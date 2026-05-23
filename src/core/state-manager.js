@@ -207,6 +207,39 @@ class StateManager {
   }
 
   /**
+   * Add a new empty tree to the project
+   */
+  addTree(name) {
+    if (!this.project) this.project = {};
+    if (this.project[name]) return false;
+    this.project[name] = Object.values(createEmptyProject())[0];
+    this.currentTreeName = name;
+    this.selectedNodeId = null;
+    this.selectedLinkIndex = null;
+    this.emit('project-loaded', { project: this.project });
+    this.scheduleAutosave();
+    return true;
+  }
+
+  /**
+   * Clear everything and start a fresh project
+   */
+  clearAll() {
+    if (this.autosaveTimer) {
+      clearTimeout(this.autosaveTimer);
+      this.autosaveTimer = null;
+    }
+    localStorage.removeItem(STORAGE_KEY);
+    this.project = createEmptyProject();
+    this.currentTreeName = 'default-tree';
+    this.selectedNodeId = null;
+    this.selectedLinkIndex = null;
+    this.lastLayout = null;
+    this.visibleLinkTypes = new Set(['default', 'father', 'mother', 'married']);
+    this.emit('project-loaded', { project: this.project });
+  }
+
+  /**
    * Clear localStorage
    */
   clearStorage() {

@@ -15,8 +15,12 @@
       <!-- Top Toolbar -->
       <div class="top-toolbar">
         <label class="toolbar-btn dark">
-          <span>⬆</span>
-          <span>Import</span>
+          <!-- <span>⬆</span> -->
+          <span><svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg></span>
           <input id="fileInput" type="file" accept=".json,application/json" style="display:none" />
         </label>
 
@@ -24,26 +28,78 @@
           <option>No tree loaded</option>
         </select>
 
+        <!-- New Tree inline widget -->
+        <div class="new-tree-widget" id="newTreeWidget">
+          <button id="newTreeBtn" class="toolbar-btn" type="button" title="Add a new tree to this project">
+            <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <div class="new-tree-popover" id="newTreePopover">
+            <input id="newTreeNameInput" type="text" placeholder="Tree name…" maxlength="80" />
+            <button id="newTreeConfirmBtn" class="mini-btn" type="button">Create</button>
+          </div>
+        </div>
+        
+        <div class="toolbar-spacer"></div>
+
         <div id="linkTypesDropdown" class="toolbar-dropdown">
           <button id="linkTypesToggle" class="toolbar-menu-btn" type="button">
-            <span>☰</span>
-            <span>Link types</span>
+            <!-- <span>☰</span> -->
+            <span>
+              <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18C7 18 10 6 21 6"></path>
+                <polyline points="17 2 21 6 17 10"></polyline>
+                <path d="M3 6C7 6 10 18 21 18"></path>
+                <polyline points="17 14 21 18 17 22"></polyline>
+              </svg>
+            </span>
           </button>
           <div id="linkTypesMenu" class="toolbar-menu"></div>
         </div>
 
-        <button id="fitBtn" class="toolbar-btn round" disabled title="Fit view">↔</button>
+        <button id="fitBtn" class="toolbar-btn round" disabled title="Fit view">
+          <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="12,7 10,4 14,4" fill="currentColor"></polygon>
+            <polygon points="12,17 10,20 14,20" fill="currentColor"></polygon>
+            <polygon points="7,12 4,10 4,14" fill="currentColor"></polygon>
+            <polygon points="17,12 20,10 20,14" fill="currentColor"></polygon>
+          </svg>
+        </button>
 
-        <div class="toolbar-spacer"></div>
+
+        <button id="clearProjectBtn" class="toolbar-btn" type="button" title="Clear all data and start a new project">
+          <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+          </svg>
+        </button>
 
         <button id="exportJsonBtn" class="toolbar-btn" disabled type="button">
-          <span>⬇</span>
-          <span>Export JSON</span>
+          <!-- <span>⬇</span> -->
+          <span>
+            <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </span>
         </button>
 
         <button id="exportPngBtn" class="toolbar-btn" disabled type="button">
-          <span>🖼</span>
-          <span>Export PNG</span>
+          <!-- <span>🖼</span> -->
+          <span>
+            <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+              <polyline points="17 14 21 18 17 22"></polyline>
+              <path d="M21 18h-4"></path>
+            </svg>
+          </span>
         </button>
       </div>
 

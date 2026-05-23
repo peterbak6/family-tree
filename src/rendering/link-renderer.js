@@ -30,7 +30,7 @@ export function renderLinks(linkG, links, layout, state, handlers) {
     })
     .on('click', (event, d) => {
       event.stopPropagation();
-      handlers.onLinkClick?.(d.index);
+      handlers.onLinkClick?.(d.index, event.clientX, event.clientY);
     });
 }
 
@@ -64,6 +64,6 @@ export function renderMarriedLinks(marriedG, links, layout, state, handlers) {
     })
     .on('click', (event, d) => {
       event.stopPropagation();
-      handlers.onLinkClick?.(d.index);
+      handlers.onLinkClick?.(d.index, event.clientX, event.clientY);
     });
 }

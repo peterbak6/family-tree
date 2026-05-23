@@ -1,5 +1,90 @@
 /* SVG Visualization Styles */
 
+/* ── Link Context Menu ──────────────────────────────────────────────────── */
+.link-ctx-menu {
+  position: fixed;
+  z-index: 1000;
+  background: var(--surface-elevated);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 10px;
+  box-shadow: var(--shadow-xl);
+  min-width: 160px;
+  animation: slideDown 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-ctx-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 6px 6px;
+}
+
+.link-ctx-types {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.link-ctx-type-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: none;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s ease;
+}
+
+.link-ctx-type-btn::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--swatch);
+  flex-shrink: 0;
+}
+
+.link-ctx-type-btn:hover {
+  background: var(--bg-tertiary);
+}
+
+.link-ctx-type-btn.active {
+  border-color: var(--border-medium);
+  background: var(--bg-secondary);
+  font-weight: 700;
+}
+
+.link-ctx-remove {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  text-align: left;
+}
+
+.link-ctx-remove:hover {
+  background: rgba(220, 38, 38, 0.18);
+}
+
 /* Generation Axes */
 .axis-line {
   stroke-width: 3;

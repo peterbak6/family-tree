@@ -9,15 +9,18 @@
   align-items: center;
   gap: 12px;
   pointer-events: none;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .top-toolbar > * {
   pointer-events: auto;
 }
 
-.toolbar-spacer {
+/* .toolbar-spacer {
   flex: 1;
-}
+} */
 
 /* Toolbar Buttons */
 .toolbar-btn,
@@ -26,7 +29,7 @@
   height: 44px;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  padding: 0 18px;
+  padding: 0 11px;
   background: var(--surface-elevated);
   backdrop-filter: blur(20px);
   color: var(--text-primary);
@@ -211,6 +214,51 @@
 
 .mini-btn.danger-mini:hover {
   background: #fecaca;
+}
+
+/* ── New Tree Widget ─────────────────────────────────────────────────────── */
+.new-tree-widget {
+  position: relative;
+}
+
+.new-tree-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-elevated);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  box-shadow: var(--shadow-xl);
+  white-space: nowrap;
+  z-index: 100;
+  animation: slideDown 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.new-tree-popover.open {
+  display: flex;
+}
+
+.new-tree-popover input {
+  height: 36px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 0 10px;
+  font-size: 0.9rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  width: 200px;
+  transition: border-color 0.2s ease;
+}
+
+.new-tree-popover input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
 }
 
 /* Selected Link Tools */

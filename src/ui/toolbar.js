@@ -14,6 +14,11 @@ export class Toolbar {
     this.exportPngBtn = document.getElementById('exportPngBtn');
     this.linkTypesToggle = document.getElementById('linkTypesToggle');
     this.linkTypesDropdown = document.getElementById('linkTypesDropdown');
+    this.newTreeBtn = document.getElementById('newTreeBtn');
+    this.newTreePopover = document.getElementById('newTreePopover');
+    this.newTreeNameInput = document.getElementById('newTreeNameInput');
+    this.newTreeConfirmBtn = document.getElementById('newTreeConfirmBtn');
+    this.clearProjectBtn = document.getElementById('clearProjectBtn');
     
     this.setupEventListeners();
   }
@@ -68,7 +73,50 @@ export class Toolbar {
           !this.linkTypesDropdown.contains(e.target)) {
         this.linkTypesDropdown.classList.remove('open');
       }
+      if (this.newTreePopover &&
+          !this.newTreePopover.contains(e.target) &&
+          e.target !== this.newTreeBtn) {
+        this.newTreePopover.classList.remove('open');
+      }
     });
+
+    // New Tree button
+    if (this.newTreeBtn) {
+      this.newTreeBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        this.newTreePopover.classList.toggle('open');
+        if (this.newTreePopover.classList.contains('open')) {
+          this.newTreeNameInput.focus();
+        }
+      });
+    }
+
+    // Confirm new tree (button or Enter)
+    const confirmNewTree = () => {
+      const name = this.newTreeNameInput?.value.trim();
+      if (name) {
+        this.handlers.onNewTree?.(name);
+        this.newTreeNameInput.value = '';
+        this.newTreePopover.classList.remove('open');
+      }
+    };
+    this.newTreeConfirmBtn?.addEventListener('click', confirmNewTree);
+    this.newTreeNameInput?.addEventListener('keydown', e => {
+      if (e.key === 'Enter') confirmNewTree();
+      else if (e.key === 'Escape') {
+        this.newTreeNameInput.value = '';
+        this.newTreePopover.classList.remove('open');
+      }
+    });
+
+    // Clear / new project
+    if (this.clearProjectBtn) {
+      this.clearProjectBtn.addEventListener('click', () => {
+        if (confirm('Clear all data and start a new project?\nThis cannot be undone.')) {
+          this.handlers.onClearAll?.();
+        }
+      });
+    }
   }
 
   toggleLinkTypesDropdown() {

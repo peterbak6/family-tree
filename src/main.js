@@ -5,6 +5,7 @@ import { SVGRenderer } from './rendering/svg-renderer.js';
 import { LinkCreator, NodeEditor, NodeCreator } from './interactions/interaction-handlers.js';
 import { Toolbar } from './ui/toolbar.js';
 import { LinkTypesMenu } from './ui/link-types-menu.js';
+import { LinkContextMenu } from './ui/link-context-menu.js';
 import { importJSON, exportJSON } from './io/json-io.js';
 import { exportAsPng } from './io/png-export.js';
 
@@ -16,6 +17,7 @@ class FamilyTreeApp {
     this.renderer = new SVGRenderer('#chart');
     this.toolbar = null;
     this.linkTypesMenu = null;
+    this.linkContextMenu = null;
     this.linkCreator = null;
     this.nodeEditor = null;
     this.nodeCreator = null;
@@ -52,6 +54,16 @@ class FamilyTreeApp {
         }
         this.render();
       },
+      onNewTree: (name) => {
+        if (!state.addTree(name)) {
+          this.toolbar.setStatus(`Tree "${name}" already exists`);
+        }
+      },
+      onClearAll: () => {
+        state.clearAll();
+        this.onProjectLoaded();
+        this.toolbar.setStatus('Started new project');
+      },
       onExport: () => this.handleExport(),
       onExportPng: async () => {
         this.toolbar.setStatus('Exporting PNG…');
@@ -66,6 +78,7 @@ class FamilyTreeApp {
     });
 
     this.linkTypesMenu = new LinkTypesMenu(state, () => this.render());
+    this.linkContextMenu = new LinkContextMenu(state, () => this.render());
 
     // Setup background click handler
     this.renderer.onBackgroundClick(() => {
@@ -83,6 +96,7 @@ class FamilyTreeApp {
     });
     state.subscribe('selection-cleared', () => {
       this.linkTypesMenu.render();
+      this.linkContextMenu.hide();
       this.render(true); // Preserve view when clearing selection
     });
     state.subscribe('link-types-changed', () => this.render(true)); // Preserve view when link types change
@@ -137,7 +151,10 @@ class FamilyTreeApp {
       },
       onNodeEdit: (nodeId) => this.nodeEditor.startInlineEdit(nodeId),
       onNodeDelete: (nodeId) => this.nodeCreator.deleteNode(nodeId),
-      onLinkClick: (linkIndex) => state.selectLink(linkIndex),
+      onLinkClick: (linkIndex, x, y) => {
+        state.selectLink(linkIndex);
+        this.linkContextMenu.show(x, y);
+      },
       onLinkDragStart: (...args) => this.linkCreator.onLinkDragStart(...args),
       onLinkDrag: (...args) => this.linkCreator.onLinkDrag(...args),
       onLinkDragEnd: (...args) => this.linkCreator.onLinkDragEnd(...args),
