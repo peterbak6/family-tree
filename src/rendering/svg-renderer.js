@@ -9,6 +9,17 @@ import { renderLinks, renderMarriedLinks } from './link-renderer.js';
 export class SVGRenderer {
   constructor(svgSelector) {
     this.svg = d3.select(svgSelector);
+
+    // iOS Safari only fires touch/pointer events on painted SVG surfaces.
+    // A CSS background on the <svg> element is not a paint surface, so
+    // single-finger pan would silently drop.  This transparent rect covers
+    // the full viewport and gives iOS a solid hit-test target everywhere.
+    this.svg.append('rect')
+      .attr('class', 'svg-hit-area')
+      .attr('width', '100%')
+      .attr('height', '100%')
+      .attr('fill', 'transparent');
+
     this.rootG = this.svg.append('g').attr('class', 'root');
     this.axisG = this.rootG.append('g').attr('class', 'axes');
     this.linkG = this.rootG.append('g').attr('class', 'links');

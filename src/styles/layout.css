@@ -21,6 +21,9 @@ main {
   width: 100%;
   height: 100%;
   display: block;
+  touch-action: none; /* let D3 zoom handle all touch gestures */
+  user-select: none;            /* prevent iOS text-selection from eating drag events */
+  -webkit-user-select: none;
   background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
               radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
               var(--bg-primary);

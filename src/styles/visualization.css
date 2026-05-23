@@ -104,7 +104,7 @@
 
 .axis-hit {
   stroke: transparent;
-  stroke-width: 50;
+  stroke-width: 20;
   pointer-events: stroke;
   cursor: pointer;
 }
