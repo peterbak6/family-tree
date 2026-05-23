@@ -1,0 +1,6 @@
+/* Import all style modules */
+@import './base.css';
+@import './layout.css';
+@import './toolbar.css';
+@import './visualization.css';
+@import './animations.css';

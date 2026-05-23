@@ -1,0 +1,114 @@
+{
+  "example-family": {
+    "nodes": [
+      {
+        "id": 1,
+        "generation": 0,
+        "content": "John Smith, 1920-1995, Boston, Grandfather"
+      },
+      {
+        "id": 2,
+        "generation": 0,
+        "content": "Mary Johnson, 1925-2010, Boston, Grandmother"
+      },
+      {
+        "id": 3,
+        "generation": 1,
+        "content": "Robert Smith, 1950-, New York, Father"
+      },
+      {
+        "id": 4,
+        "generation": 1,
+        "content": "Susan Davis, 1952-, Chicago, Mother"
+      },
+      {
+        "id": 5,
+        "generation": 2,
+        "content": "Michael Smith, 1980-, San Francisco, Me"
+      },
+      {
+        "id": 6,
+        "generation": 2,
+        "content": "Jennifer Wilson, 1982-, San Francisco, Spouse"
+      },
+      {
+        "id": 7,
+        "generation": 3,
+        "content": "Emma Smith, 2010-, San Francisco, Daughter"
+      }
+    ],
+    "links": [
+      {
+        "from": 1,
+        "to": 2,
+        "type": "married"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "type": "father"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "type": "mother"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "type": "married"
+      },
+      {
+        "from": 3,
+        "to": 5,
+        "type": "father"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "type": "mother"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "type": "married"
+      },
+      {
+        "from": 5,
+        "to": 7,
+        "type": "father"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "type": "mother"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "#8c8f98"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "#3b82f6"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "#ec4899"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "#64748b"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 3
+    }
+  }
+}

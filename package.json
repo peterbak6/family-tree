@@ -1,0 +1,19 @@
+{
+  "name": "family-tree-editor",
+  "version": "1.0.0",
+  "description": "Interactive family tree editor with D3.js visualization",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
+}

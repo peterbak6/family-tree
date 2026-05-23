@@ -1,0 +1,85 @@
+/* Layout Structure */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: var(--bg-primary);
+  /* border-radius: var(--radius-xl); */
+  /* margin: 12px; */
+  /* box-shadow: var(--shadow-xl); */
+}
+
+/* SVG Canvas */
+#chart {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+              var(--bg-primary);
+  cursor: grab;
+}
+
+#chart:active {
+  cursor: grabbing;
+}
+
+/* Empty State */
+.empty-state {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.empty-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.empty-icon {
+  width: 80px;
+  height: 80px;
+  color: var(--text-tertiary);
+  margin: 0 auto 1.5rem;
+  opacity: 0.5;
+}
+
+.empty-content h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.empty-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Status Bar */
+#status {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: var(--surface-elevated);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  font-weight: 500;
+  z-index: 10;
+}

@@ -1,0 +1,332 @@
+/* SVG Visualization Styles */
+
+/* Generation Axes */
+.axis-line {
+  stroke-width: 3;
+  stroke-linecap: round;
+  opacity: 0.33;
+  transition: opacity 0.2s ease;
+}
+
+.axis-wrap {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.axis-wrap:hover .axis-line {
+  opacity: 0.6;
+}
+
+.axis-hit {
+  stroke: transparent;
+  stroke-width: 50;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+/* Axis Label - Tooltip style */
+.axis-label {
+  fill: var(--text-secondary);
+  font-size: 12px;
+  /* font-weight: 600; */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  paint-order: stroke fill;
+  /* stroke: rgba(0, 0, 0, 0.8);
+  stroke-width: 3px;
+  stroke-linejoin: round; */
+}
+
+.axis-wrap.axis-hover .axis-label {
+  opacity: 1;
+  animation: fadeIn 0.15s ease;
+}
+
+.side-axis-add {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  pointer-events: all;
+}
+
+.side-axis-add:hover {
+  opacity: 1;
+}
+
+.side-axis-add circle {
+  fill: rgba(255, 255, 255, 0.95);
+  stroke: var(--border-medium);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  transition: filter 0.15s ease, stroke-width 0.15s ease;
+}
+
+.side-axis-add:hover circle {
+  stroke-width: 2;
+  filter: drop-shadow(0 5px 14px rgba(0, 0, 0, 0.2));
+}
+
+.side-axis-add text {
+  /* font-size: 26px; */
+  /* font-weight: 800; */
+  fill: var(--text-secondary);
+  pointer-events: none;
+}
+
+/* Side Axis Tooltip */
+.side-tooltip {
+  fill: var(--text-secondary);
+  font-size: 12px;
+  /* font-weight: 600; */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  paint-order: stroke fill;
+  /* stroke: rgba(0, 0, 0, 0.8);
+  stroke-width: 3px;
+  stroke-linejoin: round; */
+}
+
+.side-axis-add.side-hover .side-tooltip {
+  opacity: 1;
+  animation: fadeIn 0.15s ease;
+}
+
+/* Links */
+.parent-link {
+  fill: none;
+  stroke-width: 2;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parent-link:hover {
+  opacity: 0.9;
+  stroke-width: 3;
+}
+
+.parent-link.default {
+  stroke-dasharray: 8 5;
+  stroke: #94a3b8;
+}
+
+.parent-link.father {
+  stroke: #3b82f6;
+}
+
+.parent-link.mother {
+  stroke: #ec4899;
+  stroke-width: 2.5;
+}
+
+.parent-link.selected {
+  stroke-width: 4;
+  opacity: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.married-link {
+  stroke: #64748b;
+  stroke-width: 2.5;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.married-link:hover {
+  opacity: 1;
+  stroke-width: 3.5;
+}
+
+.married-link.selected {
+  stroke-width: 4.5;
+  opacity: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Nodes */
+.node {
+  cursor: pointer;
+}
+
+.node rect {
+  stroke: var(--border-medium);
+  stroke-width: 1.5;
+  rx: 14;
+  ry: 14;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+  transition: stroke-width 0.15s ease, filter 0.15s ease;
+}
+
+.node:hover rect {
+  stroke-width: 2;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.15));
+}
+
+.node.selected rect {
+  stroke: var(--text-primary);
+  stroke-width: 3;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.2));
+}
+
+/* Node Text */
+.node text {
+  font-size: 13px;
+  fill: var(--text-primary);
+  pointer-events: none;
+  font-weight: 500;
+}
+
+.node text.editable-text {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.node .line-0 {
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+.node .line-1,
+.node .line-2,
+.node .line-3 {
+  fill: var(--text-secondary);
+  font-size: 11.5px;
+  font-weight: 400;
+}
+
+/* Node Editor */
+.node-foreign-editor {
+  overflow: visible;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.node-foreign-editor textarea {
+  box-sizing: border-box;
+  width: 220px;
+  height: 58px;
+  border: 2px solid var(--text-primary);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: white;
+  color: var(--text-primary);
+  font: 13px var(--font-sans);
+  line-height: 1.3;
+  resize: none;
+  outline: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Connector Dot */
+.connector-dot {
+  cursor: crosshair;
+  pointer-events: all;
+}
+
+.connector-dot circle {
+  fill: var(--text-primary);
+  stroke: white;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+  transition: fill 0.15s ease, filter 0.15s ease, stroke-width 0.15s ease;
+}
+
+.connector-dot:hover circle {
+  fill: var(--text-primary);
+  stroke-width: 3;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Connector Tooltip */
+.connector-tooltip {
+  fill: white;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  paint-order: stroke fill;
+  stroke: rgba(0, 0, 0, 0.8);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.connector-dot.connector-hover .connector-tooltip {
+  opacity: 1;
+  animation: fadeIn 0.15s ease;
+}
+
+/* Drag Preview */
+.drag-preview {
+  fill: none;
+  stroke: var(--text-primary);
+  stroke-width: 2.5;
+  stroke-dasharray: 8 5;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.drop-target rect {
+  stroke: var(--text-primary);
+  stroke-width: 3;
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+/* Node Action Buttons - Visible on hover */
+.delete-node-x,
+.edit-node-btn {
+  display: none;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.node:hover .delete-node-x,
+.node:hover .edit-node-btn,
+.node.selected .delete-node-x,
+.node.selected .edit-node-btn {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.delete-node-x circle {
+  fill: #ef4444;
+  stroke: white;
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 6px rgba(239, 68, 68, 0.3));
+  transition: filter 0.15s ease, stroke-width 0.15s ease;
+}
+
+.delete-node-x:hover circle {
+  stroke-width: 2.5;
+  filter: drop-shadow(0 3px 8px rgba(239, 68, 68, 0.4));
+}
+
+.edit-node-btn circle {
+  fill: white;
+  stroke: var(--border-medium);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+  transition: filter 0.15s ease, stroke-width 0.15s ease;
+}
+
+.edit-node-btn:hover circle {
+  stroke-width: 2;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+}
+
+.delete-node-x text {
+  fill: white;
+  font-size: 14px;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+.edit-node-btn text {
+  fill: var(--text-primary);
+  font-size: 12px;
+  font-weight: 900;
+  pointer-events: none;
+}
