@@ -64,6 +64,7 @@ const EXPORT_STYLES = `
 const REMOVE_SELECTORS = [
   '.axis-hit',
   '.side-axis-add',
+  '.axis-add-btn',
   '.axis-label',
   '.side-tooltip',
   '.connector-dot',

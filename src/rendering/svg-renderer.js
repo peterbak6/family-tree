@@ -111,12 +111,30 @@ export class SVGRenderer {
         handlers.onAddNodeToGeneration?.(generation);
       });
 
-    // Tooltip label for axis (follows mouse)
+    // Tooltip label for axis (follows mouse, desktop only)
     axisWrap.append('text')
       .attr('class', 'axis-label')
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
       .text('Click to add a node');
+
+    // "Add node" badge — always visible on touch devices, hover-revealed on desktop
+    axisWrap.append('g')
+      .attr('class', 'axis-add-btn')
+      .attr('transform', d => `translate(${LEFT_MARGIN + d * X_GAP},${y0 + 22})`)
+      .style('pointer-events', 'all')
+      .on('click', (event, generation) => {
+        event.stopPropagation();
+        handlers.onAddNodeToGeneration?.(generation);
+      })
+      .call(g => {
+        g.append('circle').attr('r', 14);
+        g.append('text')
+          .attr('text-anchor', 'middle')
+          .attr('dy', '0.35em')
+          .attr('font-size', '18')
+          .text('+');
+      });
 
     // Side buttons for adding new generations
     const minGen = d3.min(layout.generations);
