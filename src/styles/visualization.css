@@ -409,7 +409,7 @@
 }
 
 .delete-node-x circle {
-  fill: #ef4444;
+  fill: black;
   stroke: white;
   stroke-width: 2;
   filter: drop-shadow(0 2px 6px rgba(239, 68, 68, 0.3));

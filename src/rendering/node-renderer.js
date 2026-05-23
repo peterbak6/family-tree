@@ -87,7 +87,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
   // Edit button
   const editBtn = node.append('g')
     .attr('class', 'edit-node-btn')
-    .attr('transform', `translate(${NODE_W - 26},10)`)
+    .attr('transform', `translate(${NODE_W - 34},0)`)
     .style('pointer-events', 'all')
     .on('mousedown', event => event.stopPropagation())
     .on('touchstart', event => event.stopPropagation())
@@ -98,7 +98,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
       handlers.onNodeEdit?.(d.id);
     });
 
-  editBtn.append('circle').attr('r', 8);
+  editBtn.append('circle').attr('r', 10);
   editBtn.append('text')
     .attr('text-anchor', 'middle')
     .attr('dy', '0.35em')
@@ -107,7 +107,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
   // Delete button
   const deleteX = node.append('g')
     .attr('class', 'delete-node-x')
-    .attr('transform', `translate(${NODE_W - 10},10)`)
+    .attr('transform', `translate(${NODE_W - 10},0)`)
     .style('pointer-events', 'all')
     .on('mousedown', event => event.stopPropagation())
     .on('touchstart', event => event.stopPropagation())
@@ -118,7 +118,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
       handlers.onNodeDelete?.(d.id);
     });
 
-  deleteX.append('circle').attr('r', 8);
+  deleteX.append('circle').attr('r', 10);
   deleteX.append('text')
     .attr('text-anchor', 'middle')
     .attr('dy', '0.35em')
