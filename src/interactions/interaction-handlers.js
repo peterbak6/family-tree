@@ -67,16 +67,22 @@ export class LinkCreator {
   onLinkDrag(event, sourceNode, nodeElement) {
     if (!this.dragPreview) return;
     
-    const p = d3.pointer(event, this.rootG.node());
-    this.dragPreview.attr('d', `M${sourceNode.x},${sourceNode.y + NODE_H / 2} L${p[0]},${p[1]}`);
-    
-    const target = this.nodeAtPoint(p[0], p[1], sourceNode.id);
-    this.nodeG.selectAll('g.node').classed('drop-target', nd => target && nd.id === target.id);
+    try {
+      const p = d3.pointer(event, this.rootG.node());
+      this._lastDragPoint = p;
+      this.dragPreview.attr('d', `M${sourceNode.x},${sourceNode.y + NODE_H / 2} L${p[0]},${p[1]}`);
+      const target = this.nodeAtPoint(p[0], p[1], sourceNode.id);
+      this.nodeG.selectAll('g.node').classed('drop-target', nd => target && nd.id === target.id);
+    } catch (_) { /* touch events may lack valid clientX/Y — ignore, dragEnd uses _lastDragPoint */ }
   }
 
   onLinkDragEnd(event, sourceNode, nodeElement) {
-    const p = d3.pointer(event, this.rootG.node());
-    const target = this.nodeAtPoint(p[0], p[1], sourceNode.id);
+    // Use last position from drag; dragEnd event coordinates are unreliable on touch
+    const p = this._lastDragPoint ?? [NaN, NaN];
+    this._lastDragPoint = null;
+    const target = (isFinite(p[0]) && isFinite(p[1]))
+      ? this.nodeAtPoint(p[0], p[1], sourceNode.id)
+      : null;
     
     if (this.dragPreview) {
       this.dragPreview.remove();

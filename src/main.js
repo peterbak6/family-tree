@@ -31,6 +31,7 @@ class FamilyTreeApp {
     this.nodeEditor = new NodeEditor(state, () => this.render(true), this.renderer.nodeG, this.renderer.rootG);
     this.nodeCreator = new NodeCreator(state, () => this.render(true));
     this.nodeCreator.setNodeEditor(this.nodeEditor);
+    this.pendingLinkSource = null;
     
     // Set up callbacks for centering on newly created nodes/links
     this.nodeCreator.onNodeCreated = (nodeId) => {
@@ -95,9 +96,10 @@ class FamilyTreeApp {
       this.render(true); // Preserve view on link selection
     });
     state.subscribe('selection-cleared', () => {
+      this.pendingLinkSource = null;
       this.linkTypesMenu.render();
       this.linkContextMenu.hide();
-      this.render(true); // Preserve view when clearing selection
+      this.render(true);
     });
     state.subscribe('link-types-changed', () => this.render(true)); // Preserve view when link types change
     state.subscribe('saved', ({ savedAt }) => {
@@ -143,11 +145,24 @@ class FamilyTreeApp {
     // Prepare handlers for rendering
     const handlers = {
       onNodeClick: (nodeId) => {
+        // Tap-to-connect: if a source is pending, this tap creates the link
+        if (this.pendingLinkSource !== null) {
+          if (this.pendingLinkSource !== nodeId) {
+            this.linkCreator.createLinkBetween(this.pendingLinkSource, nodeId);
+          }
+          this.pendingLinkSource = null;
+          return;
+        }
         const wasSelected = state.selectedNodeId === nodeId;
         state.selectNode(nodeId);
         if (wasSelected) {
           this.nodeEditor.startInlineEdit(nodeId);
         }
+      },
+      onConnectorTap: (nodeId) => {
+        // Toggle: tap same connector again cancels, tap new one switches source
+        this.pendingLinkSource = this.pendingLinkSource === nodeId ? null : nodeId;
+        this.render(true);
       },
       onNodeEdit: (nodeId) => this.nodeEditor.startInlineEdit(nodeId),
       onNodeDelete: (nodeId) => this.nodeCreator.deleteNode(nodeId),
@@ -158,6 +173,7 @@ class FamilyTreeApp {
       onLinkDragStart: (...args) => this.linkCreator.onLinkDragStart(...args),
       onLinkDrag: (...args) => this.linkCreator.onLinkDrag(...args),
       onLinkDragEnd: (...args) => this.linkCreator.onLinkDragEnd(...args),
+      pendingLinkSourceId: this.pendingLinkSource,
       onAddNodeToGeneration: (gen) => this.nodeCreator.addNodeToGeneration(gen),
       onAddAxisLeft: () => this.nodeCreator.addAxisLeft(),
       onAddAxisRight: () => this.nodeCreator.addAxisRight()

@@ -8,7 +8,12 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
   const node = nodeG.selectAll('g.node')
     .data(nodes, d => d.id)
     .join('g')
-    .attr('class', d => `node ${state.selectedNodeId === d.id ? 'selected' : ''}`)
+    .attr('class', d => {
+      let cls = 'node';
+      if (state.selectedNodeId === d.id) cls += ' selected';
+      if (handlers.pendingLinkSourceId === d.id) cls += ' link-pending-source';
+      return cls;
+    })
     .attr('transform', d => `translate(${d.x},${d.y})`)
     .on('click', (event, d) => {
       event.stopPropagation();
@@ -53,7 +58,6 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
     .attr('transform', `translate(0,${NODE_H / 2})`)
     .style('pointer-events', 'all')
     .on('mousedown', event => event.stopPropagation())
-    .on('touchstart', event => event.stopPropagation())
     .on('mouseenter', function(event) {
       event.stopPropagation();
       d3.select(this).classed('connector-hover', true);
@@ -61,7 +65,15 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
     .on('mouseleave', function(event) {
       d3.select(this).classed('connector-hover', false);
     })
-    .call(d3.drag()
+    .on('click', (event, d) => {
+      event.stopPropagation();
+      handlers.onConnectorTap?.(d.id);
+    });
+
+  // Drag-to-connect: desktop (hover) only.
+  // Touch uses tap-to-connect via the click handler above.
+  if (window.matchMedia('(hover: hover)').matches) {
+    connector.call(d3.drag()
       .on('start', function(event, d) {
         event.sourceEvent.stopPropagation();
         handlers.onLinkDragStart?.(d, this.parentNode.parentNode);
@@ -73,6 +85,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
         handlers.onLinkDragEnd?.(event, d, this.parentNode.parentNode);
       })
     );
+  }
 
   connector.append('circle').attr('r', 6);
   
@@ -82,7 +95,7 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
     .attr('x', 0)
     .attr('y', -15)
     .attr('text-anchor', 'middle')
-    .text('Drag to a connected node');
+    .text('Drag to a connected node, or tap to connect on mobile');
 
   // Edit button
   const editBtn = node.append('g')

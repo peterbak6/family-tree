@@ -343,6 +343,26 @@
   pointer-events: all;
 }
 
+/* Touch devices: connector drag is mouse-only (drag filter handles it),
+   but keep it visible and tappable for tap-to-connect flow */
+@media (hover: none) {
+  .connector-dot circle {
+    stroke-width: 3;
+    r: 9;
+  }
+}
+
+/* Node in tap-to-connect source mode */
+.node.link-pending-source rect {
+  stroke-dasharray: 6 3;
+  stroke-width: 3.5;
+  animation: pulse 1s ease-in-out infinite;
+}
+.node.link-pending-source .connector-dot circle {
+  fill: var(--text-primary);
+  stroke: var(--text-primary);
+}
+
 .connector-dot circle {
   stroke: var(--text-secondary);
   fill: white;
@@ -359,16 +379,16 @@
 
 /* Connector Tooltip */
 .connector-tooltip {
-  fill: white;
+  fill: black;
   font-size: 11px;
-  font-weight: 600;
+  /* font-weight: 600; */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease;
-  paint-order: stroke fill;
-  stroke: rgba(0, 0, 0, 0.8);
+  /* paint-order: stroke fill; */
+  /* stroke: rgba(0, 0, 0, 0.8);
   stroke-width: 3px;
-  stroke-linejoin: round;
+  stroke-linejoin: round; */
 }
 
 .connector-dot.connector-hover .connector-tooltip {
