@@ -11,6 +11,7 @@ export class Toolbar {
     this.treeSelect = document.getElementById('treeSelect');
     this.fitBtn = document.getElementById('fitBtn');
     this.exportBtn = document.getElementById('exportJsonBtn');
+    this.exportPngBtn = document.getElementById('exportPngBtn');
     this.linkTypesToggle = document.getElementById('linkTypesToggle');
     this.linkTypesDropdown = document.getElementById('linkTypesDropdown');
     
@@ -39,10 +40,17 @@ export class Toolbar {
       });
     }
 
-    // Export button
+    // Export JSON button
     if (this.exportBtn) {
       this.exportBtn.addEventListener('click', () => {
         this.handlers.onExport?.();
+      });
+    }
+
+    // Export PNG button
+    if (this.exportPngBtn) {
+      this.exportPngBtn.addEventListener('click', () => {
+        this.handlers.onExportPng?.();
       });
     }
 
@@ -79,12 +87,14 @@ export class Toolbar {
       this.treeSelect.disabled = true;
       this.fitBtn.disabled = true;
       this.exportBtn.disabled = true;
+      if (this.exportPngBtn) this.exportPngBtn.disabled = true;
       return;
     }
 
     this.treeSelect.disabled = false;
     this.fitBtn.disabled = false;
     this.exportBtn.disabled = false;
+    if (this.exportPngBtn) this.exportPngBtn.disabled = false;
 
     this.treeSelect.innerHTML = treeNames.map(name => 
       `<option value="${escapeHtml(name)}" ${name === this.state.currentTreeName ? 'selected' : ''}>

@@ -58,13 +58,8 @@ export function normalizeProject(obj) {
       }
       n.generation = +n.generation || 0;
       
-      if (n.layout_order !== undefined && n.layout_order !== null && n.layout_order !== '') {
-        n.layout_order = +n.layout_order;
-      } else {
-        delete n.layout_order;
-      }
-      
-      // Remove deprecated fields
+      // Remove deprecated fields (layout_order was used for manual drag, which is gone)
+      delete n.layout_order;
       delete n.vertical_position;
       delete n.row_position;
     });
@@ -114,6 +109,30 @@ export function createEmptyProject() {
       'generation-range': { min: 0, max: 0 }
     }
   };
+}
+
+/**
+ * Normalize all hierarchical link directions so that `from` is always the
+ * earlier-generation (parent) node and `to` is always the child node.
+ * This fixes links whose direction got flipped when a user changed the type
+ * after dragging in the "wrong" direction.
+ */
+export function normalizeLinksDirection(tree) {
+  if (!tree) return;
+  // Strip stale layout_order from in-memory nodes (manual drag is gone)
+  tree.nodes.forEach(n => delete n.layout_order);
+
+  const nodeGenMap = new Map(tree.nodes.map(n => [n.id, n.generation ?? 0]));
+  const hierarchicalTypes = new Set(['father', 'mother', 'default']);
+
+  tree.links.forEach(l => {
+    if (!hierarchicalTypes.has(l.type ?? 'default')) return;
+    const fromGen = nodeGenMap.get(l.from) ?? 0;
+    const toGen   = nodeGenMap.get(l.to)   ?? 0;
+    if (fromGen > toGen) {
+      [l.from, l.to] = [l.to, l.from];
+    }
+  });
 }
 
 /**

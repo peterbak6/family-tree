@@ -19,7 +19,9 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
   node.append('rect')
     .attr('width', NODE_W)
     .attr('height', NODE_H)
-    .attr('fill', d => d.color);
+    .style('fill', "rgba(255,255,255,1.0)")
+    .style('stroke', d => d.color)
+    .style('stroke-width', 2.5);
 
   // Node text content
   node.each(function(d) {

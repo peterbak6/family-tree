@@ -1,4 +1,5 @@
 import * as d3 from 'd3';
+import { graphlib, layout as dagreLayout } from '@dagrejs/dagre';
 import {
   NODE_W,
   NODE_H,
@@ -20,19 +21,6 @@ export function computeLayout(tree) {
     return String(n.content || '').split(',')[0].trim().toLowerCase();
   }
 
-  function hasLayoutOrder(n) {
-    return n.layout_order !== undefined && n.layout_order !== null && !Number.isNaN(+n.layout_order);
-  }
-
-  function layoutOrder(n) {
-    return hasLayoutOrder(n) ? +n.layout_order : Infinity;
-  }
-
-  function componentLayoutOrder(component) {
-    const values = component.filter(hasLayoutOrder).map(n => +n.layout_order);
-    return values.length ? d3.min(values) : Infinity;
-  }
-
   function linkTypeRank(type) {
     return ({ married: 0, father: 1, mother: 2, default: 3 })[type || 'default'] ?? 9;
   }
@@ -42,7 +30,6 @@ export function computeLayout(tree) {
     .map(d => ({ ...d }))
     .sort((a, b) =>
       d3.ascending(a.generation ?? 0, b.generation ?? 0) ||
-      d3.ascending(layoutOrder(a), layoutOrder(b)) ||
       d3.ascending(nodeLabel(a), nodeLabel(b)) ||
       d3.ascending(+a.id, +b.id)
     );
@@ -86,11 +73,12 @@ export function computeLayout(tree) {
   const outgoingChildren = new Map();
 
   parentLinks.forEach(l => {
-    // For default links, normalize direction: earlier generation = parent
+    // Always normalize by generation: earlier generation = parent
+    // (link direction can be arbitrary if user changed type after dragging)
     const fromGen = nodeById.get(l.from)?.generation ?? 0;
     const toGen = nodeById.get(l.to)?.generation ?? 0;
-    const parentId = (l.type === 'default' && fromGen > toGen) ? l.to : l.from;
-    const childId = (l.type === 'default' && fromGen > toGen) ? l.from : l.to;
+    const parentId = fromGen > toGen ? l.to : l.from;
+    const childId  = fromGen > toGen ? l.from : l.to;
 
     if (!incomingParents.has(childId)) incomingParents.set(childId, []);
     incomingParents.get(childId).push(parentId);
@@ -124,6 +112,29 @@ export function computeLayout(tree) {
 
   function parentKeyForNode(id) {
     return unique(incomingParents.get(id) || []).sort((a, b) => a - b).join('|') || 'no-parents';
+  }
+
+  // Union-find: group nodes that share ANY common parent as siblings
+  const _sg = new Map(rawNodes.map(n => [n.id, n.id]));
+  function _findSG(x) {
+    let p = _sg.get(x) ?? x;
+    while (_sg.get(p) !== p) {
+      const pp = _sg.get(_sg.get(p) ?? p) ?? _sg.get(p) ?? p;
+      _sg.set(p, pp);
+      p = _sg.get(p);
+    }
+    return p;
+  }
+  outgoingChildren.forEach(children => {
+    for (let i = 1; i < children.length; i++) {
+      const ra = _findSG(children[0]), rb = _findSG(children[i]);
+      if (ra !== rb) _sg.set(rb, ra);
+    }
+  });
+  function siblingGroupKey(id) {
+    const parents = incomingParents.get(id);
+    if (!parents || parents.length === 0) return 'no-parents';
+    return String(_findSG(id));
   }
 
   function isMarried(aId, bId) {
@@ -179,104 +190,47 @@ export function computeLayout(tree) {
     if (!a || !b) return GROUP_PAD;
     if (isMarried(a.id, b.id)) return SPOUSE_PAD;
 
-    const ak = parentKeyForNode(a.id);
-    const bk = parentKeyForNode(b.id);
+    const ak = siblingGroupKey(a.id);
+    const bk = siblingGroupKey(b.id);
     return ak === bk && ak !== 'no-parents' ? SIBLING_PAD : GROUP_PAD;
   }
 
-  function neighborBarycenter(n, direction) {
-    const ids = direction === 'children'
-      ? unique(outgoingChildren.get(n.id) || [])
-      : unique(incomingParents.get(n.id) || []);
+  function neighborBarycenter() {} // kept as no-op; replaced by dagre
 
-    const values = ids
-      .map(id => placedById.get(id))
-      .filter(Boolean)
-      .map(other => other.order);
+  // ── DAGRE: determine crossing-minimising order within each generation ──
+  {
+    const dg = new graphlib.Graph();
+    dg.setGraph({ rankdir: 'LR', nodesep: SIBLING_PAD, ranksep: X_GAP });
+    dg.setDefaultEdgeLabel(() => ({}));
+    rawNodes.forEach(n => dg.setNode(String(n.id), { width: NODE_W, height: NODE_H }));
 
-    return values.length ? d3.mean(values) : null;
-  }
-
-  function sortGenerationByBarycenter(gen, direction) {
-    const arr = nodesByGeneration.get(gen) || [];
-    if (!arr.length) return;
-
-    const value = new Map();
-    arr.forEach(n => {
-      const b = neighborBarycenter(n, direction);
-      value.set(n.id, b == null ? n.order : b);
+    // Feed only directed parent→child edges so dagre can minimise crossings
+    parentLinks.forEach(l => {
+      const fromGen = nodeById.get(l.from)?.generation ?? 0;
+      const toGen   = nodeById.get(l.to)?.generation ?? 0;
+      // Always normalize by generation (handles links whose type was changed)
+      const [src, dst] = fromGen > toGen ? [l.to, l.from] : [l.from, l.to];
+      if (!dg.hasEdge(String(src), String(dst))) {
+        dg.setEdge(String(src), String(dst));
+      }
     });
 
-    const comps = marriageComponents(arr);
+    dagreLayout(dg);
 
-    comps.forEach(comp => {
-      comp.sort((a, b) => {
-        const av = value.get(a.id);
-        const bv = value.get(b.id);
-        if (Math.abs(av - bv) > 0.001) return av - bv;
-        return a.order - b.order;
+    // Re-sort each generation by dagre's within-rank y position
+    generationValues.forEach(gen => {
+      const arr = nodesByGeneration.get(gen) || [];
+      arr.sort((a, b) => {
+        const ay = dg.node(String(a.id))?.y ?? 0;
+        const by = dg.node(String(b.id))?.y ?? 0;
+        if (ay !== by) return ay - by;
+        return a.id < b.id ? -1 : 1; // stable tie-break by id
       });
     });
-
-    comps.sort((a, b) => {
-      const ao = componentLayoutOrder(a);
-      const bo = componentLayoutOrder(b);
-      if (ao !== Infinity || bo !== Infinity) {
-        return d3.ascending(ao, bo) ||
-          d3.ascending(d3.min(a, n => n.order), d3.min(b, n => n.order));
-      }
-
-      const av = d3.mean(a, n => value.get(n.id));
-      const bv = d3.mean(b, n => value.get(n.id));
-      if (Math.abs(av - bv) > 0.001) return av - bv;
-
-      const ak = d3.min(a, n => parentKeyForNode(n.id));
-      const bk = d3.min(b, n => parentKeyForNode(n.id));
-      if (ak !== bk) return d3.ascending(ak, bk);
-
-      const aHasChildren = d3.max(a, n => (outgoingChildren.get(n.id) || []).length) || 0;
-      const bHasChildren = d3.max(b, n => (outgoingChildren.get(n.id) || []).length) || 0;
-      if (aHasChildren !== bHasChildren) return d3.descending(aHasChildren, bHasChildren);
-
-      return d3.ascending(d3.min(a, n => n.order), d3.min(b, n => n.order));
-    });
-
-    const flattened = comps.flat();
-    nodesByGeneration.set(gen, flattened);
-    flattened.forEach((n, i) => n.order = i);
+    assignOrders();
   }
 
-  // Initial order: sibling groups contiguous
-  generationValues.forEach(gen => {
-    const arr = nodesByGeneration.get(gen) || [];
-    arr.sort((a, b) => {
-      if (hasLayoutOrder(a) || hasLayoutOrder(b)) {
-        return d3.ascending(layoutOrder(a), layoutOrder(b)) ||
-          d3.ascending(a.id, b.id);
-      }
-
-      const ak = parentKeyForNode(a.id);
-      const bk = parentKeyForNode(b.id);
-      if (ak !== bk) return d3.ascending(ak, bk);
-
-      const aHasChildren = (outgoingChildren.get(a.id) || []).length;
-      const bHasChildren = (outgoingChildren.get(b.id) || []).length;
-      if (aHasChildren !== bHasChildren) return d3.descending(aHasChildren, bHasChildren);
-
-      return d3.ascending(a.id, b.id);
-    });
-  });
-  assignOrders();
-
-  // Barycentric crossing-reduction sweeps
-  for (let iter = 0; iter < 18; iter++) {
-    for (let gi = 1; gi < generationValues.length; gi++) {
-      sortGenerationByBarycenter(generationValues[gi], 'parents');
-    }
-    for (let gi = generationValues.length - 2; gi >= 0; gi--) {
-      sortGenerationByBarycenter(generationValues[gi], 'children');
-    }
-  }
+  // ── layout_order is deprecated (manual drag was removed); dagre owns all ordering ──
 
   function packGeneration(gen, preserveOrder = true) {
     const arr = nodesByGeneration.get(gen) || [];
@@ -432,6 +386,24 @@ export function computeLayout(tree) {
 
   rightToLeftCoordinatePass();
   postProcessMarriedProximity();
+
+  // Vertical centering: shift each generation so its midpoint aligns with the
+  // global tree midpoint — removes the diagonal "waterfall" cascade
+  {
+    const totalMin = d3.min(layoutNodes, n => n.y);
+    const totalMax = d3.max(layoutNodes, n => n.y + NODE_H);
+    const globalCenter = (totalMin + totalMax) / 2;
+
+    generationValues.forEach(gen => {
+      const arr = nodesByGeneration.get(gen) || [];
+      if (!arr.length) return;
+      const genMin = d3.min(arr, n => n.y);
+      const genMax = d3.max(arr, n => n.y + NODE_H);
+      const genCenter = (genMin + genMax) / 2;
+      const shift = globalCenter - genCenter;
+      arr.forEach(n => { n.y += shift; n.desiredY += shift; });
+    });
+  }
 
   // Normalize top
   const minYBefore = d3.min(layoutNodes, n => n.y) ?? TOP_MARGIN;

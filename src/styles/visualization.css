@@ -97,7 +97,7 @@
 .parent-link {
   fill: none;
   stroke-width: 2;
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -118,7 +118,6 @@
 
 .parent-link.mother {
   stroke: #ec4899;
-  stroke-width: 2.5;
 }
 
 .parent-link.selected {
@@ -129,8 +128,6 @@
 
 .married-link {
   stroke: #64748b;
-  stroke-width: 2.5;
-  opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -227,8 +224,8 @@
 }
 
 .connector-dot circle {
-  fill: var(--text-primary);
-  stroke: white;
+  stroke: var(--text-secondary);
+  fill: white;
   stroke-width: 2.5;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
   transition: fill 0.15s ease, filter 0.15s ease, stroke-width 0.15s ease;

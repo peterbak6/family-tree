@@ -1,10 +1,12 @@
 import { state } from './core/state-manager.js';
 import { computeLayout } from './core/layout-engine.js';
+import { normalizeLinksDirection } from './core/data-model.js';
 import { SVGRenderer } from './rendering/svg-renderer.js';
 import { LinkCreator, NodeEditor, NodeCreator } from './interactions/interaction-handlers.js';
 import { Toolbar } from './ui/toolbar.js';
 import { LinkTypesMenu } from './ui/link-types-menu.js';
 import { importJSON, exportJSON } from './io/json-io.js';
+import { exportAsPng } from './io/png-export.js';
 
 /**
  * Main application class
@@ -42,8 +44,25 @@ class FamilyTreeApp {
     this.toolbar = new Toolbar(state, {
       onImport: (file) => this.handleImport(file),
       onTreeChange: (treeName) => this.handleTreeChange(treeName),
-      onFitView: () => this.render(), // Rerun layout and fit to view
-      onExport: () => this.handleExport()
+      onFitView: () => {
+        const tree = state.getCurrentTree();
+        if (tree) {
+          normalizeLinksDirection(tree);
+          state.scheduleAutosave();
+        }
+        this.render();
+      },
+      onExport: () => this.handleExport(),
+      onExportPng: async () => {
+        this.toolbar.setStatus('Exporting PNG…');
+        try {
+          await exportAsPng(state);
+          this.toolbar.setStatus(`${state.currentTreeName}: PNG exported`);
+        } catch (err) {
+          console.error('PNG export failed:', err);
+          this.toolbar.setStatus('PNG export failed — check console');
+        }
+      }
     });
 
     this.linkTypesMenu = new LinkTypesMenu(state, () => this.render());
@@ -132,14 +151,11 @@ class FamilyTreeApp {
 
     // Handle view positioning
     if (this.centerOnNodeId) {
-      // Center on a specific node (after creation/connection)
       this.renderer.centerOnNode(this.centerOnNodeId, layout);
-      this.centerOnNodeId = null; // Clear the flag
+      this.centerOnNodeId = null;
     } else if (preserveView && oldTransform) {
-      // Restore previous view position
       this.renderer.setTransform(oldTransform);
     } else if (!preserveView) {
-      // Fit all content in view (initial load or explicit fit button)
       this.renderer.fitView();
     }
 
