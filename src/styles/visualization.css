@@ -89,7 +89,7 @@
 .axis-line {
   stroke-width: 3;
   stroke-linecap: round;
-  opacity: 0.33;
+  opacity: 0.66;
   transition: opacity 0.2s ease;
 }
 
