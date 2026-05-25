@@ -228,6 +228,30 @@ export function computeLayout(tree) {
       });
     });
     assignOrders();
+
+    // Enforce spouse adjacency: married nodes that ended up non-adjacent after
+    // the dagre sort are reinserted immediately after their partner so that
+    // packGeneration can keep them together with the correct SPOUSE_PAD gap.
+    generationValues.forEach(gen => {
+      const arr = nodesByGeneration.get(gen) || [];
+      const inGen = new Set(arr.map(n => n.id));
+      const visited = new Set();
+      const reordered = [];
+      arr.forEach(n => {
+        if (visited.has(n.id)) return;
+        visited.add(n.id);
+        reordered.push(n);
+        // Append unvisited same-gen spouses immediately after this node
+        marriageLinks
+          .filter(l => l.from === n.id || l.to === n.id)
+          .map(l => l.from === n.id ? l.to : l.from)
+          .filter(sid => inGen.has(sid) && !visited.has(sid))
+          .sort((a, b) => (dg.node(String(a))?.y ?? 0) - (dg.node(String(b))?.y ?? 0))
+          .forEach(sid => { visited.add(sid); reordered.push(placedById.get(sid)); });
+      });
+      nodesByGeneration.set(gen, reordered.filter(Boolean));
+    });
+    assignOrders();
   }
 
   // ── layout_order is deprecated (manual drag was removed); dagre owns all ordering ──
@@ -274,141 +298,120 @@ export function computeLayout(tree) {
     });
   }
 
-  // Initial compact y positions
+  // ── Y-coordinate assignment ─────────────────────────────────────────────────
+  //
+  // "Nuclear-family" bottom-up algorithm — the standard approach used by
+  // genealogy layout software:
+  //
+  //   genSpouses(id)  → same-generation spouse nodes of a given node
+  //
+  //   bottomUpPass()  deepest→root:
+  //     For every couple (node + same-gen spouses), centre the couple block
+  //     over the midpoint of ALL their combined children.
+  //     packGeneration then resolves overlaps while preserving dagre's order,
+  //     so siblings (already adjacent thanks to dagre) stay grouped.
+  //
+  //   topDownPass()   root→deepest:
+  //     Pull each node toward the mean Y of its parents.
+  //     Leaves snap fully; nodes with children blend 50/50 to balance
+  //     the bottom-up child-centre pull against the top-down parent pull.
+  //
+  //   5 × (bottomUp + topDown), then one final bottomUp so every parent
+  //   ends up centred over its children.
+
+  function genSpouses(nodeId) {
+    const gen = nodeById.get(nodeId)?.generation ?? 0;
+    return marriageLinks
+      .filter(l => l.from === nodeId || l.to === nodeId)
+      .map(l => l.from === nodeId ? l.to : l.from)
+      .filter(sid => (nodeById.get(sid)?.generation ?? 0) === gen)
+      .map(sid => placedById.get(sid))
+      .filter(Boolean);
+  }
+
+  // Seed: give every node a valid starting Y (compact, top-aligned)
   generationValues.forEach(gen => {
     const arr = nodesByGeneration.get(gen) || [];
     arr.forEach((n, i) => {
-      n.desiredY = i === 0 ? TOP_MARGIN : arr[i - 1].y + NODE_H + gapBetween(arr[i - 1], n);
-      n.y = n.desiredY;
+      n.y = n.desiredY = i === 0
+        ? TOP_MARGIN
+        : arr[i - 1].y + NODE_H + gapBetween(arr[i - 1], n);
     });
-    packGeneration(gen, true);
   });
 
-  function rightToLeftCoordinatePass() {
+  function bottomUpPass() {
     for (let gi = generationValues.length - 2; gi >= 0; gi--) {
       const gen = generationValues[gi];
       const arr = nodesByGeneration.get(gen) || [];
+      const posInArr = new Map(arr.map((n, i) => [n.id, i]));
+      const visited = new Set();
 
       arr.forEach(n => {
-        const children = unique(outgoingChildren.get(n.id) || [])
-          .map(id => placedById.get(id))
-          .filter(Boolean);
+        if (visited.has(n.id)) return;
+        visited.add(n.id);
+
+        // Build couple: this node + unvisited same-gen spouses
+        const couple = [n];
+        genSpouses(n.id).forEach(s => {
+          if (!visited.has(s.id)) { visited.add(s.id); couple.push(s); }
+        });
+        // Preserve the dagre-determined order within the generation
+        couple.sort((a, b) => (posInArr.get(a.id) ?? 0) - (posInArr.get(b.id) ?? 0));
+
+        // Collect every child that belongs to any member of this couple
+        const childIds = new Set();
+        couple.forEach(p => (outgoingChildren.get(p.id) || []).forEach(cid => childIds.add(cid)));
+        const children = [...childIds].map(id => placedById.get(id)).filter(Boolean);
+
+        const coupleH = couple.length * NODE_H + (couple.length - 1) * SPOUSE_PAD;
 
         if (children.length) {
-          n.desiredY = d3.mean(children, c => nodeCenter(c)) - NODE_H / 2;
+          // Centre the couple block over the midpoint of their children
+          const childMid = d3.mean(children, c => c.y + NODE_H / 2);
+          const top = childMid - coupleH / 2;
+          couple.forEach((p, i) => { p.desiredY = top + i * (NODE_H + SPOUSE_PAD); });
         } else {
-          n.desiredY = n.y;
+          // No children: keep spouses centred around their current mean Y
+          const mid = d3.mean(couple, p => p.y + NODE_H / 2);
+          couple.forEach((p, i) => { p.desiredY = mid - coupleH / 2 + i * (NODE_H + SPOUSE_PAD); });
         }
       });
 
+      // Resolve overlaps while keeping the dagre order (spouses already adjacent)
       packGeneration(gen, true);
     }
   }
 
-  function gentleLeftToRightCoordinatePass() {
+  function topDownPass() {
     for (let gi = 1; gi < generationValues.length; gi++) {
       const gen = generationValues[gi];
       const arr = nodesByGeneration.get(gen) || [];
 
       arr.forEach(n => {
         const parents = unique(incomingParents.get(n.id) || [])
-          .map(id => placedById.get(id))
-          .filter(Boolean);
-        const hasChildren = (outgoingChildren.get(n.id) || []).length > 0;
+          .map(id => placedById.get(id)).filter(Boolean);
+        if (!parents.length) return;
 
-        if (parents.length && !hasChildren) {
-          const targetY = d3.mean(parents, p => nodeCenter(p)) - NODE_H / 2;
-          n.desiredY = 0.9 * n.y + 0.1 * targetY;
-        } else {
-          n.desiredY = n.y;
-        }
+        const target = d3.mean(parents, p => p.y + NODE_H / 2) - NODE_H / 2;
+        const hasChildren = (outgoingChildren.get(n.id) || []).length > 0;
+        // Leaves snap to parent mean; intermediate nodes blend 50/50
+        n.desiredY = hasChildren ? 0.5 * n.y + 0.5 * target : target;
       });
 
       packGeneration(gen, true);
     }
   }
 
-  function postProcessMarriedProximity() {
-    generationValues.forEach(gen => {
-      const arr = nodesByGeneration.get(gen) || [];
-      if (!arr.length) return;
-
-      const comps = marriageComponents(arr)
-        .map(comp => comp.slice().sort((a, b) => a.y - b.y))
-        .sort((a, b) => d3.min(a, n => n.y) - d3.min(b, n => n.y));
-
-      comps.forEach(comp => {
-        if (comp.length <= 1) return;
-        const center = d3.mean(comp, n => nodeCenter(n));
-        const height = comp.length * NODE_H + (comp.length - 1) * SPOUSE_PAD;
-        const top = center - height / 2;
-        comp.forEach((n, i) => {
-          n.y = top + i * (NODE_H + SPOUSE_PAD);
-          n.desiredY = n.y;
-        });
-      });
-
-      let prevComp = null;
-      comps.forEach(comp => {
-        const top = d3.min(comp, n => n.y);
-        const height = comp.length * NODE_H + (comp.length - 1) * SPOUSE_PAD;
-        let newTop = Math.max(TOP_MARGIN, top);
-
-        if (prevComp) {
-          const prevTop = d3.min(prevComp, n => n.y);
-          const prevHeight = prevComp.length * NODE_H + (prevComp.length - 1) * SPOUSE_PAD;
-          const prevBottom = prevTop + prevHeight;
-          const prevLast = prevComp[prevComp.length - 1];
-          const currFirst = comp[0];
-          const gap = isMarried(prevLast.id, currFirst.id) ? SPOUSE_PAD : gapBetween(prevLast, currFirst);
-          newTop = Math.max(newTop, prevBottom + gap);
-        }
-
-        comp.forEach((n, i) => {
-          n.y = newTop + i * (NODE_H + SPOUSE_PAD);
-          n.desiredY = n.y;
-        });
-
-        prevComp = comp;
-      });
-
-      const flattened = comps.flat();
-      nodesByGeneration.set(gen, flattened);
-      flattened.forEach((n, i) => n.order = i);
-    });
+  for (let pass = 0; pass < 5; pass++) {
+    bottomUpPass();
+    topDownPass();
   }
+  bottomUpPass(); // final: ensure every parent is centred over its children
 
-  // Coordinate refinement passes
-  for (let i = 0; i < 12; i++) {
-    rightToLeftCoordinatePass();
-    gentleLeftToRightCoordinatePass();
-  }
-
-  rightToLeftCoordinatePass();
-  postProcessMarriedProximity();
-
-  // Vertical centering: shift each generation so its midpoint aligns with the
-  // global tree midpoint — removes the diagonal "waterfall" cascade
-  {
-    const totalMin = d3.min(layoutNodes, n => n.y);
-    const totalMax = d3.max(layoutNodes, n => n.y + NODE_H);
-    const globalCenter = (totalMin + totalMax) / 2;
-
-    generationValues.forEach(gen => {
-      const arr = nodesByGeneration.get(gen) || [];
-      if (!arr.length) return;
-      const genMin = d3.min(arr, n => n.y);
-      const genMax = d3.max(arr, n => n.y + NODE_H);
-      const genCenter = (genMin + genMax) / 2;
-      const shift = globalCenter - genCenter;
-      arr.forEach(n => { n.y += shift; n.desiredY += shift; });
-    });
-  }
-
-  // Normalize top
-  const minYBefore = d3.min(layoutNodes, n => n.y) ?? TOP_MARGIN;
-  const shiftY = TOP_MARGIN - minYBefore;
-  layoutNodes.forEach(n => n.y += shiftY);
+  // Normalize so the topmost node sits at TOP_MARGIN
+  const minYFinal = d3.min(layoutNodes, n => n.y) ?? TOP_MARGIN;
+  const shiftY = TOP_MARGIN - minYFinal;
+  layoutNodes.forEach(n => { n.y += shiftY; n.desiredY += shiftY; });
 
   // Final positioning
   layoutNodes.forEach(n => {
