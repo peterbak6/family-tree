@@ -67,8 +67,12 @@ export function computeLayout(tree) {
     )
   );
 
-  const marriageLinks = links.filter(l => l.type === 'married' && nodeById.has(l.from) && nodeById.has(l.to));
-
+const marriageLinks = links.filter(
+  (l) =>
+    (l.type === "married" || (l.type || "").includes("marri")) &&
+    nodeById.has(l.from) &&
+    nodeById.has(l.to),
+);
   const incomingParents = new Map();
   const outgoingChildren = new Map();
 
@@ -378,7 +382,7 @@ export function computeLayout(tree) {
       });
 
       // Resolve overlaps while keeping the dagre order (spouses already adjacent)
-      packGeneration(gen, true);
+      packGeneration(gen, false);
     }
   }
 
@@ -398,7 +402,7 @@ export function computeLayout(tree) {
         n.desiredY = hasChildren ? 0.5 * n.y + 0.5 * target : target;
       });
 
-      packGeneration(gen, true);
+      packGeneration(gen, false);
     }
   }
 
@@ -407,6 +411,7 @@ export function computeLayout(tree) {
     topDownPass();
   }
   bottomUpPass(); // final: ensure every parent is centred over its children
+    topDownPass();
 
   // Normalize so the topmost node sits at TOP_MARGIN
   const minYFinal = d3.min(layoutNodes, n => n.y) ?? TOP_MARGIN;
