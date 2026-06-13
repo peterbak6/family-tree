@@ -201,6 +201,12 @@ const marriageLinks = links.filter(
 
   function neighborBarycenter() {} // kept as no-op; replaced by dagre
 
+  function moveToward(current, target, strength = 0.45, maxStep = 180) {
+    const delta = target - current;
+    const limited = Math.max(-maxStep, Math.min(maxStep, delta));
+    return current + limited * strength;
+  }
+
   // ── DAGRE: determine crossing-minimising order within each generation ──
   {
     const dg = new graphlib.Graph();
@@ -399,7 +405,10 @@ const marriageLinks = links.filter(
         const target = d3.mean(parents, p => p.y + NODE_H / 2) - NODE_H / 2;
         const hasChildren = (outgoingChildren.get(n.id) || []).length > 0;
         // Leaves snap to parent mean; intermediate nodes blend 50/50
-        n.desiredY = hasChildren ? 0.5 * n.y + 0.5 * target : target;
+        // n.desiredY = hasChildren ? 0.5 * n.y + 0.5 * target : target;
+        n.desiredY = hasChildren
+          ? moveToward(n.y, target, 0.25, 120)
+          : moveToward(n.y, target, 0.55, 180);
       });
 
       packGeneration(gen, false);
