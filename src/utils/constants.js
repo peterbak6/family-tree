@@ -1,10 +1,10 @@
 // Layout constants
-export const NODE_W = 220;
+export const NODE_W = 300;
 export const NODE_H = 58;
 export const SPOUSE_PAD = 5;
 export const SIBLING_PAD = 10;
 export const GROUP_PAD = 42;
-export const X_GAP = 630;
+export const X_GAP = 380;
 export const TOP_MARGIN = 120;
 export const LEFT_MARGIN = 190;
 
