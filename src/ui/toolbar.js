@@ -112,7 +112,7 @@ export class Toolbar {
     // Clear / new project
     if (this.clearProjectBtn) {
       this.clearProjectBtn.addEventListener('click', () => {
-        if (confirm('Clear all data and start a new project?\nThis cannot be undone.')) {
+        if (confirm('Clear your trees and return to the starter project?\nBuilt-in examples will remain available.')) {
           this.handlers.onClearAll?.();
         }
       });

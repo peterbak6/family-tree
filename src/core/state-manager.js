@@ -1,4 +1,5 @@
 import { createEmptyProject, createStarterProject, normalizeProject } from './data-model.js';
+import { deepClone } from '../utils/helpers.js';
 
 const STORAGE_KEY = 'family-tree-state';
 const AUTOSAVE_DELAY = 1000; // 1 second debounce
@@ -90,7 +91,7 @@ class StateManager {
   }
 
   addTrees(project) {
-    const normalized = normalizeProject(project);
+    const normalized = normalizeProject(deepClone(project));
     let added = 0;
 
     Object.entries(normalized).forEach(([name, tree]) => {
@@ -259,8 +260,8 @@ class StateManager {
       this.autosaveTimer = null;
     }
     localStorage.removeItem(STORAGE_KEY);
-    this.project = createEmptyProject();
-    this.currentTreeName = 'default-tree';
+    this.project = createStarterProject();
+    this.currentTreeName = Object.keys(this.project)[0];
     this.selectedNodeId = null;
     this.selectedLinkIndex = null;
     this.lastLayout = null;
