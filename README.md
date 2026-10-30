@@ -2,6 +2,13 @@
 
 A modern, interactive family tree visualization tool built with vanilla JavaScript and D3.js.
 
+**[View the project on Visual Analytics](https://visualanalytics.co.il/familiytree)**
+
+Created by [Peter Bak](https://visualanalytics.co.il/) ·
+[Source code](https://github.com/peterbak6/family-tree) ·
+[Layout algorithm](ALGORITHM.md) ·
+[License](LICENSE)
+
 ## Features
 
 ✨ **Interactive Visualization**
@@ -93,3 +100,5 @@ another product without separate written permission. See [ALGORITHM.md](ALGORITH
 for its design and authorship record.
 
 Earlier versions received under the MIT License remain governed by that grant.
+
+Copyright © 2026 [Peter Bak](https://visualanalytics.co.il/).

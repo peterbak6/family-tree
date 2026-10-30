@@ -58,7 +58,8 @@ producing arbitrary layouts.
 
 The repository's Git history records the development of the layout engine.
 The current algorithm documentation and implementation are published as part
-of Family Tree Editor version 1.0.0.
+of Family Tree Editor version 1.0.0. The project is also presented on
+[Visual Analytics by Peter Bak](https://visualanalytics.co.il/familiytree).
 
 The Layout Algorithm is governed by the restrictions in `LICENSE`. It may be
 used and modified as part of Family Tree Editor, but it may not be extracted,
