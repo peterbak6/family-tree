@@ -1,21 +1,71 @@
-MIT License
+Family Tree Editor Source-Available License 1.0
 
-Copyright (c) 2026 peterbak6
+Copyright (c) 2026 Peter Bak (peterbak6). All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Definitions
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+"Software" means the Family Tree Editor source code, documentation, assets,
+and associated files distributed with this license.
+
+"Layout Algorithm" means the family-tree layout logic implemented in
+src/core/layout-engine.js, including its spouse grouping, sibling grouping,
+generation packing, parent-child centering, iterative bottom-up and top-down
+positioning, and related adaptations, but excluding independently licensed
+third-party components such as Dagre and D3.
+
+2. Permitted use
+
+You may, without charge:
+
+- run and use the Software as the Family Tree Editor;
+- host the complete Software for others to use as the Family Tree Editor;
+- inspect, study, and evaluate the source code;
+- modify the Software for use within the Family Tree Editor; and
+- redistribute modified or unmodified copies of the complete Software,
+  provided that this license and all copyright notices remain included.
+
+3. Layout Algorithm restriction
+
+You may not use the Layout Algorithm outside the Family Tree Editor.
+In particular, you may not extract, copy, adapt, translate, port, repackage,
+or incorporate the Layout Algorithm, in whole or in substantial part, into
+another application, website, service, library, framework, plugin, or product.
+You may not distribute the Layout Algorithm as a standalone component or use
+the source code as the basis for a separate implementation.
+
+Use of the Layout Algorithm outside the Family Tree Editor requires a separate
+written license from the copyright holder.
+
+4. No trademark grant
+
+This license does not grant permission to use the names "Family Tree Editor",
+"Peter Bak", or "peterbak6", or associated marks, to imply endorsement of a
+modified version or another product.
+
+5. Third-party software
+
+Third-party software included in or used by the Software remains subject to
+its own license terms. This license does not restrict rights granted directly
+by those third-party licenses.
+
+6. Termination
+
+Your rights under this license terminate automatically if you violate these
+terms. They may be reinstated only with written permission from the copyright
+holder.
+
+7. Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+8. Earlier versions
+
+This license applies to versions first distributed with this license. Copies
+of earlier versions that were validly received under the MIT License remain
+available under the terms granted with those versions; those grants are not
+retroactively revoked.

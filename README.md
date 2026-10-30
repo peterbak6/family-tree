@@ -86,5 +86,10 @@ Built with modern vanilla JavaScript and modular design:
 
 ## License
 
-MIT
-a new way of creating family trees
+Source-available under the [Family Tree Editor Source-Available License 1.0](LICENSE).
+You may use, host, modify, and redistribute the complete editor under that
+license. The family-tree layout algorithm may not be extracted or used in
+another product without separate written permission. See [ALGORITHM.md](ALGORITHM.md)
+for its design and authorship record.
+
+Earlier versions received under the MIT License remain governed by that grant.
