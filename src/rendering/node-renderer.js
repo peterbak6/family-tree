@@ -70,6 +70,8 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
       handlers.onConnectorTap?.(d.id);
     });
 
+  connector.append('title').text('Create a relationship from this person');
+
   // Drag-to-connect: desktop (hover) only.
   // Touch uses tap-to-connect via the click handler above.
   if (window.matchMedia('(hover: hover)').matches) {
@@ -111,6 +113,8 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
       handlers.onNodeEdit?.(d.id);
     });
 
+  editBtn.append('title').text('Edit person');
+
   editBtn.append('circle').attr('r', 10);
   editBtn.append('text')
     .attr('text-anchor', 'middle')
@@ -130,6 +134,8 @@ export function renderNodes(nodeG, nodes, layout, state, handlers) {
       event.stopPropagation();
       handlers.onNodeDelete?.(d.id);
     });
+
+  deleteX.append('title').text('Delete person');
 
   deleteX.append('circle').attr('r', 10);
   deleteX.append('text')

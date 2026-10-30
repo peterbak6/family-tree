@@ -1,0 +1,1449 @@
+{
+  "Habsburg overview: Spanish and Austrian split": {
+    "nodes": [
+      {
+        "id": 900001,
+        "generation": 0,
+        "content": "Maximilian I, Holy Roman Emperor, 1459 - 1519",
+        "layout_order": 0
+      },
+      {
+        "id": 900002,
+        "generation": 0,
+        "content": "Mary of Burgundy, 1457 - 1482",
+        "layout_order": 1
+      },
+      {
+        "id": 900003,
+        "generation": 0,
+        "content": "Ferdinand II of Aragon, 1452 - 1516",
+        "layout_order": 2
+      },
+      {
+        "id": 900004,
+        "generation": 0,
+        "content": "Isabella I of Castile, 1451 - 1504",
+        "layout_order": 3
+      },
+      {
+        "id": 900005,
+        "generation": 1,
+        "content": "Philip I of Castile / Philip the Handsome, 1478 - 1506",
+        "layout_order": 0
+      },
+      {
+        "id": 900006,
+        "generation": 1,
+        "content": "Joanna of Castile, 1479 - 1555",
+        "layout_order": 1
+      },
+      {
+        "id": 900007,
+        "generation": 2,
+        "content": "Charles V, Holy Roman Emperor / Charles I of Spain, 1500 - 1558",
+        "layout_order": 0
+      },
+      {
+        "id": 900008,
+        "generation": 2,
+        "content": "Ferdinand I, Holy Roman Emperor, 1503 - 1564",
+        "layout_order": 1
+      },
+      {
+        "id": 900009,
+        "generation": 2,
+        "content": "Eleanor of Austria, 1498 - 1558",
+        "layout_order": 2
+      },
+      {
+        "id": 900010,
+        "generation": 2,
+        "content": "Mary of Hungary, 1505 - 1558",
+        "layout_order": 3
+      },
+      {
+        "id": 900011,
+        "generation": 2,
+        "content": "Isabella of Portugal, 1503 - 1539",
+        "layout_order": 4
+      },
+      {
+        "id": 900012,
+        "generation": 2,
+        "content": "Anna of Bohemia and Hungary, 1503 - 1547",
+        "layout_order": 5
+      },
+      {
+        "id": 900013,
+        "generation": 3,
+        "content": "Philip II of Spain, 1527 - 1598",
+        "layout_order": 0
+      },
+      {
+        "id": 900014,
+        "generation": 3,
+        "content": "Maria of Spain, 1528 - 1603",
+        "layout_order": 1
+      },
+      {
+        "id": 900015,
+        "generation": 3,
+        "content": "Maximilian II, Holy Roman Emperor, 1527 - 1576",
+        "layout_order": 2
+      },
+      {
+        "id": 900016,
+        "generation": 3,
+        "content": "Charles II of Inner Austria, 1540 - 1590",
+        "layout_order": 3
+      },
+      {
+        "id": 900017,
+        "generation": 4,
+        "content": "Spanish Habsburg branch, Spain and overseas empire",
+        "layout_order": 0
+      },
+      {
+        "id": 900018,
+        "generation": 4,
+        "content": "Austrian Habsburg branch, Austria / Holy Roman Empire",
+        "layout_order": 1
+      }
+    ],
+    "links": [
+      {
+        "from": 900001,
+        "to": 900002,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900003,
+        "to": 900004,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900001,
+        "to": 900005,
+        "type": "father"
+      },
+      {
+        "from": 900002,
+        "to": 900005,
+        "type": "mother"
+      },
+      {
+        "from": 900003,
+        "to": 900006,
+        "type": "father"
+      },
+      {
+        "from": 900004,
+        "to": 900006,
+        "type": "mother"
+      },
+      {
+        "from": 900005,
+        "to": 900006,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900005,
+        "to": 900007,
+        "type": "father"
+      },
+      {
+        "from": 900006,
+        "to": 900007,
+        "type": "mother"
+      },
+      {
+        "from": 900005,
+        "to": 900008,
+        "type": "father"
+      },
+      {
+        "from": 900006,
+        "to": 900008,
+        "type": "mother"
+      },
+      {
+        "from": 900005,
+        "to": 900009,
+        "type": "father"
+      },
+      {
+        "from": 900006,
+        "to": 900009,
+        "type": "mother"
+      },
+      {
+        "from": 900005,
+        "to": 900010,
+        "type": "father"
+      },
+      {
+        "from": 900006,
+        "to": 900010,
+        "type": "mother"
+      },
+      {
+        "from": 900007,
+        "to": 900011,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900008,
+        "to": 900012,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900007,
+        "to": 900013,
+        "type": "father"
+      },
+      {
+        "from": 900011,
+        "to": 900013,
+        "type": "mother"
+      },
+      {
+        "from": 900007,
+        "to": 900014,
+        "type": "father"
+      },
+      {
+        "from": 900011,
+        "to": 900014,
+        "type": "mother"
+      },
+      {
+        "from": 900008,
+        "to": 900015,
+        "type": "father"
+      },
+      {
+        "from": 900012,
+        "to": 900015,
+        "type": "mother"
+      },
+      {
+        "from": 900008,
+        "to": 900016,
+        "type": "father"
+      },
+      {
+        "from": 900012,
+        "to": 900016,
+        "type": "mother"
+      },
+      {
+        "from": 900013,
+        "to": 900017,
+        "type": "father"
+      },
+      {
+        "from": 900015,
+        "to": 900018,
+        "type": "father"
+      },
+      {
+        "from": 900016,
+        "to": 900018,
+        "type": "father"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "rgba(102, 102, 102, 0.5)"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "rgba(27, 158, 119, 0.5)"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "rgba(231, 41, 138, 0.5)"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "rgba(117, 112, 179, 0.5)"
+      },
+      {
+        "type": "dynastic-marriage",
+        "label": "dynastic marriage",
+        "color": "rgba(230, 126, 34, 0.55)"
+      },
+      {
+        "type": "succession",
+        "label": "succession / title line",
+        "color": "rgba(88, 80, 236, 0.55)"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 4
+    }
+  },
+  "Spanish Habsburgs: Charles II pedigree collapse": {
+    "nodes": [
+      {
+        "id": 900019,
+        "generation": 0,
+        "content": "Maximilian I, Holy Roman Emperor, 1459 - 1519",
+        "layout_order": 0
+      },
+      {
+        "id": 900020,
+        "generation": 0,
+        "content": "Mary of Burgundy, 1457 - 1482",
+        "layout_order": 1
+      },
+      {
+        "id": 900021,
+        "generation": 0,
+        "content": "Ferdinand II of Aragon, 1452 - 1516",
+        "layout_order": 2
+      },
+      {
+        "id": 900022,
+        "generation": 0,
+        "content": "Isabella I of Castile, 1451 - 1504",
+        "layout_order": 3
+      },
+      {
+        "id": 900023,
+        "generation": 1,
+        "content": "Philip I / Philip the Handsome, 1478 - 1506",
+        "layout_order": 0
+      },
+      {
+        "id": 900024,
+        "generation": 1,
+        "content": "Joanna of Castile, 1479 - 1555",
+        "layout_order": 1
+      },
+      {
+        "id": 900025,
+        "generation": 2,
+        "content": "Charles V, Holy Roman Emperor, 1500 - 1558",
+        "layout_order": 0
+      },
+      {
+        "id": 900026,
+        "generation": 2,
+        "content": "Ferdinand I, Holy Roman Emperor, 1503 - 1564",
+        "layout_order": 1
+      },
+      {
+        "id": 900027,
+        "generation": 2,
+        "content": "Isabella of Portugal, 1503 - 1539",
+        "layout_order": 2
+      },
+      {
+        "id": 900028,
+        "generation": 2,
+        "content": "Anna of Bohemia and Hungary, 1503 - 1547",
+        "layout_order": 3
+      },
+      {
+        "id": 900029,
+        "generation": 3,
+        "content": "Philip II of Spain, 1527 - 1598",
+        "layout_order": 0
+      },
+      {
+        "id": 900030,
+        "generation": 3,
+        "content": "Maria of Spain, 1528 - 1603",
+        "layout_order": 1
+      },
+      {
+        "id": 900031,
+        "generation": 3,
+        "content": "Maximilian II, Holy Roman Emperor, 1527 - 1576",
+        "layout_order": 2
+      },
+      {
+        "id": 900032,
+        "generation": 3,
+        "content": "Charles II of Inner Austria, 1540 - 1590",
+        "layout_order": 3
+      },
+      {
+        "id": 900033,
+        "generation": 4,
+        "content": "Anna of Austria, 1549 - 1580",
+        "layout_order": 0
+      },
+      {
+        "id": 900034,
+        "generation": 4,
+        "content": "Maria Anna of Bavaria, 1551 - 1608",
+        "layout_order": 1
+      },
+      {
+        "id": 900035,
+        "generation": 5,
+        "content": "Philip III of Spain, 1578 - 1621",
+        "layout_order": 0
+      },
+      {
+        "id": 900036,
+        "generation": 5,
+        "content": "Margaret of Austria, 1584 - 1611",
+        "layout_order": 1
+      },
+      {
+        "id": 900037,
+        "generation": 5,
+        "content": "Ferdinand II, Holy Roman Emperor, 1578 - 1637",
+        "layout_order": 2
+      },
+      {
+        "id": 900038,
+        "generation": 6,
+        "content": "Maria Anna of Spain, 1606 - 1646",
+        "layout_order": 0
+      },
+      {
+        "id": 900039,
+        "generation": 6,
+        "content": "Philip IV of Spain, 1605 - 1665",
+        "layout_order": 1
+      },
+      {
+        "id": 900040,
+        "generation": 7,
+        "content": "Ferdinand III, Holy Roman Emperor, 1608 - 1657",
+        "layout_order": 0
+      },
+      {
+        "id": 900041,
+        "generation": 7,
+        "content": "Mariana of Austria, 1634 - 1696",
+        "layout_order": 1
+      },
+      {
+        "id": 900042,
+        "generation": 8,
+        "content": "Margaret Theresa of Spain, 1651 - 1673",
+        "layout_order": 0
+      },
+      {
+        "id": 900043,
+        "generation": 8,
+        "content": "Charles II of Spain, 1661 - 1700, last Spanish Habsburg",
+        "layout_order": 1
+      },
+      {
+        "id": 900044,
+        "generation": 8,
+        "content": "Marie Louise d'Orléans, 1662 - 1689",
+        "layout_order": 2
+      },
+      {
+        "id": 900045,
+        "generation": 8,
+        "content": "Maria Anna of Neuburg, 1667 - 1740",
+        "layout_order": 3
+      }
+    ],
+    "links": [
+      {
+        "from": 900019,
+        "to": 900020,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900021,
+        "to": 900022,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900019,
+        "to": 900023,
+        "type": "father"
+      },
+      {
+        "from": 900020,
+        "to": 900023,
+        "type": "mother"
+      },
+      {
+        "from": 900021,
+        "to": 900024,
+        "type": "father"
+      },
+      {
+        "from": 900022,
+        "to": 900024,
+        "type": "mother"
+      },
+      {
+        "from": 900023,
+        "to": 900024,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900023,
+        "to": 900025,
+        "type": "father"
+      },
+      {
+        "from": 900024,
+        "to": 900025,
+        "type": "mother"
+      },
+      {
+        "from": 900023,
+        "to": 900026,
+        "type": "father"
+      },
+      {
+        "from": 900024,
+        "to": 900026,
+        "type": "mother"
+      },
+      {
+        "from": 900025,
+        "to": 900027,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900026,
+        "to": 900028,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900025,
+        "to": 900029,
+        "type": "father"
+      },
+      {
+        "from": 900027,
+        "to": 900029,
+        "type": "mother"
+      },
+      {
+        "from": 900025,
+        "to": 900030,
+        "type": "father"
+      },
+      {
+        "from": 900027,
+        "to": 900030,
+        "type": "mother"
+      },
+      {
+        "from": 900026,
+        "to": 900031,
+        "type": "father"
+      },
+      {
+        "from": 900028,
+        "to": 900031,
+        "type": "mother"
+      },
+      {
+        "from": 900026,
+        "to": 900032,
+        "type": "father"
+      },
+      {
+        "from": 900028,
+        "to": 900032,
+        "type": "mother"
+      },
+      {
+        "from": 900031,
+        "to": 900030,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900031,
+        "to": 900033,
+        "type": "father"
+      },
+      {
+        "from": 900030,
+        "to": 900033,
+        "type": "mother"
+      },
+      {
+        "from": 900029,
+        "to": 900033,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900032,
+        "to": 900034,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900029,
+        "to": 900035,
+        "type": "father"
+      },
+      {
+        "from": 900033,
+        "to": 900035,
+        "type": "mother"
+      },
+      {
+        "from": 900032,
+        "to": 900036,
+        "type": "father"
+      },
+      {
+        "from": 900034,
+        "to": 900036,
+        "type": "mother"
+      },
+      {
+        "from": 900032,
+        "to": 900037,
+        "type": "father"
+      },
+      {
+        "from": 900034,
+        "to": 900037,
+        "type": "mother"
+      },
+      {
+        "from": 900035,
+        "to": 900036,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900035,
+        "to": 900038,
+        "type": "father"
+      },
+      {
+        "from": 900036,
+        "to": 900038,
+        "type": "mother"
+      },
+      {
+        "from": 900035,
+        "to": 900039,
+        "type": "father"
+      },
+      {
+        "from": 900036,
+        "to": 900039,
+        "type": "mother"
+      },
+      {
+        "from": 900037,
+        "to": 900038,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900037,
+        "to": 900040,
+        "type": "father"
+      },
+      {
+        "from": 900038,
+        "to": 900040,
+        "type": "mother"
+      },
+      {
+        "from": 900037,
+        "to": 900041,
+        "type": "father"
+      },
+      {
+        "from": 900038,
+        "to": 900041,
+        "type": "mother"
+      },
+      {
+        "from": 900039,
+        "to": 900041,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900039,
+        "to": 900042,
+        "type": "father"
+      },
+      {
+        "from": 900041,
+        "to": 900042,
+        "type": "mother"
+      },
+      {
+        "from": 900039,
+        "to": 900043,
+        "type": "father"
+      },
+      {
+        "from": 900041,
+        "to": 900043,
+        "type": "mother"
+      },
+      {
+        "from": 900043,
+        "to": 900044,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900043,
+        "to": 900045,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900025,
+        "to": 900029,
+        "type": "succession"
+      },
+      {
+        "from": 900029,
+        "to": 900035,
+        "type": "succession"
+      },
+      {
+        "from": 900035,
+        "to": 900039,
+        "type": "succession"
+      },
+      {
+        "from": 900039,
+        "to": 900043,
+        "type": "succession"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "rgba(102, 102, 102, 0.5)"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "rgba(27, 158, 119, 0.5)"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "rgba(231, 41, 138, 0.5)"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "rgba(117, 112, 179, 0.5)"
+      },
+      {
+        "type": "dynastic-marriage",
+        "label": "dynastic marriage",
+        "color": "rgba(230, 126, 34, 0.55)"
+      },
+      {
+        "type": "succession",
+        "label": "succession / title line",
+        "color": "rgba(88, 80, 236, 0.55)"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 8
+    }
+  },
+  "Austrian Habsburgs and Habsburg-Lorraine": {
+    "nodes": [
+      {
+        "id": 900046,
+        "generation": 0,
+        "content": "Ferdinand I, Holy Roman Emperor, 1503 - 1564",
+        "layout_order": 0
+      },
+      {
+        "id": 900047,
+        "generation": 0,
+        "content": "Anna of Bohemia and Hungary, 1503 - 1547",
+        "layout_order": 1
+      },
+      {
+        "id": 900048,
+        "generation": 1,
+        "content": "Maximilian II, Holy Roman Emperor, 1527 - 1576",
+        "layout_order": 0
+      },
+      {
+        "id": 900049,
+        "generation": 1,
+        "content": "Charles II of Inner Austria, 1540 - 1590",
+        "layout_order": 1
+      },
+      {
+        "id": 900050,
+        "generation": 1,
+        "content": "Anna of Austria, 1528 - 1590, Duchess of Bavaria",
+        "layout_order": 2
+      },
+      {
+        "id": 900051,
+        "generation": 1,
+        "content": "Maria of Spain, 1528 - 1603",
+        "layout_order": 3
+      },
+      {
+        "id": 900052,
+        "generation": 1,
+        "content": "Maria Anna of Bavaria, 1551 - 1608",
+        "layout_order": 4
+      },
+      {
+        "id": 900053,
+        "generation": 2,
+        "content": "Rudolf II, Holy Roman Emperor, 1552 - 1612",
+        "layout_order": 0
+      },
+      {
+        "id": 900054,
+        "generation": 2,
+        "content": "Matthias, Holy Roman Emperor, 1557 - 1619",
+        "layout_order": 1
+      },
+      {
+        "id": 900055,
+        "generation": 2,
+        "content": "Ferdinand II, Holy Roman Emperor, 1578 - 1637",
+        "layout_order": 2
+      },
+      {
+        "id": 900056,
+        "generation": 2,
+        "content": "Maria Anna of Bavaria, 1574 - 1616",
+        "layout_order": 3
+      },
+      {
+        "id": 900057,
+        "generation": 3,
+        "content": "Ferdinand III, Holy Roman Emperor, 1608 - 1657",
+        "layout_order": 0
+      },
+      {
+        "id": 900058,
+        "generation": 3,
+        "content": "Maria Anna of Austria, 1610 - 1665",
+        "layout_order": 1
+      },
+      {
+        "id": 900059,
+        "generation": 3,
+        "content": "Leopold Wilhelm of Austria, 1614 - 1662",
+        "layout_order": 2
+      },
+      {
+        "id": 900060,
+        "generation": 3,
+        "content": "Maria Anna of Spain, 1606 - 1646",
+        "layout_order": 3
+      },
+      {
+        "id": 900061,
+        "generation": 4,
+        "content": "Leopold I, Holy Roman Emperor, 1640 - 1705",
+        "layout_order": 0
+      },
+      {
+        "id": 900062,
+        "generation": 4,
+        "content": "Mariana of Austria, 1634 - 1696",
+        "layout_order": 1
+      },
+      {
+        "id": 900063,
+        "generation": 4,
+        "content": "Margaret Theresa of Spain, 1651 - 1673",
+        "layout_order": 2
+      },
+      {
+        "id": 900064,
+        "generation": 4,
+        "content": "Eleonore Magdalene of Neuburg, 1655 - 1720",
+        "layout_order": 3
+      },
+      {
+        "id": 900065,
+        "generation": 5,
+        "content": "Joseph I, Holy Roman Emperor, 1678 - 1711",
+        "layout_order": 0
+      },
+      {
+        "id": 900066,
+        "generation": 5,
+        "content": "Charles VI, Holy Roman Emperor, 1685 - 1740",
+        "layout_order": 1
+      },
+      {
+        "id": 900067,
+        "generation": 5,
+        "content": "Maria Antonia of Austria, 1669 - 1692",
+        "layout_order": 2
+      },
+      {
+        "id": 900068,
+        "generation": 5,
+        "content": "Elisabeth Christine of Brunswick-Wolfenbüttel, 1691 - 1750",
+        "layout_order": 3
+      },
+      {
+        "id": 900069,
+        "generation": 6,
+        "content": "Maria Theresa, 1717 - 1780",
+        "layout_order": 0
+      },
+      {
+        "id": 900070,
+        "generation": 6,
+        "content": "Francis I, Holy Roman Emperor, 1708 - 1765, House of Lorraine",
+        "layout_order": 1
+      },
+      {
+        "id": 900071,
+        "generation": 7,
+        "content": "Joseph II, Holy Roman Emperor, 1741 - 1790",
+        "layout_order": 0
+      },
+      {
+        "id": 900072,
+        "generation": 7,
+        "content": "Leopold II, Holy Roman Emperor, 1747 - 1792",
+        "layout_order": 1
+      },
+      {
+        "id": 900073,
+        "generation": 7,
+        "content": "Marie Antoinette, 1755 - 1793",
+        "layout_order": 2
+      },
+      {
+        "id": 900074,
+        "generation": 7,
+        "content": "Maria Luisa of Spain, 1745 - 1792",
+        "layout_order": 3
+      },
+      {
+        "id": 900075,
+        "generation": 8,
+        "content": "Francis II / Francis I of Austria, 1768 - 1835",
+        "layout_order": 0
+      }
+    ],
+    "links": [
+      {
+        "from": 900046,
+        "to": 900047,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900046,
+        "to": 900048,
+        "type": "father"
+      },
+      {
+        "from": 900047,
+        "to": 900048,
+        "type": "mother"
+      },
+      {
+        "from": 900046,
+        "to": 900049,
+        "type": "father"
+      },
+      {
+        "from": 900047,
+        "to": 900049,
+        "type": "mother"
+      },
+      {
+        "from": 900046,
+        "to": 900050,
+        "type": "father"
+      },
+      {
+        "from": 900047,
+        "to": 900050,
+        "type": "mother"
+      },
+      {
+        "from": 900048,
+        "to": 900051,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900049,
+        "to": 900052,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900048,
+        "to": 900053,
+        "type": "father"
+      },
+      {
+        "from": 900051,
+        "to": 900053,
+        "type": "mother"
+      },
+      {
+        "from": 900048,
+        "to": 900054,
+        "type": "father"
+      },
+      {
+        "from": 900051,
+        "to": 900054,
+        "type": "mother"
+      },
+      {
+        "from": 900049,
+        "to": 900055,
+        "type": "father"
+      },
+      {
+        "from": 900052,
+        "to": 900055,
+        "type": "mother"
+      },
+      {
+        "from": 900055,
+        "to": 900056,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900055,
+        "to": 900057,
+        "type": "father"
+      },
+      {
+        "from": 900056,
+        "to": 900057,
+        "type": "mother"
+      },
+      {
+        "from": 900055,
+        "to": 900058,
+        "type": "father"
+      },
+      {
+        "from": 900056,
+        "to": 900058,
+        "type": "mother"
+      },
+      {
+        "from": 900055,
+        "to": 900059,
+        "type": "father"
+      },
+      {
+        "from": 900056,
+        "to": 900059,
+        "type": "mother"
+      },
+      {
+        "from": 900057,
+        "to": 900060,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900057,
+        "to": 900061,
+        "type": "father"
+      },
+      {
+        "from": 900060,
+        "to": 900061,
+        "type": "mother"
+      },
+      {
+        "from": 900057,
+        "to": 900062,
+        "type": "father"
+      },
+      {
+        "from": 900060,
+        "to": 900062,
+        "type": "mother"
+      },
+      {
+        "from": 900061,
+        "to": 900063,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900061,
+        "to": 900064,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900061,
+        "to": 900065,
+        "type": "father"
+      },
+      {
+        "from": 900064,
+        "to": 900065,
+        "type": "mother"
+      },
+      {
+        "from": 900061,
+        "to": 900066,
+        "type": "father"
+      },
+      {
+        "from": 900064,
+        "to": 900066,
+        "type": "mother"
+      },
+      {
+        "from": 900061,
+        "to": 900067,
+        "type": "father"
+      },
+      {
+        "from": 900063,
+        "to": 900067,
+        "type": "mother"
+      },
+      {
+        "from": 900066,
+        "to": 900068,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900066,
+        "to": 900069,
+        "type": "father"
+      },
+      {
+        "from": 900068,
+        "to": 900069,
+        "type": "mother"
+      },
+      {
+        "from": 900069,
+        "to": 900070,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900070,
+        "to": 900071,
+        "type": "father"
+      },
+      {
+        "from": 900069,
+        "to": 900071,
+        "type": "mother"
+      },
+      {
+        "from": 900070,
+        "to": 900072,
+        "type": "father"
+      },
+      {
+        "from": 900069,
+        "to": 900072,
+        "type": "mother"
+      },
+      {
+        "from": 900070,
+        "to": 900073,
+        "type": "father"
+      },
+      {
+        "from": 900069,
+        "to": 900073,
+        "type": "mother"
+      },
+      {
+        "from": 900072,
+        "to": 900074,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900072,
+        "to": 900075,
+        "type": "father"
+      },
+      {
+        "from": 900074,
+        "to": 900075,
+        "type": "mother"
+      },
+      {
+        "from": 900046,
+        "to": 900048,
+        "type": "succession"
+      },
+      {
+        "from": 900048,
+        "to": 900053,
+        "type": "succession"
+      },
+      {
+        "from": 900053,
+        "to": 900054,
+        "type": "succession"
+      },
+      {
+        "from": 900054,
+        "to": 900055,
+        "type": "succession"
+      },
+      {
+        "from": 900055,
+        "to": 900057,
+        "type": "succession"
+      },
+      {
+        "from": 900057,
+        "to": 900061,
+        "type": "succession"
+      },
+      {
+        "from": 900061,
+        "to": 900065,
+        "type": "succession"
+      },
+      {
+        "from": 900065,
+        "to": 900066,
+        "type": "succession"
+      },
+      {
+        "from": 900066,
+        "to": 900069,
+        "type": "succession"
+      },
+      {
+        "from": 900069,
+        "to": 900071,
+        "type": "succession"
+      },
+      {
+        "from": 900071,
+        "to": 900072,
+        "type": "succession"
+      },
+      {
+        "from": 900072,
+        "to": 900075,
+        "type": "succession"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "rgba(102, 102, 102, 0.5)"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "rgba(27, 158, 119, 0.5)"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "rgba(231, 41, 138, 0.5)"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "rgba(117, 112, 179, 0.5)"
+      },
+      {
+        "type": "dynastic-marriage",
+        "label": "dynastic marriage",
+        "color": "rgba(230, 126, 34, 0.55)"
+      },
+      {
+        "type": "succession",
+        "label": "succession / title line",
+        "color": "rgba(88, 80, 236, 0.55)"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 8
+    }
+  },
+  "Charles II of Spain: compact inbreeding example": {
+    "nodes": [
+      {
+        "id": 900076,
+        "generation": 0,
+        "content": "Philip III of Spain, 1578 - 1621",
+        "layout_order": 0
+      },
+      {
+        "id": 900077,
+        "generation": 0,
+        "content": "Margaret of Austria, 1584 - 1611",
+        "layout_order": 1
+      },
+      {
+        "id": 900078,
+        "generation": 0,
+        "content": "Ferdinand II, Holy Roman Emperor, 1578 - 1637",
+        "layout_order": 2
+      },
+      {
+        "id": 900079,
+        "generation": 0,
+        "content": "Maria Anna of Bavaria, 1574 - 1616",
+        "layout_order": 3
+      },
+      {
+        "id": 900080,
+        "generation": 1,
+        "content": "Philip IV of Spain, 1605 - 1665",
+        "layout_order": 0
+      },
+      {
+        "id": 900081,
+        "generation": 1,
+        "content": "Maria Anna of Spain, 1606 - 1646",
+        "layout_order": 1
+      },
+      {
+        "id": 900082,
+        "generation": 1,
+        "content": "Ferdinand III, Holy Roman Emperor, 1608 - 1657",
+        "layout_order": 2
+      },
+      {
+        "id": 900083,
+        "generation": 2,
+        "content": "Mariana of Austria, 1634 - 1696, niece and wife of Philip IV",
+        "layout_order": 0
+      },
+      {
+        "id": 900084,
+        "generation": 3,
+        "content": "Charles II of Spain, 1661 - 1700, child of uncle-niece marriage",
+        "layout_order": 0
+      }
+    ],
+    "links": [
+      {
+        "from": 900076,
+        "to": 900077,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900078,
+        "to": 900079,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900076,
+        "to": 900080,
+        "type": "father"
+      },
+      {
+        "from": 900077,
+        "to": 900080,
+        "type": "mother"
+      },
+      {
+        "from": 900076,
+        "to": 900081,
+        "type": "father"
+      },
+      {
+        "from": 900077,
+        "to": 900081,
+        "type": "mother"
+      },
+      {
+        "from": 900078,
+        "to": 900082,
+        "type": "father"
+      },
+      {
+        "from": 900079,
+        "to": 900082,
+        "type": "mother"
+      },
+      {
+        "from": 900082,
+        "to": 900081,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900082,
+        "to": 900083,
+        "type": "father"
+      },
+      {
+        "from": 900081,
+        "to": 900083,
+        "type": "mother"
+      },
+      {
+        "from": 900080,
+        "to": 900083,
+        "type": "dynastic-marriage"
+      },
+      {
+        "from": 900080,
+        "to": 900084,
+        "type": "father"
+      },
+      {
+        "from": 900083,
+        "to": 900084,
+        "type": "mother"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "rgba(102, 102, 102, 0.5)"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "rgba(27, 158, 119, 0.5)"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "rgba(231, 41, 138, 0.5)"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "rgba(117, 112, 179, 0.5)"
+      },
+      {
+        "type": "dynastic-marriage",
+        "label": "dynastic marriage",
+        "color": "rgba(230, 126, 34, 0.55)"
+      },
+      {
+        "type": "succession",
+        "label": "succession / title line",
+        "color": "rgba(88, 80, 236, 0.55)"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 3
+    }
+  }
+}

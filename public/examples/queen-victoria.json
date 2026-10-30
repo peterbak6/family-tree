@@ -1,0 +1,3365 @@
+{
+  "Queen Victoria descendants showcase": {
+    "nodes": [
+      {
+        "id": 1000001,
+        "generation": 0,
+        "content": "Queen Victoria, 1819 - 1901, Queen of the United Kingdom / Empress of India",
+        "layout_order": 0
+      },
+      {
+        "id": 1000002,
+        "generation": 0,
+        "content": "Prince Albert of Saxe-Coburg and Gotha, 1819 - 1861, Prince Consort",
+        "layout_order": 1
+      },
+      {
+        "id": 1000003,
+        "generation": 1,
+        "content": "Victoria, Princess Royal, 1840 - 1901, German Empress",
+        "layout_order": 0
+      },
+      {
+        "id": 1000004,
+        "generation": 1,
+        "content": "Frederick III, German Emperor, 1831 - 1888",
+        "layout_order": 1
+      },
+      {
+        "id": 1000005,
+        "generation": 1,
+        "content": "Edward VII, 1841 - 1910, King of the United Kingdom",
+        "layout_order": 2
+      },
+      {
+        "id": 1000006,
+        "generation": 1,
+        "content": "Alexandra of Denmark, 1844 - 1925",
+        "layout_order": 3
+      },
+      {
+        "id": 1000007,
+        "generation": 1,
+        "content": "Princess Alice, 1843 - 1878, Grand Duchess of Hesse",
+        "layout_order": 4
+      },
+      {
+        "id": 1000008,
+        "generation": 1,
+        "content": "Louis IV, Grand Duke of Hesse, 1837 - 1892",
+        "layout_order": 5
+      },
+      {
+        "id": 1000009,
+        "generation": 1,
+        "content": "Prince Alfred, Duke of Edinburgh / Saxe-Coburg and Gotha, 1844 - 1900",
+        "layout_order": 6
+      },
+      {
+        "id": 1000010,
+        "generation": 1,
+        "content": "Grand Duchess Maria Alexandrovna of Russia, 1853 - 1920",
+        "layout_order": 7
+      },
+      {
+        "id": 1000011,
+        "generation": 1,
+        "content": "Princess Helena, 1846 - 1923",
+        "layout_order": 8
+      },
+      {
+        "id": 1000012,
+        "generation": 1,
+        "content": "Prince Christian of Schleswig-Holstein, 1831 - 1917",
+        "layout_order": 9
+      },
+      {
+        "id": 1000013,
+        "generation": 1,
+        "content": "Princess Louise, Duchess of Argyll, 1848 - 1939",
+        "layout_order": 10
+      },
+      {
+        "id": 1000014,
+        "generation": 1,
+        "content": "John Campbell, 9th Duke of Argyll, 1845 - 1914",
+        "layout_order": 11
+      },
+      {
+        "id": 1000015,
+        "generation": 1,
+        "content": "Prince Arthur, Duke of Connaught, 1850 - 1942",
+        "layout_order": 12
+      },
+      {
+        "id": 1000016,
+        "generation": 1,
+        "content": "Princess Louise Margaret of Prussia, 1860 - 1917",
+        "layout_order": 13
+      },
+      {
+        "id": 1000017,
+        "generation": 1,
+        "content": "Prince Leopold, Duke of Albany, 1853 - 1884, hemophilia line",
+        "layout_order": 14
+      },
+      {
+        "id": 1000018,
+        "generation": 1,
+        "content": "Princess Helena of Waldeck and Pyrmont, 1861 - 1922",
+        "layout_order": 15
+      },
+      {
+        "id": 1000019,
+        "generation": 1,
+        "content": "Princess Beatrice, 1857 - 1944",
+        "layout_order": 16
+      },
+      {
+        "id": 1000020,
+        "generation": 1,
+        "content": "Prince Henry of Battenberg, 1858 - 1896",
+        "layout_order": 17
+      },
+      {
+        "id": 1000021,
+        "generation": 2,
+        "content": "Wilhelm II, German Emperor, 1859 - 1941",
+        "layout_order": 0
+      },
+      {
+        "id": 1000022,
+        "generation": 2,
+        "content": "Princess Charlotte of Prussia, 1860 - 1919",
+        "layout_order": 1
+      },
+      {
+        "id": 1000023,
+        "generation": 2,
+        "content": "Prince Heinrich of Prussia, 1862 - 1929",
+        "layout_order": 2
+      },
+      {
+        "id": 1000024,
+        "generation": 2,
+        "content": "Prince Sigismund of Prussia, 1864 - 1866",
+        "layout_order": 3
+      },
+      {
+        "id": 1000025,
+        "generation": 2,
+        "content": "Princess Viktoria of Prussia, 1866 - 1929",
+        "layout_order": 4
+      },
+      {
+        "id": 1000026,
+        "generation": 2,
+        "content": "Prince Waldemar of Prussia, 1868 - 1879",
+        "layout_order": 5
+      },
+      {
+        "id": 1000027,
+        "generation": 2,
+        "content": "Princess Sophie of Prussia, 1870 - 1932, Queen of Greece",
+        "layout_order": 6
+      },
+      {
+        "id": 1000028,
+        "generation": 2,
+        "content": "Princess Margarete of Prussia, 1872 - 1954",
+        "layout_order": 7
+      },
+      {
+        "id": 1000029,
+        "generation": 2,
+        "content": "Prince Albert Victor, Duke of Clarence, 1864 - 1892",
+        "layout_order": 8
+      },
+      {
+        "id": 1000030,
+        "generation": 2,
+        "content": "George V, 1865 - 1936, King of the United Kingdom",
+        "layout_order": 9
+      },
+      {
+        "id": 1000031,
+        "generation": 2,
+        "content": "Louise, Princess Royal, 1867 - 1931",
+        "layout_order": 10
+      },
+      {
+        "id": 1000032,
+        "generation": 2,
+        "content": "Princess Victoria of Wales, 1868 - 1935",
+        "layout_order": 11
+      },
+      {
+        "id": 1000033,
+        "generation": 2,
+        "content": "Princess Maud of Wales, 1869 - 1938, Queen of Norway",
+        "layout_order": 12
+      },
+      {
+        "id": 1000034,
+        "generation": 2,
+        "content": "Prince Alexander John of Wales, 1871 - 1871",
+        "layout_order": 13
+      },
+      {
+        "id": 1000035,
+        "generation": 2,
+        "content": "Princess Victoria of Hesse and by Rhine, 1863 - 1950",
+        "layout_order": 14
+      },
+      {
+        "id": 1000036,
+        "generation": 2,
+        "content": "Princess Elisabeth of Hesse, 1864 - 1918",
+        "layout_order": 15
+      },
+      {
+        "id": 1000037,
+        "generation": 2,
+        "content": "Princess Irene of Hesse and by Rhine, 1866 - 1953",
+        "layout_order": 16
+      },
+      {
+        "id": 1000038,
+        "generation": 2,
+        "content": "Ernest Louis, Grand Duke of Hesse, 1868 - 1937",
+        "layout_order": 17
+      },
+      {
+        "id": 1000039,
+        "generation": 2,
+        "content": "Prince Friedrich of Hesse, 1870 - 1873, hemophiliac",
+        "layout_order": 18
+      },
+      {
+        "id": 1000040,
+        "generation": 2,
+        "content": "Princess Alix of Hesse, 1872 - 1918, Empress Alexandra Feodorovna of Russia",
+        "layout_order": 19
+      },
+      {
+        "id": 1000041,
+        "generation": 2,
+        "content": "Princess Marie of Hesse, 1874 - 1878",
+        "layout_order": 20
+      },
+      {
+        "id": 1000042,
+        "generation": 2,
+        "content": "Prince Alfred of Edinburgh, 1874 - 1899",
+        "layout_order": 21
+      },
+      {
+        "id": 1000043,
+        "generation": 2,
+        "content": "Princess Marie of Edinburgh, 1875 - 1938, Queen of Romania",
+        "layout_order": 22
+      },
+      {
+        "id": 1000044,
+        "generation": 2,
+        "content": "Princess Victoria Melita of Edinburgh, 1876 - 1936",
+        "layout_order": 23
+      },
+      {
+        "id": 1000045,
+        "generation": 2,
+        "content": "Princess Alexandra of Edinburgh, 1878 - 1942",
+        "layout_order": 24
+      },
+      {
+        "id": 1000046,
+        "generation": 2,
+        "content": "Princess Beatrice of Edinburgh, 1884 - 1966",
+        "layout_order": 25
+      },
+      {
+        "id": 1000047,
+        "generation": 2,
+        "content": "Prince Christian Victor of Schleswig-Holstein, 1867 - 1900",
+        "layout_order": 26
+      },
+      {
+        "id": 1000048,
+        "generation": 2,
+        "content": "Prince Albert of Schleswig-Holstein, 1869 - 1931",
+        "layout_order": 27
+      },
+      {
+        "id": 1000049,
+        "generation": 2,
+        "content": "Princess Helena Victoria of Schleswig-Holstein, 1870 - 1948",
+        "layout_order": 28
+      },
+      {
+        "id": 1000050,
+        "generation": 2,
+        "content": "Princess Marie Louise of Schleswig-Holstein, 1872 - 1956",
+        "layout_order": 29
+      },
+      {
+        "id": 1000051,
+        "generation": 2,
+        "content": "Prince Harald of Schleswig-Holstein, 1876 - 1876",
+        "layout_order": 30
+      },
+      {
+        "id": 1000052,
+        "generation": 2,
+        "content": "Princess Louise and John Campbell: no children",
+        "layout_order": 31
+      },
+      {
+        "id": 1000053,
+        "generation": 2,
+        "content": "Princess Margaret of Connaught, 1882 - 1920, Crown Princess of Sweden",
+        "layout_order": 32
+      },
+      {
+        "id": 1000054,
+        "generation": 2,
+        "content": "Prince Arthur of Connaught, 1883 - 1938",
+        "layout_order": 33
+      },
+      {
+        "id": 1000055,
+        "generation": 2,
+        "content": "Princess Patricia of Connaught, 1886 - 1974",
+        "layout_order": 34
+      },
+      {
+        "id": 1000056,
+        "generation": 2,
+        "content": "Princess Alice of Albany, 1883 - 1981",
+        "layout_order": 35
+      },
+      {
+        "id": 1000057,
+        "generation": 2,
+        "content": "Charles Edward, Duke of Albany / Saxe-Coburg and Gotha, 1884 - 1954",
+        "layout_order": 36
+      },
+      {
+        "id": 1000058,
+        "generation": 2,
+        "content": "Alexander Mountbatten, Marquess of Carisbrooke, 1886 - 1960",
+        "layout_order": 37
+      },
+      {
+        "id": 1000059,
+        "generation": 2,
+        "content": "Victoria Eugenie of Battenberg, 1887 - 1969, Queen of Spain",
+        "layout_order": 38
+      },
+      {
+        "id": 1000060,
+        "generation": 2,
+        "content": "Leopold Mountbatten, 1889 - 1922, hemophiliac",
+        "layout_order": 39
+      },
+      {
+        "id": 1000061,
+        "generation": 2,
+        "content": "Prince Maurice of Battenberg, 1891 - 1914",
+        "layout_order": 40
+      },
+      {
+        "id": 1000062,
+        "generation": 2,
+        "content": "Augusta Victoria of Schleswig-Holstein, 1858 - 1921",
+        "layout_order": 43
+      },
+      {
+        "id": 1000063,
+        "generation": 2,
+        "content": "Constantine I of Greece, 1868 - 1923",
+        "layout_order": 44
+      },
+      {
+        "id": 1000064,
+        "generation": 2,
+        "content": "Frederick Charles of Hesse, 1868 - 1940",
+        "layout_order": 45
+      },
+      {
+        "id": 1000065,
+        "generation": 2,
+        "content": "Mary of Teck, 1867 - 1953, Queen consort",
+        "layout_order": 46
+      },
+      {
+        "id": 1000066,
+        "generation": 2,
+        "content": "Haakon VII of Norway, 1872 - 1957",
+        "layout_order": 47
+      },
+      {
+        "id": 1000067,
+        "generation": 2,
+        "content": "Louis Mountbatten, 1st Marquess of Milford Haven, 1854 - 1921",
+        "layout_order": 48
+      },
+      {
+        "id": 1000068,
+        "generation": 2,
+        "content": "Grand Duke Sergei Alexandrovich of Russia, 1857 - 1905",
+        "layout_order": 49
+      },
+      {
+        "id": 1000069,
+        "generation": 2,
+        "content": "Nicholas II of Russia, 1868 - 1918",
+        "layout_order": 50
+      },
+      {
+        "id": 1000070,
+        "generation": 2,
+        "content": "Ferdinand I of Romania, 1865 - 1927",
+        "layout_order": 51
+      },
+      {
+        "id": 1000071,
+        "generation": 2,
+        "content": "Grand Duke Kirill Vladimirovich of Russia, 1876 - 1938",
+        "layout_order": 52
+      },
+      {
+        "id": 1000072,
+        "generation": 2,
+        "content": "Gustaf VI Adolf of Sweden, 1882 - 1973",
+        "layout_order": 53
+      },
+      {
+        "id": 1000073,
+        "generation": 2,
+        "content": "Alexander Cambridge, Earl of Athlone, 1874 - 1957",
+        "layout_order": 54
+      },
+      {
+        "id": 1000074,
+        "generation": 2,
+        "content": "Victoria Adelaide of Schleswig-Holstein, 1885 - 1970",
+        "layout_order": 55
+      },
+      {
+        "id": 1000075,
+        "generation": 2,
+        "content": "Alfonso XIII of Spain, 1886 - 1941",
+        "layout_order": 56
+      },
+      {
+        "id": 1000076,
+        "generation": 3,
+        "content": "Wilhelm, German Crown Prince, 1882 - 1951",
+        "layout_order": 0
+      },
+      {
+        "id": 1000077,
+        "generation": 3,
+        "content": "Prince Eitel Friedrich of Prussia, 1883 - 1942",
+        "layout_order": 1
+      },
+      {
+        "id": 1000078,
+        "generation": 3,
+        "content": "Prince Adalbert of Prussia, 1884 - 1948",
+        "layout_order": 2
+      },
+      {
+        "id": 1000079,
+        "generation": 3,
+        "content": "Prince August Wilhelm of Prussia, 1887 - 1949",
+        "layout_order": 3
+      },
+      {
+        "id": 1000080,
+        "generation": 3,
+        "content": "Prince Oskar of Prussia, 1888 - 1958",
+        "layout_order": 4
+      },
+      {
+        "id": 1000081,
+        "generation": 3,
+        "content": "Prince Joachim of Prussia, 1890 - 1920",
+        "layout_order": 5
+      },
+      {
+        "id": 1000082,
+        "generation": 3,
+        "content": "Princess Victoria Louise of Prussia, 1892 - 1980",
+        "layout_order": 6
+      },
+      {
+        "id": 1000083,
+        "generation": 3,
+        "content": "George II of Greece, 1890 - 1947",
+        "layout_order": 7
+      },
+      {
+        "id": 1000084,
+        "generation": 3,
+        "content": "Alexander of Greece, 1893 - 1920",
+        "layout_order": 8
+      },
+      {
+        "id": 1000085,
+        "generation": 3,
+        "content": "Helen of Greece and Denmark, 1896 - 1982",
+        "layout_order": 9
+      },
+      {
+        "id": 1000086,
+        "generation": 3,
+        "content": "Paul of Greece, 1901 - 1964",
+        "layout_order": 10
+      },
+      {
+        "id": 1000087,
+        "generation": 3,
+        "content": "Princess Irene of Greece and Denmark, 1904 - 1974",
+        "layout_order": 11
+      },
+      {
+        "id": 1000088,
+        "generation": 3,
+        "content": "Princess Katherine of Greece and Denmark, 1913 - 2007",
+        "layout_order": 12
+      },
+      {
+        "id": 1000089,
+        "generation": 3,
+        "content": "Edward VIII, 1894 - 1972",
+        "layout_order": 13
+      },
+      {
+        "id": 1000090,
+        "generation": 3,
+        "content": "George VI, 1895 - 1952",
+        "layout_order": 14
+      },
+      {
+        "id": 1000091,
+        "generation": 3,
+        "content": "Mary, Princess Royal, 1897 - 1965",
+        "layout_order": 15
+      },
+      {
+        "id": 1000092,
+        "generation": 3,
+        "content": "Prince Henry, Duke of Gloucester, 1900 - 1974",
+        "layout_order": 16
+      },
+      {
+        "id": 1000093,
+        "generation": 3,
+        "content": "Prince George, Duke of Kent, 1902 - 1942",
+        "layout_order": 17
+      },
+      {
+        "id": 1000094,
+        "generation": 3,
+        "content": "Prince John, 1905 - 1919",
+        "layout_order": 18
+      },
+      {
+        "id": 1000095,
+        "generation": 3,
+        "content": "Olav V of Norway, 1903 - 1991",
+        "layout_order": 19
+      },
+      {
+        "id": 1000096,
+        "generation": 3,
+        "content": "Princess Alice of Battenberg, 1885 - 1969",
+        "layout_order": 20
+      },
+      {
+        "id": 1000097,
+        "generation": 3,
+        "content": "Louise Mountbatten, 1889 - 1965, Queen of Sweden",
+        "layout_order": 21
+      },
+      {
+        "id": 1000098,
+        "generation": 3,
+        "content": "George Mountbatten, 2nd Marquess of Milford Haven, 1892 - 1938",
+        "layout_order": 22
+      },
+      {
+        "id": 1000099,
+        "generation": 3,
+        "content": "Louis Mountbatten, 1st Earl Mountbatten of Burma, 1900 - 1979",
+        "layout_order": 23
+      },
+      {
+        "id": 1000100,
+        "generation": 3,
+        "content": "Grand Duchess Olga Nikolaevna of Russia, 1895 - 1918",
+        "layout_order": 24
+      },
+      {
+        "id": 1000101,
+        "generation": 3,
+        "content": "Grand Duchess Tatiana Nikolaevna of Russia, 1897 - 1918",
+        "layout_order": 25
+      },
+      {
+        "id": 1000102,
+        "generation": 3,
+        "content": "Grand Duchess Maria Nikolaevna of Russia, 1899 - 1918",
+        "layout_order": 26
+      },
+      {
+        "id": 1000103,
+        "generation": 3,
+        "content": "Grand Duchess Anastasia Nikolaevna of Russia, 1901 - 1918",
+        "layout_order": 27
+      },
+      {
+        "id": 1000104,
+        "generation": 3,
+        "content": "Alexei Nikolaevich, Tsarevich of Russia, 1904 - 1918, hemophiliac",
+        "layout_order": 28
+      },
+      {
+        "id": 1000105,
+        "generation": 3,
+        "content": "Carol II of Romania, 1893 - 1953",
+        "layout_order": 29
+      },
+      {
+        "id": 1000106,
+        "generation": 3,
+        "content": "Elisabeth of Romania, 1894 - 1956",
+        "layout_order": 30
+      },
+      {
+        "id": 1000107,
+        "generation": 3,
+        "content": "Maria of Romania, 1900 - 1961",
+        "layout_order": 31
+      },
+      {
+        "id": 1000108,
+        "generation": 3,
+        "content": "Prince Nicholas of Romania, 1903 - 1978",
+        "layout_order": 32
+      },
+      {
+        "id": 1000109,
+        "generation": 3,
+        "content": "Princess Ileana of Romania, 1909 - 1991",
+        "layout_order": 33
+      },
+      {
+        "id": 1000110,
+        "generation": 3,
+        "content": "Prince Mircea of Romania, 1913 - 1916",
+        "layout_order": 34
+      },
+      {
+        "id": 1000111,
+        "generation": 3,
+        "content": "Prince Gustaf Adolf, Duke of Västerbotten, 1906 - 1947",
+        "layout_order": 35
+      },
+      {
+        "id": 1000112,
+        "generation": 3,
+        "content": "Prince Sigvard Bernadotte, 1907 - 2002",
+        "layout_order": 36
+      },
+      {
+        "id": 1000113,
+        "generation": 3,
+        "content": "Ingrid of Sweden, 1910 - 2000, Queen of Denmark",
+        "layout_order": 37
+      },
+      {
+        "id": 1000114,
+        "generation": 3,
+        "content": "Prince Bertil, Duke of Halland, 1912 - 1997",
+        "layout_order": 38
+      },
+      {
+        "id": 1000115,
+        "generation": 3,
+        "content": "Prince Carl Johan Bernadotte, 1916 - 2012",
+        "layout_order": 39
+      },
+      {
+        "id": 1000116,
+        "generation": 3,
+        "content": "Princess May of Teck / Lady May Abel Smith, 1906 - 1994",
+        "layout_order": 40
+      },
+      {
+        "id": 1000117,
+        "generation": 3,
+        "content": "Rupert Cambridge, Viscount Trematon, 1907 - 1928, hemophiliac",
+        "layout_order": 41
+      },
+      {
+        "id": 1000118,
+        "generation": 3,
+        "content": "Prince Maurice of Teck, 1910",
+        "layout_order": 42
+      },
+      {
+        "id": 1000119,
+        "generation": 3,
+        "content": "Johann Leopold, Hereditary Prince of Saxe-Coburg and Gotha, 1906 - 1972",
+        "layout_order": 43
+      },
+      {
+        "id": 1000120,
+        "generation": 3,
+        "content": "Princess Sibylla of Saxe-Coburg and Gotha, 1908 - 1972",
+        "layout_order": 44
+      },
+      {
+        "id": 1000121,
+        "generation": 3,
+        "content": "Prince Hubertus of Saxe-Coburg and Gotha, 1909 - 1943",
+        "layout_order": 45
+      },
+      {
+        "id": 1000122,
+        "generation": 3,
+        "content": "Princess Caroline Mathilde of Saxe-Coburg and Gotha, 1912 - 1983",
+        "layout_order": 46
+      },
+      {
+        "id": 1000123,
+        "generation": 3,
+        "content": "Friedrich Josias, Prince of Saxe-Coburg and Gotha, 1918 - 1998",
+        "layout_order": 47
+      },
+      {
+        "id": 1000124,
+        "generation": 3,
+        "content": "Alfonso, Prince of Asturias, 1907 - 1938, hemophiliac",
+        "layout_order": 48
+      },
+      {
+        "id": 1000125,
+        "generation": 3,
+        "content": "Infante Jaime, Duke of Segovia, 1908 - 1975",
+        "layout_order": 49
+      },
+      {
+        "id": 1000126,
+        "generation": 3,
+        "content": "Infanta Beatriz of Spain, 1909 - 2002",
+        "layout_order": 50
+      },
+      {
+        "id": 1000127,
+        "generation": 3,
+        "content": "Infanta Maria Cristina of Spain, 1911 - 1996",
+        "layout_order": 51
+      },
+      {
+        "id": 1000128,
+        "generation": 3,
+        "content": "Infante Juan, Count of Barcelona, 1913 - 1993",
+        "layout_order": 52
+      },
+      {
+        "id": 1000129,
+        "generation": 3,
+        "content": "Infante Gonzalo of Spain, 1914 - 1934, hemophiliac",
+        "layout_order": 53
+      },
+      {
+        "id": 1000130,
+        "generation": 4,
+        "content": "Elizabeth II, 1926 - 2022, Queen of the United Kingdom",
+        "layout_order": 0
+      },
+      {
+        "id": 1000131,
+        "generation": 4,
+        "content": "Princess Margaret, Countess of Snowdon, 1930 - 2002",
+        "layout_order": 1
+      },
+      {
+        "id": 1000132,
+        "generation": 3,
+        "content": "Prince Andrew of Greece and Denmark, 1882 - 1944",
+        "layout_order": 54
+      },
+      {
+        "id": 1000133,
+        "generation": 4,
+        "content": "Prince Philip, Duke of Edinburgh, 1921 - 2021",
+        "layout_order": 2
+      },
+      {
+        "id": 1000134,
+        "generation": 4,
+        "content": "Princess Margarita of Greece and Denmark, 1905 - 1981",
+        "layout_order": 3
+      },
+      {
+        "id": 1000135,
+        "generation": 4,
+        "content": "Princess Theodora of Greece and Denmark, 1906 - 1969",
+        "layout_order": 4
+      },
+      {
+        "id": 1000136,
+        "generation": 4,
+        "content": "Princess Cecilie of Greece and Denmark, 1911 - 1937",
+        "layout_order": 5
+      },
+      {
+        "id": 1000137,
+        "generation": 4,
+        "content": "Princess Sophie of Greece and Denmark, 1914 - 2001",
+        "layout_order": 6
+      },
+      {
+        "id": 1000138,
+        "generation": 5,
+        "content": "Charles III, born: 1948 -, King of the United Kingdom",
+        "layout_order": 0
+      },
+      {
+        "id": 1000139,
+        "generation": 5,
+        "content": "Anne, Princess Royal, born: 1950 -",
+        "layout_order": 1
+      },
+      {
+        "id": 1000140,
+        "generation": 5,
+        "content": "Prince Andrew, Duke of York, born: 1960 -",
+        "layout_order": 2
+      },
+      {
+        "id": 1000141,
+        "generation": 5,
+        "content": "Prince Edward, Duke of Edinburgh, born: 1964 -",
+        "layout_order": 3
+      },
+      {
+        "id": 1000142,
+        "generation": 5,
+        "content": "Diana, Princess of Wales, 1961 - 1997",
+        "layout_order": 4
+      },
+      {
+        "id": 1000143,
+        "generation": 6,
+        "content": "William, Prince of Wales, born: 1982 -",
+        "layout_order": 0
+      },
+      {
+        "id": 1000144,
+        "generation": 6,
+        "content": "Prince Harry, Duke of Sussex, born: 1984 -",
+        "layout_order": 1
+      },
+      {
+        "id": 1000145,
+        "generation": 6,
+        "content": "Catherine, Princess of Wales, born: 1982 -",
+        "layout_order": 2
+      },
+      {
+        "id": 1000146,
+        "generation": 7,
+        "content": "Prince George of Wales, born: 2013 -",
+        "layout_order": 0
+      },
+      {
+        "id": 1000147,
+        "generation": 7,
+        "content": "Princess Charlotte of Wales, born: 2015 -",
+        "layout_order": 1
+      },
+      {
+        "id": 1000148,
+        "generation": 7,
+        "content": "Prince Louis of Wales, born: 2018 -",
+        "layout_order": 2
+      },
+      {
+        "id": 1000149,
+        "generation": 3,
+        "content": "Princess María de las Mercedes of Bourbon-Two Sicilies, 1910 - 2000",
+        "layout_order": 55
+      },
+      {
+        "id": 1000150,
+        "generation": 4,
+        "content": "Juan Carlos I of Spain, born: 1938 -",
+        "layout_order": 10
+      },
+      {
+        "id": 1000151,
+        "generation": 4,
+        "content": "Queen Sofía of Spain, born: 1938 -",
+        "layout_order": 11
+      },
+      {
+        "id": 1000152,
+        "generation": 5,
+        "content": "Infanta Elena of Spain, born: 1963 -",
+        "layout_order": 5
+      },
+      {
+        "id": 1000153,
+        "generation": 5,
+        "content": "Infanta Cristina of Spain, born: 1965 -",
+        "layout_order": 6
+      },
+      {
+        "id": 1000154,
+        "generation": 5,
+        "content": "Felipe VI of Spain, born: 1968 -",
+        "layout_order": 7
+      },
+      {
+        "id": 1000155,
+        "generation": 3,
+        "content": "Princess Märtha of Sweden, 1901 - 1954",
+        "layout_order": 56
+      },
+      {
+        "id": 1000156,
+        "generation": 4,
+        "content": "Princess Ragnhild of Norway, 1930 - 2012",
+        "layout_order": 14
+      },
+      {
+        "id": 1000157,
+        "generation": 4,
+        "content": "Princess Astrid of Norway, born: 1932 -",
+        "layout_order": 15
+      },
+      {
+        "id": 1000158,
+        "generation": 4,
+        "content": "Harald V of Norway, born: 1937 -",
+        "layout_order": 16
+      },
+      {
+        "id": 1000159,
+        "generation": 3,
+        "content": "Frederick IX of Denmark, 1899 - 1972",
+        "layout_order": 57
+      },
+      {
+        "id": 1000160,
+        "generation": 4,
+        "content": "Margrethe II of Denmark, born: 1940 -",
+        "layout_order": 17
+      },
+      {
+        "id": 1000161,
+        "generation": 4,
+        "content": "Princess Benedikte of Denmark, born: 1944 -",
+        "layout_order": 18
+      },
+      {
+        "id": 1000162,
+        "generation": 4,
+        "content": "Queen Anne-Marie of Greece, born: 1946 -",
+        "layout_order": 19
+      },
+      {
+        "id": 1000163,
+        "generation": 4,
+        "content": "Princess Margaretha of Sweden, born: 1934 -",
+        "layout_order": 20
+      },
+      {
+        "id": 1000164,
+        "generation": 4,
+        "content": "Princess Birgitta of Sweden, 1937 - 2024",
+        "layout_order": 21
+      },
+      {
+        "id": 1000165,
+        "generation": 4,
+        "content": "Princess Désirée of Sweden, born: 1938 -",
+        "layout_order": 22
+      },
+      {
+        "id": 1000166,
+        "generation": 4,
+        "content": "Princess Christina of Sweden, born: 1943 -",
+        "layout_order": 23
+      },
+      {
+        "id": 1000167,
+        "generation": 4,
+        "content": "Carl XVI Gustaf of Sweden, born: 1946 -",
+        "layout_order": 24
+      },
+      {
+        "id": 1000168,
+        "generation": 4,
+        "content": "Queen Sonja of Norway, born: 1937 -",
+        "layout_order": 25
+      },
+      {
+        "id": 1000169,
+        "generation": 5,
+        "content": "Princess Märtha Louise of Norway, born: 1971 -",
+        "layout_order": 20
+      },
+      {
+        "id": 1000170,
+        "generation": 5,
+        "content": "Ari Behn, 1972 - 2019, first husband of Princess Märtha Louise",
+        "layout_order": 21
+      },
+      {
+        "id": 1000171,
+        "generation": 5,
+        "content": "Crown Prince Haakon of Norway, born: 1973 -",
+        "layout_order": 22
+      },
+      {
+        "id": 1000172,
+        "generation": 5,
+        "content": "Crown Princess Mette-Marit of Norway, born: 1973 -",
+        "layout_order": 23
+      },
+      {
+        "id": 1000173,
+        "generation": 5,
+        "content": "Durek Verrett, born: 1974 -, second husband of Princess Märtha Louise",
+        "layout_order": 24
+      },
+      {
+        "id": 1000174,
+        "generation": 6,
+        "content": "Maud Angelica Behn, born: 2003 -",
+        "layout_order": 20
+      },
+      {
+        "id": 1000175,
+        "generation": 6,
+        "content": "Leah Isadora Behn, born: 2005 -",
+        "layout_order": 21
+      },
+      {
+        "id": 1000176,
+        "generation": 6,
+        "content": "Emma Tallulah Behn, born: 2008 -",
+        "layout_order": 22
+      },
+      {
+        "id": 1000177,
+        "generation": 6,
+        "content": "Princess Ingrid Alexandra of Norway, born: 2004 -",
+        "layout_order": 23
+      },
+      {
+        "id": 1000178,
+        "generation": 6,
+        "content": "Prince Sverre Magnus of Norway, born: 2005 -",
+        "layout_order": 24
+      },
+      {
+        "id": 1000179,
+        "generation": 6,
+        "content": "Marius Borg Høiby, born: 1997 -, son of Crown Princess Mette-Marit",
+        "layout_order": 25
+      },
+      {
+        "id": 1000180,
+        "generation": 5,
+        "content": "Queen Letizia of Spain, born: 1972 -",
+        "layout_order": 9
+      },
+      {
+        "id": 1000181,
+        "generation": 5,
+        "content": "Jaime de Marichalar, born: 1963 -, former husband of Infanta Elena",
+        "layout_order": 10
+      },
+      {
+        "id": 1000182,
+        "generation": 5,
+        "content": "Iñaki Urdangarin, born: 1968 -, former husband of Infanta Cristina",
+        "layout_order": 11
+      },
+      {
+        "id": 1000183,
+        "generation": 6,
+        "content": "Leonor, Princess of Asturias, born: 2005 -, heir presumptive of Spain",
+        "layout_order": 10
+      },
+      {
+        "id": 1000184,
+        "generation": 6,
+        "content": "Infanta Sofía of Spain, born: 2007 -",
+        "layout_order": 11
+      },
+      {
+        "id": 1000185,
+        "generation": 6,
+        "content": "Felipe Juan Froilán de Marichalar y Borbón, born: 1998 -",
+        "layout_order": 12
+      },
+      {
+        "id": 1000186,
+        "generation": 6,
+        "content": "Victoria Federica de Marichalar y Borbón, born: 2000 -",
+        "layout_order": 13
+      },
+      {
+        "id": 1000187,
+        "generation": 6,
+        "content": "Juan Valentín Urdangarin y de Borbón, born: 1999 -",
+        "layout_order": 14
+      },
+      {
+        "id": 1000188,
+        "generation": 6,
+        "content": "Pablo Nicolás Urdangarin y de Borbón, born: 2000 -",
+        "layout_order": 15
+      },
+      {
+        "id": 1000189,
+        "generation": 6,
+        "content": "Miguel Urdangarin y de Borbón, born: 2002 -",
+        "layout_order": 16
+      },
+      {
+        "id": 1000190,
+        "generation": 6,
+        "content": "Irene Urdangarin y de Borbón, born: 2005 -",
+        "layout_order": 17
+      },
+      {
+        "id": 1000191,
+        "generation": 4,
+        "content": "Queen Silvia of Sweden, born: 1943 -",
+        "layout_order": 26
+      },
+      {
+        "id": 1000192,
+        "generation": 5,
+        "content": "Crown Princess Victoria of Sweden, born: 1977 -",
+        "layout_order": 30
+      },
+      {
+        "id": 1000193,
+        "generation": 5,
+        "content": "Prince Daniel, Duke of Västergötland, born: 1973 -",
+        "layout_order": 31
+      },
+      {
+        "id": 1000194,
+        "generation": 5,
+        "content": "Prince Carl Philip of Sweden, born: 1979 -",
+        "layout_order": 32
+      },
+      {
+        "id": 1000195,
+        "generation": 5,
+        "content": "Princess Sofia of Sweden, born: 1984 -",
+        "layout_order": 33
+      },
+      {
+        "id": 1000196,
+        "generation": 5,
+        "content": "Princess Madeleine of Sweden, born: 1982 -",
+        "layout_order": 34
+      },
+      {
+        "id": 1000197,
+        "generation": 5,
+        "content": "Christopher O'Neill, born: 1974 -, husband of Princess Madeleine",
+        "layout_order": 35
+      },
+      {
+        "id": 1000198,
+        "generation": 6,
+        "content": "Princess Estelle of Sweden, Duchess of Östergötland, born: 2012 -",
+        "layout_order": 30
+      },
+      {
+        "id": 1000199,
+        "generation": 6,
+        "content": "Prince Oscar of Sweden, Duke of Skåne, born: 2016 -",
+        "layout_order": 31
+      },
+      {
+        "id": 1000200,
+        "generation": 6,
+        "content": "Prince Alexander of Sweden, Duke of Södermanland, born: 2016 -",
+        "layout_order": 32
+      },
+      {
+        "id": 1000201,
+        "generation": 6,
+        "content": "Prince Gabriel of Sweden, Duke of Dalarna, born: 2017 -",
+        "layout_order": 33
+      },
+      {
+        "id": 1000202,
+        "generation": 6,
+        "content": "Prince Julian of Sweden, Duke of Halland, born: 2021 -",
+        "layout_order": 34
+      },
+      {
+        "id": 1000203,
+        "generation": 6,
+        "content": "Princess Ines of Sweden, Duchess of Västerbotten, born: 2025 -",
+        "layout_order": 35
+      },
+      {
+        "id": 1000204,
+        "generation": 6,
+        "content": "Princess Leonore of Sweden, Duchess of Gotland, born: 2014 -",
+        "layout_order": 36
+      },
+      {
+        "id": 1000205,
+        "generation": 6,
+        "content": "Prince Nicolas of Sweden, Duke of Ångermanland, born: 2015 -",
+        "layout_order": 37
+      },
+      {
+        "id": 1000206,
+        "generation": 6,
+        "content": "Princess Adrienne of Sweden, Duchess of Blekinge, born: 2018 -",
+        "layout_order": 38
+      }
+    ],
+    "links": [
+      {
+        "from": 1000001,
+        "to": 1000002,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000003,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000003,
+        "type": "mother"
+      },
+      {
+        "from": 1000003,
+        "to": 1000004,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000005,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000005,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000006,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000007,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000007,
+        "type": "mother"
+      },
+      {
+        "from": 1000007,
+        "to": 1000008,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000009,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000009,
+        "type": "mother"
+      },
+      {
+        "from": 1000009,
+        "to": 1000010,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000011,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000011,
+        "type": "mother"
+      },
+      {
+        "from": 1000011,
+        "to": 1000012,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000013,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000013,
+        "type": "mother"
+      },
+      {
+        "from": 1000013,
+        "to": 1000014,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000015,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000015,
+        "type": "mother"
+      },
+      {
+        "from": 1000015,
+        "to": 1000016,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000017,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000017,
+        "type": "mother"
+      },
+      {
+        "from": 1000017,
+        "to": 1000018,
+        "type": "married"
+      },
+      {
+        "from": 1000002,
+        "to": 1000019,
+        "type": "father"
+      },
+      {
+        "from": 1000001,
+        "to": 1000019,
+        "type": "mother"
+      },
+      {
+        "from": 1000019,
+        "to": 1000020,
+        "type": "married"
+      },
+      {
+        "from": 1000001,
+        "to": 1000007,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000001,
+        "to": 1000017,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000001,
+        "to": 1000019,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000004,
+        "to": 1000021,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000021,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000022,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000022,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000023,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000023,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000024,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000024,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000025,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000025,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000026,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000026,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000027,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000027,
+        "type": "mother"
+      },
+      {
+        "from": 1000004,
+        "to": 1000028,
+        "type": "father"
+      },
+      {
+        "from": 1000003,
+        "to": 1000028,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000029,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000029,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000030,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000030,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000031,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000031,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000032,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000032,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000033,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000033,
+        "type": "mother"
+      },
+      {
+        "from": 1000005,
+        "to": 1000034,
+        "type": "father"
+      },
+      {
+        "from": 1000006,
+        "to": 1000034,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000035,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000035,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000036,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000036,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000037,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000037,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000038,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000038,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000039,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000039,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000040,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000040,
+        "type": "mother"
+      },
+      {
+        "from": 1000008,
+        "to": 1000041,
+        "type": "father"
+      },
+      {
+        "from": 1000007,
+        "to": 1000041,
+        "type": "mother"
+      },
+      {
+        "from": 1000007,
+        "to": 1000037,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000007,
+        "to": 1000039,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000007,
+        "to": 1000040,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000009,
+        "to": 1000042,
+        "type": "father"
+      },
+      {
+        "from": 1000010,
+        "to": 1000042,
+        "type": "mother"
+      },
+      {
+        "from": 1000009,
+        "to": 1000043,
+        "type": "father"
+      },
+      {
+        "from": 1000010,
+        "to": 1000043,
+        "type": "mother"
+      },
+      {
+        "from": 1000009,
+        "to": 1000044,
+        "type": "father"
+      },
+      {
+        "from": 1000010,
+        "to": 1000044,
+        "type": "mother"
+      },
+      {
+        "from": 1000009,
+        "to": 1000045,
+        "type": "father"
+      },
+      {
+        "from": 1000010,
+        "to": 1000045,
+        "type": "mother"
+      },
+      {
+        "from": 1000009,
+        "to": 1000046,
+        "type": "father"
+      },
+      {
+        "from": 1000010,
+        "to": 1000046,
+        "type": "mother"
+      },
+      {
+        "from": 1000012,
+        "to": 1000047,
+        "type": "father"
+      },
+      {
+        "from": 1000011,
+        "to": 1000047,
+        "type": "mother"
+      },
+      {
+        "from": 1000012,
+        "to": 1000048,
+        "type": "father"
+      },
+      {
+        "from": 1000011,
+        "to": 1000048,
+        "type": "mother"
+      },
+      {
+        "from": 1000012,
+        "to": 1000049,
+        "type": "father"
+      },
+      {
+        "from": 1000011,
+        "to": 1000049,
+        "type": "mother"
+      },
+      {
+        "from": 1000012,
+        "to": 1000050,
+        "type": "father"
+      },
+      {
+        "from": 1000011,
+        "to": 1000050,
+        "type": "mother"
+      },
+      {
+        "from": 1000012,
+        "to": 1000051,
+        "type": "father"
+      },
+      {
+        "from": 1000011,
+        "to": 1000051,
+        "type": "mother"
+      },
+      {
+        "from": 1000014,
+        "to": 1000052,
+        "type": "father"
+      },
+      {
+        "from": 1000013,
+        "to": 1000052,
+        "type": "mother"
+      },
+      {
+        "from": 1000015,
+        "to": 1000053,
+        "type": "father"
+      },
+      {
+        "from": 1000016,
+        "to": 1000053,
+        "type": "mother"
+      },
+      {
+        "from": 1000015,
+        "to": 1000054,
+        "type": "father"
+      },
+      {
+        "from": 1000016,
+        "to": 1000054,
+        "type": "mother"
+      },
+      {
+        "from": 1000015,
+        "to": 1000055,
+        "type": "father"
+      },
+      {
+        "from": 1000016,
+        "to": 1000055,
+        "type": "mother"
+      },
+      {
+        "from": 1000017,
+        "to": 1000056,
+        "type": "father"
+      },
+      {
+        "from": 1000018,
+        "to": 1000056,
+        "type": "mother"
+      },
+      {
+        "from": 1000017,
+        "to": 1000057,
+        "type": "father"
+      },
+      {
+        "from": 1000018,
+        "to": 1000057,
+        "type": "mother"
+      },
+      {
+        "from": 1000020,
+        "to": 1000058,
+        "type": "father"
+      },
+      {
+        "from": 1000019,
+        "to": 1000058,
+        "type": "mother"
+      },
+      {
+        "from": 1000020,
+        "to": 1000059,
+        "type": "father"
+      },
+      {
+        "from": 1000019,
+        "to": 1000059,
+        "type": "mother"
+      },
+      {
+        "from": 1000020,
+        "to": 1000060,
+        "type": "father"
+      },
+      {
+        "from": 1000019,
+        "to": 1000060,
+        "type": "mother"
+      },
+      {
+        "from": 1000020,
+        "to": 1000061,
+        "type": "father"
+      },
+      {
+        "from": 1000019,
+        "to": 1000061,
+        "type": "mother"
+      },
+      {
+        "from": 1000017,
+        "to": 1000057,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000019,
+        "to": 1000059,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000019,
+        "to": 1000060,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000021,
+        "to": 1000062,
+        "type": "married"
+      },
+      {
+        "from": 1000027,
+        "to": 1000063,
+        "type": "married"
+      },
+      {
+        "from": 1000028,
+        "to": 1000064,
+        "type": "married"
+      },
+      {
+        "from": 1000030,
+        "to": 1000065,
+        "type": "married"
+      },
+      {
+        "from": 1000033,
+        "to": 1000066,
+        "type": "married"
+      },
+      {
+        "from": 1000035,
+        "to": 1000067,
+        "type": "married"
+      },
+      {
+        "from": 1000036,
+        "to": 1000068,
+        "type": "married"
+      },
+      {
+        "from": 1000040,
+        "to": 1000069,
+        "type": "married"
+      },
+      {
+        "from": 1000043,
+        "to": 1000070,
+        "type": "married"
+      },
+      {
+        "from": 1000044,
+        "to": 1000071,
+        "type": "married"
+      },
+      {
+        "from": 1000053,
+        "to": 1000072,
+        "type": "married"
+      },
+      {
+        "from": 1000056,
+        "to": 1000073,
+        "type": "married"
+      },
+      {
+        "from": 1000057,
+        "to": 1000074,
+        "type": "married"
+      },
+      {
+        "from": 1000059,
+        "to": 1000075,
+        "type": "married"
+      },
+      {
+        "from": 1000037,
+        "to": 1000023,
+        "type": "married"
+      },
+      {
+        "from": 1000038,
+        "to": 1000044,
+        "type": "married"
+      },
+      {
+        "from": 1000021,
+        "to": 1000076,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000076,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000077,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000077,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000078,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000078,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000079,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000079,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000080,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000080,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000081,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000081,
+        "type": "mother"
+      },
+      {
+        "from": 1000021,
+        "to": 1000082,
+        "type": "father"
+      },
+      {
+        "from": 1000062,
+        "to": 1000082,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000083,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000083,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000084,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000084,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000085,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000085,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000086,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000086,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000087,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000087,
+        "type": "mother"
+      },
+      {
+        "from": 1000063,
+        "to": 1000088,
+        "type": "father"
+      },
+      {
+        "from": 1000027,
+        "to": 1000088,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000089,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000089,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000090,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000090,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000091,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000091,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000092,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000092,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000093,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000093,
+        "type": "mother"
+      },
+      {
+        "from": 1000030,
+        "to": 1000094,
+        "type": "father"
+      },
+      {
+        "from": 1000065,
+        "to": 1000094,
+        "type": "mother"
+      },
+      {
+        "from": 1000066,
+        "to": 1000095,
+        "type": "father"
+      },
+      {
+        "from": 1000033,
+        "to": 1000095,
+        "type": "mother"
+      },
+      {
+        "from": 1000067,
+        "to": 1000096,
+        "type": "father"
+      },
+      {
+        "from": 1000035,
+        "to": 1000096,
+        "type": "mother"
+      },
+      {
+        "from": 1000067,
+        "to": 1000097,
+        "type": "father"
+      },
+      {
+        "from": 1000035,
+        "to": 1000097,
+        "type": "mother"
+      },
+      {
+        "from": 1000067,
+        "to": 1000098,
+        "type": "father"
+      },
+      {
+        "from": 1000035,
+        "to": 1000098,
+        "type": "mother"
+      },
+      {
+        "from": 1000067,
+        "to": 1000099,
+        "type": "father"
+      },
+      {
+        "from": 1000035,
+        "to": 1000099,
+        "type": "mother"
+      },
+      {
+        "from": 1000069,
+        "to": 1000100,
+        "type": "father"
+      },
+      {
+        "from": 1000040,
+        "to": 1000100,
+        "type": "mother"
+      },
+      {
+        "from": 1000069,
+        "to": 1000101,
+        "type": "father"
+      },
+      {
+        "from": 1000040,
+        "to": 1000101,
+        "type": "mother"
+      },
+      {
+        "from": 1000069,
+        "to": 1000102,
+        "type": "father"
+      },
+      {
+        "from": 1000040,
+        "to": 1000102,
+        "type": "mother"
+      },
+      {
+        "from": 1000069,
+        "to": 1000103,
+        "type": "father"
+      },
+      {
+        "from": 1000040,
+        "to": 1000103,
+        "type": "mother"
+      },
+      {
+        "from": 1000069,
+        "to": 1000104,
+        "type": "father"
+      },
+      {
+        "from": 1000040,
+        "to": 1000104,
+        "type": "mother"
+      },
+      {
+        "from": 1000040,
+        "to": 1000104,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000070,
+        "to": 1000105,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000105,
+        "type": "mother"
+      },
+      {
+        "from": 1000070,
+        "to": 1000106,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000106,
+        "type": "mother"
+      },
+      {
+        "from": 1000070,
+        "to": 1000107,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000107,
+        "type": "mother"
+      },
+      {
+        "from": 1000070,
+        "to": 1000108,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000108,
+        "type": "mother"
+      },
+      {
+        "from": 1000070,
+        "to": 1000109,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000109,
+        "type": "mother"
+      },
+      {
+        "from": 1000070,
+        "to": 1000110,
+        "type": "father"
+      },
+      {
+        "from": 1000043,
+        "to": 1000110,
+        "type": "mother"
+      },
+      {
+        "from": 1000072,
+        "to": 1000111,
+        "type": "father"
+      },
+      {
+        "from": 1000053,
+        "to": 1000111,
+        "type": "mother"
+      },
+      {
+        "from": 1000072,
+        "to": 1000112,
+        "type": "father"
+      },
+      {
+        "from": 1000053,
+        "to": 1000112,
+        "type": "mother"
+      },
+      {
+        "from": 1000072,
+        "to": 1000113,
+        "type": "father"
+      },
+      {
+        "from": 1000053,
+        "to": 1000113,
+        "type": "mother"
+      },
+      {
+        "from": 1000072,
+        "to": 1000114,
+        "type": "father"
+      },
+      {
+        "from": 1000053,
+        "to": 1000114,
+        "type": "mother"
+      },
+      {
+        "from": 1000072,
+        "to": 1000115,
+        "type": "father"
+      },
+      {
+        "from": 1000053,
+        "to": 1000115,
+        "type": "mother"
+      },
+      {
+        "from": 1000073,
+        "to": 1000116,
+        "type": "father"
+      },
+      {
+        "from": 1000056,
+        "to": 1000116,
+        "type": "mother"
+      },
+      {
+        "from": 1000073,
+        "to": 1000117,
+        "type": "father"
+      },
+      {
+        "from": 1000056,
+        "to": 1000117,
+        "type": "mother"
+      },
+      {
+        "from": 1000073,
+        "to": 1000118,
+        "type": "father"
+      },
+      {
+        "from": 1000056,
+        "to": 1000118,
+        "type": "mother"
+      },
+      {
+        "from": 1000056,
+        "to": 1000117,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000057,
+        "to": 1000119,
+        "type": "father"
+      },
+      {
+        "from": 1000074,
+        "to": 1000119,
+        "type": "mother"
+      },
+      {
+        "from": 1000057,
+        "to": 1000120,
+        "type": "father"
+      },
+      {
+        "from": 1000074,
+        "to": 1000120,
+        "type": "mother"
+      },
+      {
+        "from": 1000057,
+        "to": 1000121,
+        "type": "father"
+      },
+      {
+        "from": 1000074,
+        "to": 1000121,
+        "type": "mother"
+      },
+      {
+        "from": 1000057,
+        "to": 1000122,
+        "type": "father"
+      },
+      {
+        "from": 1000074,
+        "to": 1000122,
+        "type": "mother"
+      },
+      {
+        "from": 1000057,
+        "to": 1000123,
+        "type": "father"
+      },
+      {
+        "from": 1000074,
+        "to": 1000123,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000124,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000124,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000125,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000125,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000126,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000126,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000127,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000127,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000128,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000128,
+        "type": "mother"
+      },
+      {
+        "from": 1000075,
+        "to": 1000129,
+        "type": "father"
+      },
+      {
+        "from": 1000059,
+        "to": 1000129,
+        "type": "mother"
+      },
+      {
+        "from": 1000059,
+        "to": 1000124,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000059,
+        "to": 1000129,
+        "type": "hemophilia-line"
+      },
+      {
+        "from": 1000090,
+        "to": 1000130,
+        "type": "father"
+      },
+      {
+        "from": 1000090,
+        "to": 1000131,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000132,
+        "type": "married"
+      },
+      {
+        "from": 1000132,
+        "to": 1000134,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000134,
+        "type": "mother"
+      },
+      {
+        "from": 1000132,
+        "to": 1000135,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000135,
+        "type": "mother"
+      },
+      {
+        "from": 1000132,
+        "to": 1000136,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000136,
+        "type": "mother"
+      },
+      {
+        "from": 1000132,
+        "to": 1000137,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000137,
+        "type": "mother"
+      },
+      {
+        "from": 1000132,
+        "to": 1000133,
+        "type": "father"
+      },
+      {
+        "from": 1000096,
+        "to": 1000133,
+        "type": "mother"
+      },
+      {
+        "from": 1000130,
+        "to": 1000133,
+        "type": "married"
+      },
+      {
+        "from": 1000133,
+        "to": 1000138,
+        "type": "father"
+      },
+      {
+        "from": 1000130,
+        "to": 1000138,
+        "type": "mother"
+      },
+      {
+        "from": 1000133,
+        "to": 1000139,
+        "type": "father"
+      },
+      {
+        "from": 1000130,
+        "to": 1000139,
+        "type": "mother"
+      },
+      {
+        "from": 1000133,
+        "to": 1000140,
+        "type": "father"
+      },
+      {
+        "from": 1000130,
+        "to": 1000140,
+        "type": "mother"
+      },
+      {
+        "from": 1000133,
+        "to": 1000141,
+        "type": "father"
+      },
+      {
+        "from": 1000130,
+        "to": 1000141,
+        "type": "mother"
+      },
+      {
+        "from": 1000138,
+        "to": 1000142,
+        "type": "married"
+      },
+      {
+        "from": 1000138,
+        "to": 1000143,
+        "type": "father"
+      },
+      {
+        "from": 1000142,
+        "to": 1000143,
+        "type": "mother"
+      },
+      {
+        "from": 1000138,
+        "to": 1000144,
+        "type": "father"
+      },
+      {
+        "from": 1000142,
+        "to": 1000144,
+        "type": "mother"
+      },
+      {
+        "from": 1000143,
+        "to": 1000145,
+        "type": "married"
+      },
+      {
+        "from": 1000143,
+        "to": 1000146,
+        "type": "father"
+      },
+      {
+        "from": 1000145,
+        "to": 1000146,
+        "type": "mother"
+      },
+      {
+        "from": 1000143,
+        "to": 1000147,
+        "type": "father"
+      },
+      {
+        "from": 1000145,
+        "to": 1000147,
+        "type": "mother"
+      },
+      {
+        "from": 1000143,
+        "to": 1000148,
+        "type": "father"
+      },
+      {
+        "from": 1000145,
+        "to": 1000148,
+        "type": "mother"
+      },
+      {
+        "from": 1000128,
+        "to": 1000149,
+        "type": "married"
+      },
+      {
+        "from": 1000128,
+        "to": 1000150,
+        "type": "father"
+      },
+      {
+        "from": 1000149,
+        "to": 1000150,
+        "type": "mother"
+      },
+      {
+        "from": 1000150,
+        "to": 1000151,
+        "type": "married"
+      },
+      {
+        "from": 1000150,
+        "to": 1000152,
+        "type": "father"
+      },
+      {
+        "from": 1000151,
+        "to": 1000152,
+        "type": "mother"
+      },
+      {
+        "from": 1000150,
+        "to": 1000153,
+        "type": "father"
+      },
+      {
+        "from": 1000151,
+        "to": 1000153,
+        "type": "mother"
+      },
+      {
+        "from": 1000150,
+        "to": 1000154,
+        "type": "father"
+      },
+      {
+        "from": 1000151,
+        "to": 1000154,
+        "type": "mother"
+      },
+      {
+        "from": 1000095,
+        "to": 1000155,
+        "type": "married"
+      },
+      {
+        "from": 1000095,
+        "to": 1000156,
+        "type": "father"
+      },
+      {
+        "from": 1000155,
+        "to": 1000156,
+        "type": "mother"
+      },
+      {
+        "from": 1000095,
+        "to": 1000157,
+        "type": "father"
+      },
+      {
+        "from": 1000155,
+        "to": 1000157,
+        "type": "mother"
+      },
+      {
+        "from": 1000095,
+        "to": 1000158,
+        "type": "father"
+      },
+      {
+        "from": 1000155,
+        "to": 1000158,
+        "type": "mother"
+      },
+      {
+        "from": 1000113,
+        "to": 1000159,
+        "type": "married"
+      },
+      {
+        "from": 1000159,
+        "to": 1000160,
+        "type": "father"
+      },
+      {
+        "from": 1000113,
+        "to": 1000160,
+        "type": "mother"
+      },
+      {
+        "from": 1000159,
+        "to": 1000161,
+        "type": "father"
+      },
+      {
+        "from": 1000113,
+        "to": 1000161,
+        "type": "mother"
+      },
+      {
+        "from": 1000159,
+        "to": 1000162,
+        "type": "father"
+      },
+      {
+        "from": 1000113,
+        "to": 1000162,
+        "type": "mother"
+      },
+      {
+        "from": 1000111,
+        "to": 1000120,
+        "type": "married"
+      },
+      {
+        "from": 1000111,
+        "to": 1000163,
+        "type": "father"
+      },
+      {
+        "from": 1000120,
+        "to": 1000163,
+        "type": "mother"
+      },
+      {
+        "from": 1000111,
+        "to": 1000164,
+        "type": "father"
+      },
+      {
+        "from": 1000120,
+        "to": 1000164,
+        "type": "mother"
+      },
+      {
+        "from": 1000111,
+        "to": 1000165,
+        "type": "father"
+      },
+      {
+        "from": 1000120,
+        "to": 1000165,
+        "type": "mother"
+      },
+      {
+        "from": 1000111,
+        "to": 1000166,
+        "type": "father"
+      },
+      {
+        "from": 1000120,
+        "to": 1000166,
+        "type": "mother"
+      },
+      {
+        "from": 1000111,
+        "to": 1000167,
+        "type": "father"
+      },
+      {
+        "from": 1000120,
+        "to": 1000167,
+        "type": "mother"
+      },
+      {
+        "from": 1000001,
+        "to": 1000005,
+        "type": "succession"
+      },
+      {
+        "from": 1000005,
+        "to": 1000030,
+        "type": "succession"
+      },
+      {
+        "from": 1000030,
+        "to": 1000089,
+        "type": "succession"
+      },
+      {
+        "from": 1000089,
+        "to": 1000090,
+        "type": "succession"
+      },
+      {
+        "from": 1000090,
+        "to": 1000130,
+        "type": "succession"
+      },
+      {
+        "from": 1000130,
+        "to": 1000138,
+        "type": "succession"
+      },
+      {
+        "from": 1000138,
+        "to": 1000143,
+        "type": "succession"
+      },
+      {
+        "from": 1000143,
+        "to": 1000146,
+        "type": "succession"
+      },
+      {
+        "from": 1000066,
+        "to": 1000095,
+        "type": "succession"
+      },
+      {
+        "from": 1000095,
+        "to": 1000158,
+        "type": "succession"
+      },
+      {
+        "from": 1000075,
+        "to": 1000128,
+        "type": "succession"
+      },
+      {
+        "from": 1000128,
+        "to": 1000150,
+        "type": "succession"
+      },
+      {
+        "from": 1000150,
+        "to": 1000154,
+        "type": "succession"
+      },
+      {
+        "from": 1000159,
+        "to": 1000160,
+        "type": "succession"
+      },
+      {
+        "from": 1000111,
+        "to": 1000167,
+        "type": "succession"
+      },
+      {
+        "from": 1000158,
+        "to": 1000168,
+        "type": "married"
+      },
+      {
+        "from": 1000158,
+        "to": 1000169,
+        "type": "father"
+      },
+      {
+        "from": 1000168,
+        "to": 1000169,
+        "type": "mother"
+      },
+      {
+        "from": 1000158,
+        "to": 1000171,
+        "type": "father"
+      },
+      {
+        "from": 1000168,
+        "to": 1000171,
+        "type": "mother"
+      },
+      {
+        "from": 1000169,
+        "to": 1000170,
+        "type": "married"
+      },
+      {
+        "from": 1000169,
+        "to": 1000173,
+        "type": "married"
+      },
+      {
+        "from": 1000171,
+        "to": 1000172,
+        "type": "married"
+      },
+      {
+        "from": 1000170,
+        "to": 1000174,
+        "type": "father"
+      },
+      {
+        "from": 1000169,
+        "to": 1000174,
+        "type": "mother"
+      },
+      {
+        "from": 1000170,
+        "to": 1000175,
+        "type": "father"
+      },
+      {
+        "from": 1000169,
+        "to": 1000175,
+        "type": "mother"
+      },
+      {
+        "from": 1000170,
+        "to": 1000176,
+        "type": "father"
+      },
+      {
+        "from": 1000169,
+        "to": 1000176,
+        "type": "mother"
+      },
+      {
+        "from": 1000171,
+        "to": 1000177,
+        "type": "father"
+      },
+      {
+        "from": 1000172,
+        "to": 1000177,
+        "type": "mother"
+      },
+      {
+        "from": 1000171,
+        "to": 1000178,
+        "type": "father"
+      },
+      {
+        "from": 1000172,
+        "to": 1000178,
+        "type": "mother"
+      },
+      {
+        "from": 1000172,
+        "to": 1000179,
+        "type": "mother"
+      },
+      {
+        "from": 1000171,
+        "to": 1000179,
+        "type": "step-parent"
+      },
+      {
+        "from": 1000158,
+        "to": 1000171,
+        "type": "succession"
+      },
+      {
+        "from": 1000171,
+        "to": 1000177,
+        "type": "succession"
+      },
+      {
+        "from": 1000177,
+        "to": 1000178,
+        "type": "succession"
+      },
+      {
+        "from": 1000154,
+        "to": 1000180,
+        "type": "married"
+      },
+      {
+        "from": 1000152,
+        "to": 1000181,
+        "type": "married"
+      },
+      {
+        "from": 1000153,
+        "to": 1000182,
+        "type": "married"
+      },
+      {
+        "from": 1000154,
+        "to": 1000183,
+        "type": "father"
+      },
+      {
+        "from": 1000180,
+        "to": 1000183,
+        "type": "mother"
+      },
+      {
+        "from": 1000154,
+        "to": 1000184,
+        "type": "father"
+      },
+      {
+        "from": 1000180,
+        "to": 1000184,
+        "type": "mother"
+      },
+      {
+        "from": 1000181,
+        "to": 1000185,
+        "type": "father"
+      },
+      {
+        "from": 1000152,
+        "to": 1000185,
+        "type": "mother"
+      },
+      {
+        "from": 1000181,
+        "to": 1000186,
+        "type": "father"
+      },
+      {
+        "from": 1000152,
+        "to": 1000186,
+        "type": "mother"
+      },
+      {
+        "from": 1000182,
+        "to": 1000187,
+        "type": "father"
+      },
+      {
+        "from": 1000153,
+        "to": 1000187,
+        "type": "mother"
+      },
+      {
+        "from": 1000182,
+        "to": 1000188,
+        "type": "father"
+      },
+      {
+        "from": 1000153,
+        "to": 1000188,
+        "type": "mother"
+      },
+      {
+        "from": 1000182,
+        "to": 1000189,
+        "type": "father"
+      },
+      {
+        "from": 1000153,
+        "to": 1000189,
+        "type": "mother"
+      },
+      {
+        "from": 1000182,
+        "to": 1000190,
+        "type": "father"
+      },
+      {
+        "from": 1000153,
+        "to": 1000190,
+        "type": "mother"
+      },
+      {
+        "from": 1000154,
+        "to": 1000183,
+        "type": "succession"
+      },
+      {
+        "from": 1000183,
+        "to": 1000184,
+        "type": "succession"
+      },
+      {
+        "from": 1000167,
+        "to": 1000191,
+        "type": "married"
+      },
+      {
+        "from": 1000167,
+        "to": 1000192,
+        "type": "father"
+      },
+      {
+        "from": 1000191,
+        "to": 1000192,
+        "type": "mother"
+      },
+      {
+        "from": 1000167,
+        "to": 1000194,
+        "type": "father"
+      },
+      {
+        "from": 1000191,
+        "to": 1000194,
+        "type": "mother"
+      },
+      {
+        "from": 1000167,
+        "to": 1000196,
+        "type": "father"
+      },
+      {
+        "from": 1000191,
+        "to": 1000196,
+        "type": "mother"
+      },
+      {
+        "from": 1000192,
+        "to": 1000193,
+        "type": "married"
+      },
+      {
+        "from": 1000194,
+        "to": 1000195,
+        "type": "married"
+      },
+      {
+        "from": 1000196,
+        "to": 1000197,
+        "type": "married"
+      },
+      {
+        "from": 1000193,
+        "to": 1000198,
+        "type": "father"
+      },
+      {
+        "from": 1000192,
+        "to": 1000198,
+        "type": "mother"
+      },
+      {
+        "from": 1000193,
+        "to": 1000199,
+        "type": "father"
+      },
+      {
+        "from": 1000192,
+        "to": 1000199,
+        "type": "mother"
+      },
+      {
+        "from": 1000194,
+        "to": 1000200,
+        "type": "father"
+      },
+      {
+        "from": 1000195,
+        "to": 1000200,
+        "type": "mother"
+      },
+      {
+        "from": 1000194,
+        "to": 1000201,
+        "type": "father"
+      },
+      {
+        "from": 1000195,
+        "to": 1000201,
+        "type": "mother"
+      },
+      {
+        "from": 1000194,
+        "to": 1000202,
+        "type": "father"
+      },
+      {
+        "from": 1000195,
+        "to": 1000202,
+        "type": "mother"
+      },
+      {
+        "from": 1000194,
+        "to": 1000203,
+        "type": "father"
+      },
+      {
+        "from": 1000195,
+        "to": 1000203,
+        "type": "mother"
+      },
+      {
+        "from": 1000197,
+        "to": 1000204,
+        "type": "father"
+      },
+      {
+        "from": 1000196,
+        "to": 1000204,
+        "type": "mother"
+      },
+      {
+        "from": 1000197,
+        "to": 1000205,
+        "type": "father"
+      },
+      {
+        "from": 1000196,
+        "to": 1000205,
+        "type": "mother"
+      },
+      {
+        "from": 1000197,
+        "to": 1000206,
+        "type": "father"
+      },
+      {
+        "from": 1000196,
+        "to": 1000206,
+        "type": "mother"
+      },
+      {
+        "from": 1000167,
+        "to": 1000192,
+        "type": "succession"
+      },
+      {
+        "from": 1000192,
+        "to": 1000198,
+        "type": "succession"
+      },
+      {
+        "from": 1000198,
+        "to": 1000199,
+        "type": "succession"
+      },
+      {
+        "from": 1000199,
+        "to": 1000194,
+        "type": "succession"
+      },
+      {
+        "from": 1000194,
+        "to": 1000200,
+        "type": "succession"
+      },
+      {
+        "from": 1000200,
+        "to": 1000201,
+        "type": "succession"
+      },
+      {
+        "from": 1000201,
+        "to": 1000202,
+        "type": "succession"
+      },
+      {
+        "from": 1000202,
+        "to": 1000203,
+        "type": "succession"
+      },
+      {
+        "from": 1000203,
+        "to": 1000196,
+        "type": "succession"
+      },
+      {
+        "from": 1000196,
+        "to": 1000204,
+        "type": "succession"
+      },
+      {
+        "from": 1000204,
+        "to": 1000205,
+        "type": "succession"
+      },
+      {
+        "from": 1000205,
+        "to": 1000206,
+        "type": "succession"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "#8c8f98"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "#3b82f6"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "#ec4899"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "#64748b"
+      },
+      {
+        "type": "married",
+        "label": "dynastic marriage",
+        "color": "#f97316"
+      },
+      {
+        "type": "succession",
+        "label": "succession / crown line",
+        "color": "#8b5cf6"
+      },
+      {
+        "type": "hemophilia-line",
+        "label": "hemophilia line",
+        "color": "#ef4444"
+      },
+      {
+        "type": "step-parent",
+        "label": "step-parent / blended family",
+        "color": "#14b8a6"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 7
+    }
+  }
+}

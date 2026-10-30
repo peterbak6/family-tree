@@ -20,7 +20,7 @@
     <main>
       <!-- Top Toolbar -->
       <div class="top-toolbar">
-        <label class="toolbar-btn dark">
+        <label class="toolbar-btn dark has-tooltip" data-tooltip="Import trees from JSON" aria-label="Import trees from JSON" tabindex="0">
           <!-- <span>⬆</span> -->
           <span><svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -30,13 +30,16 @@
           <input id="fileInput" type="file" accept=".json,application/json" style="display:none" />
         </label>
 
-        <select id="treeSelect" class="toolbar-select" disabled>
-          <option>No tree loaded</option>
-        </select>
+        <label class="tree-picker">
+          <span>Tree</span>
+          <select id="treeSelect" class="toolbar-select" aria-label="Choose family tree" title="Choose a tree from this project" disabled>
+            <option>No tree loaded</option>
+          </select>
+        </label>
 
         <!-- New Tree inline widget -->
         <div class="new-tree-widget" id="newTreeWidget">
-          <button id="newTreeBtn" class="toolbar-btn" type="button" title="Add a new tree to this project">
+          <button id="newTreeBtn" class="toolbar-btn has-tooltip" type="button" aria-label="Create a new tree" data-tooltip="Create a new tree">
             <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -51,7 +54,7 @@
         <div class="toolbar-spacer"></div>
 
         <div id="linkTypesDropdown" class="toolbar-dropdown">
-          <button id="linkTypesToggle" class="toolbar-menu-btn" type="button">
+          <button id="linkTypesToggle" class="toolbar-menu-btn has-tooltip" type="button" aria-label="Manage relationship types" data-tooltip="Manage relationship types">
             <!-- <span>☰</span> -->
             <span>
               <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +68,7 @@
           <div id="linkTypesMenu" class="toolbar-menu"></div>
         </div>
 
-        <button id="fitBtn" class="toolbar-btn round" disabled title="Fit view">
+        <button id="fitBtn" class="toolbar-btn round has-tooltip" disabled type="button" aria-label="Fit tree to view" data-tooltip="Fit tree to view">
           <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
             <polygon points="12,7 10,4 14,4" fill="currentColor"></polygon>
@@ -76,7 +79,7 @@
         </button>
 
 
-        <button id="clearProjectBtn" class="toolbar-btn" type="button" title="Clear all data and start a new project">
+        <button id="clearProjectBtn" class="toolbar-btn has-tooltip" type="button" aria-label="Clear all trees" data-tooltip="Clear all trees">
           <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 6h18"></path>
             <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
@@ -84,7 +87,7 @@
           </svg>
         </button>
 
-        <button id="exportJsonBtn" class="toolbar-btn" disabled type="button">
+        <button id="exportJsonBtn" class="toolbar-btn has-tooltip" disabled type="button" aria-label="Export project as JSON" data-tooltip="Export project as JSON">
           <!-- <span>⬇</span> -->
           <span>
             <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,7 +98,7 @@
           </span>
         </button>
 
-        <button id="exportPngBtn" class="toolbar-btn" disabled type="button">
+        <button id="exportPngBtn" class="toolbar-btn has-tooltip" disabled type="button" aria-label="Export current tree as PNG" data-tooltip="Export current tree as PNG">
           <!-- <span>🖼</span> -->
           <span>
             <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -119,8 +122,12 @@
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
-          <h2>Welcome to Family Tree Editor</h2>
-          <p>Import a JSON file to get started or start with an empty tree</p>
+          <h2>This tree is empty</h2>
+          <p>Add its first person or import a JSON project containing one or more trees.</p>
+          <div class="empty-actions">
+            <button id="emptyAddBtn" class="empty-primary-btn" type="button">Add first person</button>
+            <button id="emptyImportBtn" class="empty-secondary-btn" type="button">Import JSON</button>
+          </div>
         </div>
       </div>
 

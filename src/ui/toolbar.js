@@ -144,11 +144,12 @@ export class Toolbar {
     this.exportBtn.disabled = false;
     if (this.exportPngBtn) this.exportPngBtn.disabled = false;
 
-    this.treeSelect.innerHTML = treeNames.map(name => 
-      `<option value="${escapeHtml(name)}" ${name === this.state.currentTreeName ? 'selected' : ''}>
-        ${escapeHtml(name)}
+    this.treeSelect.innerHTML = treeNames.map(name => {
+      const displayName = name === 'default-tree' ? 'Untitled tree' : name;
+      return `<option value="${escapeHtml(name)}" ${name === this.state.currentTreeName ? 'selected' : ''}>
+        ${escapeHtml(displayName)}
       </option>`
-    ).join('');
+    }).join('');
   }
 
   setStatus(text) {

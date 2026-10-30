@@ -34,7 +34,7 @@ export class LinkContextMenu {
         ${linkTypes.map(t => `
           <button class="link-ctx-type-btn ${link.type === t.type ? 'active' : ''}"
                   data-type="${t.type}"
-                  style="--swatch:${t.color}">
+                  style="--swatch:${escapeHtml(t.color)}">
             ${escapeHtml(t.label)}
           </button>
         `).join('')}

@@ -30,7 +30,7 @@ export class LinkTypesMenu {
         <input type="checkbox" 
                data-link-filter="${t.type}" 
                ${this.state.visibleLinkTypes.has(t.type) ? 'checked' : ''} />
-        <span class="type-swatch" style="background:${t.color}"></span>
+        <span class="type-swatch" style="background:${escapeHtml(t.color)}"></span>
         <span>${escapeHtml(t.label)}</span>
       </label>
     `).join('');

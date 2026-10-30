@@ -2,6 +2,13 @@ import { defaultLinkTypes, linkTypeColorPalette } from '../utils/constants.js';
 import { sanitizeLinkTypeName, unique } from '../utils/helpers.js';
 import * as d3 from 'd3';
 
+const SAFE_COLOR_PATTERN = /^(?:#[0-9a-f]{3,8}|(?:rgb|hsl)a?\([0-9.,%+\-\s]+\)|[a-z]+)$/i;
+
+function normalizeLinkTypeColor(value, fallback) {
+  const color = typeof value === 'string' ? value.trim() : '';
+  return SAFE_COLOR_PATTERN.test(color) ? color : fallback;
+}
+
 /**
  * Normalize link type list with defaults and custom types
  */
@@ -12,10 +19,9 @@ export function normalizeLinkTypeList(rawTypes = [], links = []) {
   function add(item) {
     const type = sanitizeLinkTypeName(typeof item === 'string' ? item : item?.type);
     if (!type || seen.has(type)) return;
-    
-    const color = typeof item === 'object' && item?.color
-      ? item.color
-      : linkTypeColorPalette[result.length % linkTypeColorPalette.length];
+
+    const fallbackColor = linkTypeColorPalette[result.length % linkTypeColorPalette.length];
+    const color = normalizeLinkTypeColor(item?.color, fallbackColor);
     const label = typeof item === 'object' && item?.label ? item.label : type;
     
     seen.add(type);
@@ -109,6 +115,32 @@ export function createEmptyProject() {
       'generation-range': { min: 0, max: 0 }
     }
   };
+}
+
+export function createStarterProject() {
+  return normalizeProject({
+    'Start here: three generations': {
+      nodes: [
+        { id: 100001, generation: 0, content: 'Sam Rivera, grandparent' },
+        { id: 100002, generation: 0, content: 'Lee Chen, grandparent' },
+        { id: 100003, generation: 1, content: 'Maya Rivera, parent' },
+        { id: 100004, generation: 1, content: 'Noah Okafor, parent' },
+        { id: 100005, generation: 2, content: 'Ava Rivera, child' },
+        { id: 100006, generation: 2, content: 'Leo Rivera, child' }
+      ],
+      links: [
+        { from: 100001, to: 100002, type: 'married' },
+        { from: 100001, to: 100003, type: 'father' },
+        { from: 100002, to: 100003, type: 'mother' },
+        { from: 100003, to: 100004, type: 'married' },
+        { from: 100003, to: 100005, type: 'mother' },
+        { from: 100004, to: 100005, type: 'father' },
+        { from: 100003, to: 100006, type: 'mother' },
+        { from: 100004, to: 100006, type: 'father' }
+      ],
+      'generation-range': { min: 0, max: 2 }
+    }
+  });
 }
 
 /**

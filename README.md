@@ -5,7 +5,7 @@ A modern, interactive family tree visualization tool built with vanilla JavaScri
 ## Features
 
 ✨ **Interactive Visualization**
-- Drag-and-drop node positioning
+- Automatic family-tree layout
 - Zoom and pan canvas
 - Click-to-edit inline editing
 - Beautiful, color-coded generations
@@ -20,6 +20,7 @@ A modern, interactive family tree visualization tool built with vanilla JavaScri
 - Auto-save to localStorage
 - Import/export JSON files
 - Resume where you left off
+- Built-in starter and historical example trees
 
 🎨 **Modern UI**
 - Clean, gradient background
@@ -47,12 +48,16 @@ npm run preview
 
 ### Usage
 
-1. **Start Fresh**: The app opens with an empty tree or your last session
-2. **Import Data**: Click "Import" to load a JSON file
+1. **Start Fresh**: The app opens with a small starter tree or your last session
+2. **Import Data**: Click "Import" to load a JSON project. Each top-level key is a tree shown in the tree selector.
 3. **Add Nodes**: Click the "+" on generation axes to add people
 4. **Create Links**: Drag from the connector dot on one node to another
 5. **Edit Content**: Click a node twice or use the edit button
 6. **Auto-save**: Your work is automatically saved to localStorage
+
+The tree selector includes a compact three-generation starter plus Confucius,
+Habsburg, Maria Theresa, and Queen Victoria examples. Imported projects can add
+more trees using top-level JSON keys.
 
 ## Deployment
 

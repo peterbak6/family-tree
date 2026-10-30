@@ -47,11 +47,12 @@ export class SVGRenderer {
     this.renderAxes(layout, handlers);
 
     // Render links and nodes
-    const parentLinks = layout.links.filter(l => 
-      l.type !== 'married' && state.visibleLinkTypes.has(l.type || 'default')
+    const isMarriageLink = link => link.type === 'married' || link.type?.includes('marri');
+    const parentLinks = layout.links.filter(l =>
+      !isMarriageLink(l) && state.visibleLinkTypes.has(l.type || 'default')
     );
-    const marriedLinks = layout.links.filter(l => 
-      l.type === 'married' && state.visibleLinkTypes.has('married')
+    const marriedLinks = layout.links.filter(l =>
+      isMarriageLink(l) && state.visibleLinkTypes.has(l.type || 'married')
     );
 
     renderLinks(this.linkG, parentLinks, layout, state, handlers);
@@ -70,6 +71,8 @@ export class SVGRenderer {
       .data(layout.generations)
       .join('g')
       .attr('class', 'axis-wrap');
+
+    axisWrap.append('title').text(d => `Add a person to generation ${d}`);
 
     // Axis line
     axisWrap.append('line')
@@ -167,6 +170,8 @@ export class SVGRenderer {
           handlers.onAddAxisRight?.();
         }
       });
+
+    sideAxisAdd.append('title').text(d => `Create a new generation to the ${d.side}`);
 
     sideAxisAdd.append('circle').attr('r', 18);
     sideAxisAdd.append('text')

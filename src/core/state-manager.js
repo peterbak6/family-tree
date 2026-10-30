@@ -1,4 +1,4 @@
-import { createEmptyProject, normalizeProject } from './data-model.js';
+import { createEmptyProject, createStarterProject, normalizeProject } from './data-model.js';
 
 const STORAGE_KEY = 'family-tree-state';
 const AUTOSAVE_DELAY = 1000; // 1 second debounce
@@ -59,8 +59,15 @@ class StateManager {
     this.currentTreeName = treeName;
     this.selectedNodeId = null;
     this.selectedLinkIndex = null;
+    this.showCurrentTreeLinkTypes();
     this.emit('tree-changed', { treeName });
     this.scheduleAutosave();
+  }
+
+  showCurrentTreeLinkTypes() {
+    this.getCurrentTree()?.['link-types']?.forEach(({ type }) => {
+      this.visibleLinkTypes.add(type);
+    });
   }
 
   /**
@@ -76,15 +83,28 @@ class StateManager {
     }
     
     // Ensure link types are visible
-    const tree = this.getCurrentTree();
-    if (tree && tree['link-types']) {
-      tree['link-types'].forEach(lt => {
-        this.visibleLinkTypes.add(lt.type);
-      });
-    }
+    this.showCurrentTreeLinkTypes();
     
     this.emit('project-loaded', { project: this.project });
     this.scheduleAutosave();
+  }
+
+  addTrees(project) {
+    const normalized = normalizeProject(project);
+    let added = 0;
+
+    Object.entries(normalized).forEach(([name, tree]) => {
+      if (this.project[name]) return;
+      this.project[name] = tree;
+      added += 1;
+    });
+
+    if (added > 0) {
+      this.emit('project-loaded', { project: this.project });
+      this.scheduleAutosave();
+    }
+
+    return added;
   }
 
   /**
@@ -187,10 +207,19 @@ class StateManager {
         if (state.project) {
           this.project = normalizeProject(state.project);
           this.currentTreeName = state.currentTreeName;
+
+          const treeNames = Object.keys(this.project);
+          const legacyTree = this.project['default-tree'];
+          if (treeNames.length === 1 && legacyTree?.nodes.length === 0 && legacyTree.links.length === 0) {
+            this.project = createStarterProject();
+            this.currentTreeName = Object.keys(this.project)[0];
+          }
           
           if (state.visibleLinkTypes) {
             this.visibleLinkTypes = new Set(state.visibleLinkTypes);
           }
+
+          this.showCurrentTreeLinkTypes();
           
           this.emit('loaded-from-storage', { savedAt: state.savedAt });
           return true;
@@ -200,9 +229,9 @@ class StateManager {
       console.error('Failed to load from localStorage:', error);
     }
     
-    // If no stored state or error, create empty project
-    this.project = createEmptyProject();
-    this.currentTreeName = 'default-tree';
+    // Begin with a small tree that demonstrates generations and relationships.
+    this.project = createStarterProject();
+    this.currentTreeName = Object.keys(this.project)[0];
     return false;
   }
 

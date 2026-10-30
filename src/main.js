@@ -8,6 +8,7 @@ import { LinkTypesMenu } from './ui/link-types-menu.js';
 import { LinkContextMenu } from './ui/link-context-menu.js';
 import { importJSON, exportJSON } from './io/json-io.js';
 import { exportAsPng } from './io/png-export.js';
+import { loadExampleTrees } from './io/example-catalog.js';
 
 /**
  * Main application class
@@ -21,6 +22,7 @@ class FamilyTreeApp {
     this.linkCreator = null;
     this.nodeEditor = null;
     this.nodeCreator = null;
+    this.exampleTrees = null;
     
     this.init();
   }
@@ -62,6 +64,7 @@ class FamilyTreeApp {
       },
       onClearAll: () => {
         state.clearAll();
+        if (this.exampleTrees) state.addTrees(this.exampleTrees);
         this.onProjectLoaded();
         this.toolbar.setStatus('Started new project');
       },
@@ -76,6 +79,13 @@ class FamilyTreeApp {
           this.toolbar.setStatus('PNG export failed — check console');
         }
       }
+    });
+
+    document.getElementById('emptyAddBtn')?.addEventListener('click', () => {
+      this.nodeCreator.addNodeToGeneration(0);
+    });
+    document.getElementById('emptyImportBtn')?.addEventListener('click', () => {
+      this.toolbar.fileInput?.click();
     });
 
     this.linkTypesMenu = new LinkTypesMenu(state, () => this.render());
@@ -112,6 +122,17 @@ class FamilyTreeApp {
 
     // Initial render
     this.onProjectLoaded();
+    this.loadExamples();
+  }
+
+  async loadExamples() {
+    try {
+      this.exampleTrees = await loadExampleTrees();
+      state.addTrees(this.exampleTrees);
+    } catch (error) {
+      console.error('Failed to load example trees:', error);
+      this.toolbar.setStatus('Some example trees could not be loaded');
+    }
   }
 
   onProjectLoaded() {
@@ -120,7 +141,6 @@ class FamilyTreeApp {
     
     if (state.getCurrentTree()) {
       this.render();
-      document.getElementById('emptyState').style.display = 'none';
     } else {
       document.getElementById('emptyState').style.display = 'grid';
     }
@@ -133,7 +153,7 @@ class FamilyTreeApp {
       return;
     }
 
-    document.getElementById('emptyState').style.display = 'none';
+    document.getElementById('emptyState').style.display = tree.nodes.length === 0 ? 'grid' : 'none';
 
     // Save current transform if preserving view
     const oldTransform = preserveView ? this.renderer.getTransform() : null;
@@ -205,6 +225,7 @@ class FamilyTreeApp {
       file,
       (project) => {
         state.loadProject(project);
+        if (this.exampleTrees) state.addTrees(this.exampleTrees);
         this.toolbar.setStatus('Imported successfully');
       },
       (error) => {

@@ -1,0 +1,1804 @@
+{
+  "Confucius / Kong main-line family tree": {
+    "nodes": [
+      {
+        "id": 800001,
+        "generation": 0,
+        "content": "Shuliang He 叔梁紇, father of Confucius"
+      },
+      {
+        "id": 800011,
+        "generation": 1,
+        "content": "Meng Pi 孟皮, elder brother of Confucius"
+      },
+      {
+        "id": 800012,
+        "generation": 1,
+        "content": "Confucius / Kong Qiu 孔丘, 551 BCE - 479 BCE, Kong generation 1"
+      },
+      {
+        "id": 800021,
+        "generation": 2,
+        "content": "Kong Li 孔鯉, 532 BCE - 483 BCE, generation 2"
+      },
+      {
+        "id": 800031,
+        "generation": 3,
+        "content": "Kong Ji 孔伋 / Zisi 子思, 483 BCE - 402 BCE, generation 3"
+      },
+      {
+        "id": 800041,
+        "generation": 4,
+        "content": "Kong Bai 孔白, generation 4"
+      },
+      {
+        "id": 800051,
+        "generation": 5,
+        "content": "Kong Qiu 孔求, generation 5"
+      },
+      {
+        "id": 800061,
+        "generation": 6,
+        "content": "Kong Ji 孔箕, generation 6"
+      },
+      {
+        "id": 800071,
+        "generation": 7,
+        "content": "Kong Chuan 孔穿, generation 7"
+      },
+      {
+        "id": 800081,
+        "generation": 8,
+        "content": "Kong Qian 孔謙, generation 8"
+      },
+      {
+        "id": 800091,
+        "generation": 9,
+        "content": "Kong Fu 孔鮒, generation 9"
+      },
+      {
+        "id": 800092,
+        "generation": 9,
+        "content": "Kong Teng 孔騰, generation 9 branch"
+      },
+      {
+        "id": 800093,
+        "generation": 9,
+        "content": "Kong Shu 孔樹, generation 9 branch"
+      },
+      {
+        "id": 800101,
+        "generation": 10,
+        "content": "Kong Sui 孔隨, generation 10"
+      },
+      {
+        "id": 800102,
+        "generation": 10,
+        "content": "Kong Zhong 孔忠, generation 10 branch"
+      },
+      {
+        "id": 800111,
+        "generation": 11,
+        "content": "Kong Wu 孔武, generation 11"
+      },
+      {
+        "id": 800121,
+        "generation": 12,
+        "content": "Kong Yannian 孔延年, generation 12"
+      },
+      {
+        "id": 800131,
+        "generation": 13,
+        "content": "Kong Ba 孔霸, generation 13"
+      },
+      {
+        "id": 800141,
+        "generation": 14,
+        "content": "Kong Ji 孔吉, generation 14"
+      },
+      {
+        "id": 800142,
+        "generation": 14,
+        "content": "Kong Fu 孔福, generation 14 branch"
+      },
+      {
+        "id": 800151,
+        "generation": 15,
+        "content": "Kong Heqi 孔何齊, generation 15"
+      },
+      {
+        "id": 800152,
+        "generation": 15,
+        "content": "Kong Fang 孔房, generation 15 branch"
+      },
+      {
+        "id": 800161,
+        "generation": 16,
+        "content": "Kong Hong 孔弘, generation 16"
+      },
+      {
+        "id": 800162,
+        "generation": 16,
+        "content": "Kong Jun 孔均, generation 16 branch"
+      },
+      {
+        "id": 800171,
+        "generation": 17,
+        "content": "Kong An 孔安, generation 17"
+      },
+      {
+        "id": 800172,
+        "generation": 17,
+        "content": "Kong Zhi 孔志, generation 17 branch"
+      },
+      {
+        "id": 800181,
+        "generation": 18,
+        "content": "Kong Sun 孔損, generation 18"
+      },
+      {
+        "id": 800191,
+        "generation": 19,
+        "content": "Kong Yao 孔曜, generation 19"
+      },
+      {
+        "id": 800201,
+        "generation": 20,
+        "content": "Kong Wan 孔完, generation 20"
+      },
+      {
+        "id": 800202,
+        "generation": 20,
+        "content": "Kong Zan 孔贊, generation 20 branch"
+      },
+      {
+        "id": 800211,
+        "generation": 21,
+        "content": "Kong Xian 孔羡, generation 21"
+      },
+      {
+        "id": 800221,
+        "generation": 22,
+        "content": "Kong Zhen 孔震, generation 22"
+      },
+      {
+        "id": 800231,
+        "generation": 23,
+        "content": "Kong Ni 孔嶷, generation 23"
+      },
+      {
+        "id": 800241,
+        "generation": 24,
+        "content": "Kong Fu 孔撫, generation 24"
+      },
+      {
+        "id": 800251,
+        "generation": 25,
+        "content": "Kong Yi 孔懿, generation 25"
+      },
+      {
+        "id": 800261,
+        "generation": 26,
+        "content": "Kong Xian 孔鮮, generation 26"
+      },
+      {
+        "id": 800271,
+        "generation": 27,
+        "content": "Kong Cheng 孔乘, generation 27"
+      },
+      {
+        "id": 800281,
+        "generation": 28,
+        "content": "Kong Lingzhen 孔靈珍, generation 28"
+      },
+      {
+        "id": 800291,
+        "generation": 29,
+        "content": "Kong Wentai 孔文泰, generation 29"
+      },
+      {
+        "id": 800301,
+        "generation": 30,
+        "content": "Kong Qu 孔渠, generation 30"
+      },
+      {
+        "id": 800311,
+        "generation": 31,
+        "content": "Kong Zhangsun 孔長孫, generation 31"
+      },
+      {
+        "id": 800321,
+        "generation": 32,
+        "content": "Kong Yingzhe 孔英悊, generation 32"
+      },
+      {
+        "id": 800322,
+        "generation": 32,
+        "content": "Kong Sizhe 孔嗣悊, generation 32 branch"
+      },
+      {
+        "id": 800331,
+        "generation": 33,
+        "content": "Kong Delun 孔德倫, generation 33"
+      },
+      {
+        "id": 800341,
+        "generation": 34,
+        "content": "Kong Chongji 孔崇基, generation 34"
+      },
+      {
+        "id": 800351,
+        "generation": 35,
+        "content": "Kong Suizhi 孔璲之, generation 35"
+      },
+      {
+        "id": 800361,
+        "generation": 36,
+        "content": "Kong Xuan 孔萱, generation 36"
+      },
+      {
+        "id": 800371,
+        "generation": 37,
+        "content": "Kong Qiqing 孔齊卿, generation 37"
+      },
+      {
+        "id": 800381,
+        "generation": 38,
+        "content": "Kong Weizhi 孔惟晊, generation 38"
+      },
+      {
+        "id": 800391,
+        "generation": 39,
+        "content": "Kong Ce 孔策, generation 39"
+      },
+      {
+        "id": 800401,
+        "generation": 40,
+        "content": "Kong Zhen 孔振, generation 40"
+      },
+      {
+        "id": 800411,
+        "generation": 41,
+        "content": "Kong Zhaojian 孔昭檢, generation 41"
+      },
+      {
+        "id": 800421,
+        "generation": 42,
+        "content": "Kong Guangsi 孔光嗣, generation 42"
+      },
+      {
+        "id": 800431,
+        "generation": 43,
+        "content": "Kong Renyu 孔仁玉, 912 - 956, generation 43"
+      },
+      {
+        "id": 800441,
+        "generation": 44,
+        "content": "Kong Yi 孔宜, 941 - 986, generation 44"
+      },
+      {
+        "id": 800451,
+        "generation": 45,
+        "content": "Kong Yanshi 孔延世, 969 - 1006, generation 45"
+      },
+      {
+        "id": 800452,
+        "generation": 45,
+        "content": "Kong Yanze 孔延澤, generation 45 branch"
+      },
+      {
+        "id": 800461,
+        "generation": 46,
+        "content": "Kong Shengyou 孔聖佑, 998 - 1032, generation 46"
+      },
+      {
+        "id": 800462,
+        "generation": 46,
+        "content": "Kong Zongyuan 孔宗願, generation 46, Duke Yansheng line"
+      },
+      {
+        "id": 800471,
+        "generation": 47,
+        "content": "Kong Ruomeng 孔若蒙, generation 47"
+      },
+      {
+        "id": 800472,
+        "generation": 47,
+        "content": "Kong Ruoxu 孔若虛, ? - 1104, generation 47 branch"
+      },
+      {
+        "id": 800473,
+        "generation": 47,
+        "content": "Kong Ruoyu 孔若愚, generation 47 branch"
+      },
+      {
+        "id": 800481,
+        "generation": 48,
+        "content": "Kong Duanyou 孔端友, 1078 - 1132, generation 48"
+      },
+      {
+        "id": 800482,
+        "generation": 48,
+        "content": "Kong Duancao 孔端操, ? - 1133, northern branch"
+      },
+      {
+        "id": 800483,
+        "generation": 48,
+        "content": "Kong Duanli 孔端立, generation 48 branch"
+      },
+      {
+        "id": 800491,
+        "generation": 49,
+        "content": "Kong Jie 孔玠, 1122 - 1154, generation 49"
+      },
+      {
+        "id": 800492,
+        "generation": 49,
+        "content": "Kong Xuan 孔瑄, generation 49 branch"
+      },
+      {
+        "id": 800493,
+        "generation": 49,
+        "content": "Kong Fan 孔璠, 1106 - 1143, generation 49 branch"
+      },
+      {
+        "id": 800494,
+        "generation": 49,
+        "content": "Kong Tian 孔瑱, generation 49 branch"
+      },
+      {
+        "id": 800495,
+        "generation": 49,
+        "content": "Kong Hu 孔琥, generation 49 branch"
+      },
+      {
+        "id": 800501,
+        "generation": 50,
+        "content": "Kong Jin 孔搢, 1145 - 1193, generation 50"
+      },
+      {
+        "id": 800502,
+        "generation": 50,
+        "content": "Kong Zheng 孔拯, 1136 - 1161, generation 50 branch"
+      },
+      {
+        "id": 800503,
+        "generation": 50,
+        "content": "Kong Zong 孔摠, 1138 - 1190, generation 50 branch"
+      },
+      {
+        "id": 800504,
+        "generation": 50,
+        "content": "Kong Fu 孔拂, generation 50 branch"
+      },
+      {
+        "id": 800511,
+        "generation": 51,
+        "content": "Kong Wenyuan 孔文遠, 1185 - 1226, generation 51"
+      },
+      {
+        "id": 800512,
+        "generation": 51,
+        "content": "Kong Yuancuo 孔元措, 1182 - 1251, generation 51 branch"
+      },
+      {
+        "id": 800513,
+        "generation": 51,
+        "content": "Kong Yuanhong 孔元綋, generation 51 branch"
+      },
+      {
+        "id": 800514,
+        "generation": 51,
+        "content": "Kong Yuanxiao 孔元孝, generation 51 branch"
+      },
+      {
+        "id": 800515,
+        "generation": 51,
+        "content": "Kong Yuanyong 孔元用, ? - 1227, generation 51 branch"
+      },
+      {
+        "id": 800521,
+        "generation": 52,
+        "content": "Kong Wanchun 孔萬春, ? - 1241, generation 52"
+      },
+      {
+        "id": 800522,
+        "generation": 52,
+        "content": "Kong Zhigu 孔之固, generation 52 branch/adoption line"
+      },
+      {
+        "id": 800523,
+        "generation": 52,
+        "content": "Kong Zhihou 孔之厚, generation 52 branch"
+      },
+      {
+        "id": 800524,
+        "generation": 52,
+        "content": "Kong Zhiquan 孔之全, generation 52 branch"
+      },
+      {
+        "id": 800531,
+        "generation": 53,
+        "content": "Kong Zhu 孔洙, 1228 - 1287, generation 53"
+      },
+      {
+        "id": 800532,
+        "generation": 53,
+        "content": "Kong Zhen 孔湞, generation 53 branch"
+      },
+      {
+        "id": 800533,
+        "generation": 53,
+        "content": "Kong Huan 孔浣, ? - 1283, generation 53 branch"
+      },
+      {
+        "id": 800534,
+        "generation": 53,
+        "content": "Kong Zhi 孔治, 1237 - 1307, generation 53 branch"
+      },
+      {
+        "id": 800541,
+        "generation": 54,
+        "content": "Kong Sihui 孔思晦, 1267 - 1333, generation 54"
+      },
+      {
+        "id": 800542,
+        "generation": 54,
+        "content": "Kong Sicheng 孔思誠, generation 54 branch"
+      },
+      {
+        "id": 800551,
+        "generation": 55,
+        "content": "Kong Kejian 孔克堅, 1316 - 1370, generation 55"
+      },
+      {
+        "id": 800561,
+        "generation": 56,
+        "content": "Kong Xixue 孔希學, 1335 - 1381, generation 56"
+      },
+      {
+        "id": 800571,
+        "generation": 57,
+        "content": "Kong Ne 孔訥, 1356 - 1400, generation 57"
+      },
+      {
+        "id": 800581,
+        "generation": 58,
+        "content": "Kong Gongjian 孔公鑑, 1380 - 1402, generation 58"
+      },
+      {
+        "id": 800591,
+        "generation": 59,
+        "content": "Kong Yanjin 孔彦縉, 1401 - 1455, generation 59"
+      },
+      {
+        "id": 800601,
+        "generation": 60,
+        "content": "Kong Chengqing 孔承慶, 1420 - 1450, generation 60"
+      },
+      {
+        "id": 800611,
+        "generation": 61,
+        "content": "Kong Hongxu 孔弘緒, 1448 - 1504, generation 61"
+      },
+      {
+        "id": 800612,
+        "generation": 61,
+        "content": "Kong Hongtai 孔弘泰, 1450 - 1503, generation 61 branch"
+      },
+      {
+        "id": 800621,
+        "generation": 62,
+        "content": "Kong Wenshao 孔聞韶, 1482 - 1546, generation 62"
+      },
+      {
+        "id": 800631,
+        "generation": 63,
+        "content": "Kong Zhengan 孔貞幹, 1519 - 1556, generation 63"
+      },
+      {
+        "id": 800632,
+        "generation": 63,
+        "content": "Kong Zhenning 孔貞寧, 1522 - 1606, generation 63 branch"
+      },
+      {
+        "id": 800641,
+        "generation": 64,
+        "content": "Kong Shangxian 孔尚賢, 1544 - 1622, generation 64"
+      },
+      {
+        "id": 800642,
+        "generation": 64,
+        "content": "Kong Shangtan 孔尚坦, 1573 - 1598, generation 64 branch"
+      },
+      {
+        "id": 800651,
+        "generation": 65,
+        "content": "Kong Yinchun 孔胤椿, 1571 - 1619, generation 65"
+      },
+      {
+        "id": 800652,
+        "generation": 65,
+        "content": "Kong Yingui 孔胤桂, ? - 1595, generation 65 branch"
+      },
+      {
+        "id": 800653,
+        "generation": 65,
+        "content": "Kong Yinzhi 孔胤植, 1592 - 1648, generation 65 branch"
+      },
+      {
+        "id": 800661,
+        "generation": 66,
+        "content": "Kong Xingxie 孔興燮, 1636 - 1668, generation 66"
+      },
+      {
+        "id": 800671,
+        "generation": 67,
+        "content": "Kong Yuqi 孔毓圻, 1657 - 1723, generation 67"
+      },
+      {
+        "id": 800681,
+        "generation": 68,
+        "content": "Kong Chuanduo 孔傳鐸, 1673 - 1735, generation 68"
+      },
+      {
+        "id": 800691,
+        "generation": 69,
+        "content": "Kong Jihuo 孔繼濩, 1697 - 1719, generation 69"
+      },
+      {
+        "id": 800701,
+        "generation": 70,
+        "content": "Kong Guangqi 孔廣棨, 1713 - 1743, generation 70"
+      },
+      {
+        "id": 800711,
+        "generation": 71,
+        "content": "Kong Zhaohuan 孔昭煥, 1735 - 1782, generation 71"
+      },
+      {
+        "id": 800721,
+        "generation": 72,
+        "content": "Kong Xianpei 孔憲培, 1756 - 1793, generation 72"
+      },
+      {
+        "id": 800722,
+        "generation": 72,
+        "content": "Kong Xianzeng 孔憲增, 1759 - 1812, generation 72 branch"
+      },
+      {
+        "id": 800731,
+        "generation": 73,
+        "content": "Kong Qingrong 孔慶鎔, 1787 - 1841, generation 73"
+      },
+      {
+        "id": 800741,
+        "generation": 74,
+        "content": "Kong Fanhao 孔繁灝, 1804 - 1860, generation 74"
+      },
+      {
+        "id": 800751,
+        "generation": 75,
+        "content": "Kong Xiangke 孔祥珂, 1848 - 1876, generation 75"
+      },
+      {
+        "id": 800761,
+        "generation": 76,
+        "content": "Kong Lingyi 孔令貽, 1872 - 1919, generation 76"
+      },
+      {
+        "id": 800771,
+        "generation": 77,
+        "content": "Kung Te-cheng / Kong Decheng 孔德成, 1920 - 2008, generation 77"
+      },
+      {
+        "id": 800781,
+        "generation": 78,
+        "content": "Kong Wei-yi 孔維益, 1939 - 1989, generation 78"
+      },
+      {
+        "id": 800791,
+        "generation": 79,
+        "content": "Kung Tsui-chang / Kong Chuichang 孔垂長, born: 1975 -, generation 79"
+      },
+      {
+        "id": 800801,
+        "generation": 80,
+        "content": "Kong Yu-jen 孔佑仁, born: 2006 -, generation 80"
+      },
+      {
+        "id": 810001,
+        "generation": 0,
+        "content": "Lady Shi 施氏, first wife of Shuliang He, nine daughters"
+      },
+      {
+        "id": 810002,
+        "generation": 0,
+        "content": "Yan Zhengzai 顏徵在, 568 BCE - 535 BCE, mother of Confucius"
+      },
+      {
+        "id": 810003,
+        "generation": 0,
+        "content": "Unknown concubine of Shuliang He, mother of Meng Pi"
+      },
+      {
+        "id": 810004,
+        "generation": 1,
+        "content": "Nine unnamed daughters of Shuliang He and Lady Shi"
+      },
+      {
+        "id": 810005,
+        "generation": 1,
+        "content": "Qi Guanshi 亓官氏 / Qiguan, wife of Confucius"
+      },
+      {
+        "id": 810006,
+        "generation": 2,
+        "content": "Kong Jiao 孔姣, daughter of Confucius and Qi Guanshi"
+      },
+      {
+        "id": 810007,
+        "generation": 2,
+        "content": "Unnamed daughter of Confucius and Qi Guanshi, died young"
+      },
+      {
+        "id": 810008,
+        "generation": 11,
+        "content": "Kong Anguo 孔安國, 11th generation prominent descendant, son of Kong Zhong"
+      },
+      {
+        "id": 810009,
+        "generation": 14,
+        "content": "Kong Jie 孔捷, 14th generation, son of Kong Ba"
+      },
+      {
+        "id": 810010,
+        "generation": 14,
+        "content": "Kong Xi 孔喜, 14th generation, son of Kong Ba"
+      },
+      {
+        "id": 810011,
+        "generation": 14,
+        "content": "Kong Guang 孔光, 14th generation, son of Kong Ba"
+      },
+      {
+        "id": 810012,
+        "generation": 22,
+        "content": "Kong Yang 孔扬, 22nd generation, ancestor of Kong Yingda branch"
+      },
+      {
+        "id": 810013,
+        "generation": 21,
+        "content": "Kong Yu 孔郁, 21st generation, ancestor of Kong Yang branch"
+      },
+      {
+        "id": 810014,
+        "generation": 29,
+        "content": "Kong Linggui 孔靈龜, 29th generation, ancestor of Kong Yingda branch"
+      },
+      {
+        "id": 810015,
+        "generation": 30,
+        "content": "Kong Shuo 孔碩, 30th generation, ancestor of Kong Yingda branch"
+      },
+      {
+        "id": 810016,
+        "generation": 31,
+        "content": "Kong An 孔安, 31st generation, Northern Qi period"
+      },
+      {
+        "id": 810017,
+        "generation": 32,
+        "content": "Kong Yingda 孔穎達, 32nd generation, Tang scholar"
+      },
+      {
+        "id": 810018,
+        "generation": 19,
+        "content": "Kong Zhou 孔宙, 19th generation prominent descendant"
+      },
+      {
+        "id": 810019,
+        "generation": 20,
+        "content": "Kong Rong 孔融, 20th generation prominent descendant"
+      },
+      {
+        "id": 810020,
+        "generation": 45,
+        "content": "Kong Daofu 孔道輔, 45th generation, Song official"
+      },
+      {
+        "id": 810021,
+        "generation": 46,
+        "content": "Kong Zonghan 孔宗翰, 46th generation, Song official"
+      },
+      {
+        "id": 810022,
+        "generation": 47,
+        "content": "Kong Ruozhuo 孔若拙, 47th generation prominent descendant"
+      },
+      {
+        "id": 810023,
+        "generation": 46,
+        "content": "Kong Jian 孔僉, prominent descendant"
+      },
+      {
+        "id": 810024,
+        "generation": 32,
+        "content": "Kong Xiuyuan 孔休源, 32nd generation"
+      },
+      {
+        "id": 810025,
+        "generation": 33,
+        "content": "Kong Zongfan 孔宗笵, 33rd generation"
+      },
+      {
+        "id": 810026,
+        "generation": 33,
+        "content": "Kong Yuntong 孔雲童, 33rd generation"
+      },
+      {
+        "id": 810027,
+        "generation": 55,
+        "content": "Kong Keren 孔克仁, 55th generation descendant"
+      },
+      {
+        "id": 810028,
+        "generation": 58,
+        "content": "Kong Gongxun 孔公恂, 58th generation descendant"
+      },
+      {
+        "id": 810029,
+        "generation": 62,
+        "content": "Kong Wenji 孔聞籍, 62nd generation descendant"
+      },
+      {
+        "id": 810030,
+        "generation": 63,
+        "content": "Kong Zhenkan 孔貞堪, 63rd generation, Magistrate of Qufu"
+      },
+      {
+        "id": 810031,
+        "generation": 64,
+        "content": "Kong Shangze 孔尚則, 64th generation"
+      },
+      {
+        "id": 810032,
+        "generation": 64,
+        "content": "Kong Shangren 孔尚任, 64th generation, playwright"
+      },
+      {
+        "id": 810033,
+        "generation": 72,
+        "content": "Kung Tian Cheng 孔天增, 72nd generation, librarian"
+      },
+      {
+        "id": 810034,
+        "generation": 71,
+        "content": "Kong Zhaoshou 孔昭壽, 71st generation descendant"
+      },
+      {
+        "id": 810035,
+        "generation": 71,
+        "content": "Kong Zhaowei 孔昭巍, 71st generation descendant"
+      },
+      {
+        "id": 810036,
+        "generation": 75,
+        "content": "Kong Xianglin 孔祥林, 75th generation, scholar / preservation official"
+      },
+      {
+        "id": 810037,
+        "generation": 75,
+        "content": "Kong Xiangxian, 75th generation Chinese Muslim descendant"
+      },
+      {
+        "id": 810038,
+        "generation": 77,
+        "content": "Kong Deyong, 77th generation descendant"
+      },
+      {
+        "id": 810039,
+        "generation": 77,
+        "content": "Kong Dejun 孔德軍, 77th generation Chinese Muslim scholar"
+      },
+      {
+        "id": 810040,
+        "generation": 47,
+        "content": "Kong Ruogu 孔若古 / Kong Chuan 孔傳, claimed ancestor of Southern branch at Quzhou"
+      },
+      {
+        "id": 810041,
+        "generation": 75,
+        "content": "Kong Xiangkai 孔祥楷, leader of southern branch at Quzhou"
+      },
+      {
+        "id": 810042,
+        "generation": 74,
+        "content": "Kong Fanci 孔繁慈, father of H. H. Kung"
+      },
+      {
+        "id": 810043,
+        "generation": 75,
+        "content": "H. H. Kung / Kong Xiangxi 孔祥熙, 75th generation"
+      },
+      {
+        "id": 810044,
+        "generation": 75,
+        "content": "Soong Ai-ling 宋藹齡, wife of H. H. Kung"
+      },
+      {
+        "id": 810045,
+        "generation": 76,
+        "content": "Kong Lingyi / Kung Ling-i 孔令儀, child of H. H. Kung"
+      },
+      {
+        "id": 810046,
+        "generation": 76,
+        "content": "Kong Lingkan / Kung Ling-k'an 孔令侃, child of H. H. Kung"
+      },
+      {
+        "id": 810047,
+        "generation": 76,
+        "content": "Kong Lingjun / Kung Ling-chun 孔令俊, child of H. H. Kung"
+      },
+      {
+        "id": 810048,
+        "generation": 76,
+        "content": "Kong Lingjie / Kung Ling-chie 孔令傑, child of H. H. Kung"
+      },
+      {
+        "id": 810049,
+        "generation": 76,
+        "content": "Debra Paget, spouse of Kong Lingjie"
+      },
+      {
+        "id": 810050,
+        "generation": 77,
+        "content": "Gregory Kung 孔德基, child of Kong Lingjie and Debra Paget"
+      },
+      {
+        "id": 810051,
+        "generation": 74,
+        "content": "Kong Fanqi 孔繁琪, 74th generation, mother of Li Fengshan"
+      },
+      {
+        "id": 810052,
+        "generation": 75,
+        "content": "Li Fengshan 李鳳山, child of Kong Fanqi"
+      },
+      {
+        "id": 810053,
+        "generation": 76,
+        "content": "Ann Li 李怜宜, grandchild of Kong Fanqi"
+      }
+    ],
+    "links": [
+      {
+        "from": 800001,
+        "to": 800011,
+        "type": "father"
+      },
+      {
+        "from": 800001,
+        "to": 800012,
+        "type": "father"
+      },
+      {
+        "from": 800011,
+        "to": 800021,
+        "type": "father"
+      },
+      {
+        "from": 800021,
+        "to": 800031,
+        "type": "father"
+      },
+      {
+        "from": 800031,
+        "to": 800041,
+        "type": "father"
+      },
+      {
+        "from": 800041,
+        "to": 800051,
+        "type": "father"
+      },
+      {
+        "from": 800051,
+        "to": 800061,
+        "type": "father"
+      },
+      {
+        "from": 800061,
+        "to": 800071,
+        "type": "father"
+      },
+      {
+        "from": 800071,
+        "to": 800081,
+        "type": "father"
+      },
+      {
+        "from": 800081,
+        "to": 800091,
+        "type": "father"
+      },
+      {
+        "from": 800081,
+        "to": 800092,
+        "type": "father"
+      },
+      {
+        "from": 800081,
+        "to": 800093,
+        "type": "father"
+      },
+      {
+        "from": 800091,
+        "to": 800101,
+        "type": "father"
+      },
+      {
+        "from": 800091,
+        "to": 800102,
+        "type": "father"
+      },
+      {
+        "from": 800101,
+        "to": 800111,
+        "type": "father"
+      },
+      {
+        "from": 800111,
+        "to": 800121,
+        "type": "father"
+      },
+      {
+        "from": 800121,
+        "to": 800131,
+        "type": "father"
+      },
+      {
+        "from": 800131,
+        "to": 800141,
+        "type": "father"
+      },
+      {
+        "from": 800131,
+        "to": 800142,
+        "type": "father"
+      },
+      {
+        "from": 800141,
+        "to": 800151,
+        "type": "father"
+      },
+      {
+        "from": 800141,
+        "to": 800152,
+        "type": "father"
+      },
+      {
+        "from": 800151,
+        "to": 800161,
+        "type": "father"
+      },
+      {
+        "from": 800151,
+        "to": 800162,
+        "type": "father"
+      },
+      {
+        "from": 800161,
+        "to": 800171,
+        "type": "father"
+      },
+      {
+        "from": 800161,
+        "to": 800172,
+        "type": "father"
+      },
+      {
+        "from": 800171,
+        "to": 800181,
+        "type": "father"
+      },
+      {
+        "from": 800181,
+        "to": 800191,
+        "type": "father"
+      },
+      {
+        "from": 800191,
+        "to": 800201,
+        "type": "father"
+      },
+      {
+        "from": 800191,
+        "to": 800202,
+        "type": "father"
+      },
+      {
+        "from": 800201,
+        "to": 800211,
+        "type": "father"
+      },
+      {
+        "from": 800211,
+        "to": 800221,
+        "type": "father"
+      },
+      {
+        "from": 800221,
+        "to": 800231,
+        "type": "father"
+      },
+      {
+        "from": 800231,
+        "to": 800241,
+        "type": "father"
+      },
+      {
+        "from": 800241,
+        "to": 800251,
+        "type": "father"
+      },
+      {
+        "from": 800251,
+        "to": 800261,
+        "type": "father"
+      },
+      {
+        "from": 800261,
+        "to": 800271,
+        "type": "father"
+      },
+      {
+        "from": 800271,
+        "to": 800281,
+        "type": "father"
+      },
+      {
+        "from": 800281,
+        "to": 800291,
+        "type": "father"
+      },
+      {
+        "from": 800291,
+        "to": 800301,
+        "type": "father"
+      },
+      {
+        "from": 800301,
+        "to": 800311,
+        "type": "father"
+      },
+      {
+        "from": 800311,
+        "to": 800321,
+        "type": "father"
+      },
+      {
+        "from": 800311,
+        "to": 800322,
+        "type": "father"
+      },
+      {
+        "from": 800321,
+        "to": 800331,
+        "type": "father"
+      },
+      {
+        "from": 800331,
+        "to": 800341,
+        "type": "father"
+      },
+      {
+        "from": 800341,
+        "to": 800351,
+        "type": "father"
+      },
+      {
+        "from": 800351,
+        "to": 800361,
+        "type": "father"
+      },
+      {
+        "from": 800361,
+        "to": 800371,
+        "type": "father"
+      },
+      {
+        "from": 800371,
+        "to": 800381,
+        "type": "father"
+      },
+      {
+        "from": 800381,
+        "to": 800391,
+        "type": "father"
+      },
+      {
+        "from": 800391,
+        "to": 800401,
+        "type": "father"
+      },
+      {
+        "from": 800401,
+        "to": 800411,
+        "type": "father"
+      },
+      {
+        "from": 800411,
+        "to": 800421,
+        "type": "father"
+      },
+      {
+        "from": 800421,
+        "to": 800431,
+        "type": "father"
+      },
+      {
+        "from": 800431,
+        "to": 800441,
+        "type": "father"
+      },
+      {
+        "from": 800441,
+        "to": 800451,
+        "type": "father"
+      },
+      {
+        "from": 800441,
+        "to": 800452,
+        "type": "father"
+      },
+      {
+        "from": 800451,
+        "to": 800461,
+        "type": "father"
+      },
+      {
+        "from": 800451,
+        "to": 800462,
+        "type": "father"
+      },
+      {
+        "from": 800461,
+        "to": 800471,
+        "type": "father"
+      },
+      {
+        "from": 800461,
+        "to": 800472,
+        "type": "father"
+      },
+      {
+        "from": 800461,
+        "to": 800473,
+        "type": "father"
+      },
+      {
+        "from": 800471,
+        "to": 800481,
+        "type": "father"
+      },
+      {
+        "from": 800471,
+        "to": 800482,
+        "type": "father"
+      },
+      {
+        "from": 800471,
+        "to": 800483,
+        "type": "father"
+      },
+      {
+        "from": 800481,
+        "to": 800491,
+        "type": "father"
+      },
+      {
+        "from": 800481,
+        "to": 800492,
+        "type": "father"
+      },
+      {
+        "from": 800481,
+        "to": 800493,
+        "type": "father"
+      },
+      {
+        "from": 800481,
+        "to": 800494,
+        "type": "father"
+      },
+      {
+        "from": 800481,
+        "to": 800495,
+        "type": "father"
+      },
+      {
+        "from": 800491,
+        "to": 800501,
+        "type": "father"
+      },
+      {
+        "from": 800491,
+        "to": 800502,
+        "type": "father"
+      },
+      {
+        "from": 800491,
+        "to": 800503,
+        "type": "father"
+      },
+      {
+        "from": 800491,
+        "to": 800504,
+        "type": "father"
+      },
+      {
+        "from": 800501,
+        "to": 800511,
+        "type": "father"
+      },
+      {
+        "from": 800501,
+        "to": 800512,
+        "type": "father"
+      },
+      {
+        "from": 800501,
+        "to": 800513,
+        "type": "father"
+      },
+      {
+        "from": 800501,
+        "to": 800514,
+        "type": "father"
+      },
+      {
+        "from": 800501,
+        "to": 800515,
+        "type": "father"
+      },
+      {
+        "from": 800511,
+        "to": 800521,
+        "type": "father"
+      },
+      {
+        "from": 800511,
+        "to": 800522,
+        "type": "adopted"
+      },
+      {
+        "from": 800511,
+        "to": 800523,
+        "type": "father"
+      },
+      {
+        "from": 800511,
+        "to": 800524,
+        "type": "father"
+      },
+      {
+        "from": 800521,
+        "to": 800531,
+        "type": "father"
+      },
+      {
+        "from": 800521,
+        "to": 800532,
+        "type": "father"
+      },
+      {
+        "from": 800521,
+        "to": 800533,
+        "type": "father"
+      },
+      {
+        "from": 800521,
+        "to": 800534,
+        "type": "father"
+      },
+      {
+        "from": 800531,
+        "to": 800541,
+        "type": "father"
+      },
+      {
+        "from": 800531,
+        "to": 800542,
+        "type": "father"
+      },
+      {
+        "from": 800541,
+        "to": 800551,
+        "type": "father"
+      },
+      {
+        "from": 800551,
+        "to": 800561,
+        "type": "father"
+      },
+      {
+        "from": 800561,
+        "to": 800571,
+        "type": "father"
+      },
+      {
+        "from": 800571,
+        "to": 800581,
+        "type": "father"
+      },
+      {
+        "from": 800581,
+        "to": 800591,
+        "type": "father"
+      },
+      {
+        "from": 800591,
+        "to": 800601,
+        "type": "father"
+      },
+      {
+        "from": 800601,
+        "to": 800611,
+        "type": "father"
+      },
+      {
+        "from": 800601,
+        "to": 800612,
+        "type": "father"
+      },
+      {
+        "from": 800611,
+        "to": 800621,
+        "type": "father"
+      },
+      {
+        "from": 800621,
+        "to": 800631,
+        "type": "father"
+      },
+      {
+        "from": 800621,
+        "to": 800632,
+        "type": "father"
+      },
+      {
+        "from": 800631,
+        "to": 800641,
+        "type": "father"
+      },
+      {
+        "from": 800631,
+        "to": 800642,
+        "type": "father"
+      },
+      {
+        "from": 800641,
+        "to": 800651,
+        "type": "father"
+      },
+      {
+        "from": 800641,
+        "to": 800652,
+        "type": "father"
+      },
+      {
+        "from": 800641,
+        "to": 800653,
+        "type": "father"
+      },
+      {
+        "from": 800651,
+        "to": 800661,
+        "type": "father"
+      },
+      {
+        "from": 800661,
+        "to": 800671,
+        "type": "father"
+      },
+      {
+        "from": 800671,
+        "to": 800681,
+        "type": "father"
+      },
+      {
+        "from": 800681,
+        "to": 800691,
+        "type": "father"
+      },
+      {
+        "from": 800691,
+        "to": 800701,
+        "type": "father"
+      },
+      {
+        "from": 800701,
+        "to": 800711,
+        "type": "father"
+      },
+      {
+        "from": 800711,
+        "to": 800721,
+        "type": "father"
+      },
+      {
+        "from": 800711,
+        "to": 800722,
+        "type": "father"
+      },
+      {
+        "from": 800721,
+        "to": 800731,
+        "type": "father"
+      },
+      {
+        "from": 800731,
+        "to": 800741,
+        "type": "father"
+      },
+      {
+        "from": 800741,
+        "to": 800751,
+        "type": "father"
+      },
+      {
+        "from": 800751,
+        "to": 800761,
+        "type": "father"
+      },
+      {
+        "from": 800761,
+        "to": 800771,
+        "type": "father"
+      },
+      {
+        "from": 800771,
+        "to": 800781,
+        "type": "father"
+      },
+      {
+        "from": 800781,
+        "to": 800791,
+        "type": "father"
+      },
+      {
+        "from": 800791,
+        "to": 800801,
+        "type": "father"
+      },
+      {
+        "from": 800001,
+        "to": 810001,
+        "type": "married"
+      },
+      {
+        "from": 800001,
+        "to": 810002,
+        "type": "married"
+      },
+      {
+        "from": 800001,
+        "to": 810003,
+        "type": "married"
+      },
+      {
+        "from": 810002,
+        "to": 800012,
+        "type": "mother"
+      },
+      {
+        "from": 810003,
+        "to": 800011,
+        "type": "mother"
+      },
+      {
+        "from": 800001,
+        "to": 810004,
+        "type": "father"
+      },
+      {
+        "from": 810001,
+        "to": 810004,
+        "type": "mother"
+      },
+      {
+        "from": 800012,
+        "to": 810005,
+        "type": "married"
+      },
+      {
+        "from": 810005,
+        "to": 800021,
+        "type": "mother"
+      },
+      {
+        "from": 800012,
+        "to": 810006,
+        "type": "father"
+      },
+      {
+        "from": 810005,
+        "to": 810006,
+        "type": "mother"
+      },
+      {
+        "from": 800012,
+        "to": 810007,
+        "type": "father"
+      },
+      {
+        "from": 810005,
+        "to": 810007,
+        "type": "mother"
+      },
+      {
+        "from": 800102,
+        "to": 810008,
+        "type": "father"
+      },
+      {
+        "from": 800181,
+        "to": 810013,
+        "type": "descendant"
+      },
+      {
+        "from": 810013,
+        "to": 810012,
+        "type": "father"
+      },
+      {
+        "from": 810014,
+        "to": 810015,
+        "type": "father"
+      },
+      {
+        "from": 810015,
+        "to": 810016,
+        "type": "father"
+      },
+      {
+        "from": 810016,
+        "to": 810017,
+        "type": "father"
+      },
+      {
+        "from": 800181,
+        "to": 810018,
+        "type": "descendant"
+      },
+      {
+        "from": 800191,
+        "to": 810019,
+        "type": "descendant"
+      },
+      {
+        "from": 800441,
+        "to": 810020,
+        "type": "descendant"
+      },
+      {
+        "from": 800451,
+        "to": 810021,
+        "type": "descendant"
+      },
+      {
+        "from": 800461,
+        "to": 810022,
+        "type": "descendant"
+      },
+      {
+        "from": 800451,
+        "to": 810023,
+        "type": "descendant"
+      },
+      {
+        "from": 800311,
+        "to": 810024,
+        "type": "descendant"
+      },
+      {
+        "from": 800321,
+        "to": 810025,
+        "type": "descendant"
+      },
+      {
+        "from": 800321,
+        "to": 810026,
+        "type": "descendant"
+      },
+      {
+        "from": 800541,
+        "to": 810027,
+        "type": "descendant"
+      },
+      {
+        "from": 800571,
+        "to": 810028,
+        "type": "descendant"
+      },
+      {
+        "from": 800611,
+        "to": 810029,
+        "type": "descendant"
+      },
+      {
+        "from": 800621,
+        "to": 810030,
+        "type": "descendant"
+      },
+      {
+        "from": 800631,
+        "to": 810031,
+        "type": "descendant"
+      },
+      {
+        "from": 800631,
+        "to": 810032,
+        "type": "descendant"
+      },
+      {
+        "from": 800711,
+        "to": 810033,
+        "type": "descendant"
+      },
+      {
+        "from": 800701,
+        "to": 810034,
+        "type": "descendant"
+      },
+      {
+        "from": 800701,
+        "to": 810035,
+        "type": "descendant"
+      },
+      {
+        "from": 800741,
+        "to": 810036,
+        "type": "descendant"
+      },
+      {
+        "from": 800741,
+        "to": 810037,
+        "type": "descendant"
+      },
+      {
+        "from": 800761,
+        "to": 810038,
+        "type": "descendant"
+      },
+      {
+        "from": 800761,
+        "to": 810039,
+        "type": "descendant"
+      },
+      {
+        "from": 800482,
+        "to": 810040,
+        "type": "descendant"
+      },
+      {
+        "from": 810042,
+        "to": 810043,
+        "type": "father"
+      },
+      {
+        "from": 810043,
+        "to": 810044,
+        "type": "married"
+      },
+      {
+        "from": 810043,
+        "to": 810045,
+        "type": "father"
+      },
+      {
+        "from": 810044,
+        "to": 810045,
+        "type": "mother"
+      },
+      {
+        "from": 810043,
+        "to": 810046,
+        "type": "father"
+      },
+      {
+        "from": 810044,
+        "to": 810046,
+        "type": "mother"
+      },
+      {
+        "from": 810043,
+        "to": 810047,
+        "type": "father"
+      },
+      {
+        "from": 810044,
+        "to": 810047,
+        "type": "mother"
+      },
+      {
+        "from": 810043,
+        "to": 810048,
+        "type": "father"
+      },
+      {
+        "from": 810044,
+        "to": 810048,
+        "type": "mother"
+      },
+      {
+        "from": 810048,
+        "to": 810049,
+        "type": "married"
+      },
+      {
+        "from": 810048,
+        "to": 810050,
+        "type": "father"
+      },
+      {
+        "from": 810049,
+        "to": 810050,
+        "type": "mother"
+      },
+      {
+        "from": 800731,
+        "to": 810051,
+        "type": "descendant"
+      },
+      {
+        "from": 810051,
+        "to": 810052,
+        "type": "mother"
+      },
+      {
+        "from": 810052,
+        "to": 810053,
+        "type": "descendant"
+      }
+    ],
+    "link-types": [
+      {
+        "type": "default",
+        "label": "default",
+        "color": "rgba(102, 102, 102, 0.5)"
+      },
+      {
+        "type": "father",
+        "label": "father",
+        "color": "rgba(27, 158, 119, 0.5)"
+      },
+      {
+        "type": "mother",
+        "label": "mother",
+        "color": "rgba(231, 41, 138, 0.5)"
+      },
+      {
+        "type": "married",
+        "label": "married",
+        "color": "rgba(117, 112, 179, 0.5)"
+      },
+      {
+        "type": "adopted",
+        "label": "adopted / dashed",
+        "color": "rgba(230, 126, 34, 0.55)"
+      },
+      {
+        "type": "descendant",
+        "label": "descendant / uncertain parent",
+        "color": "rgba(88, 80, 236, 0.55)"
+      }
+    ],
+    "generation-range": {
+      "min": 0,
+      "max": 80
+    }
+  }
+}
